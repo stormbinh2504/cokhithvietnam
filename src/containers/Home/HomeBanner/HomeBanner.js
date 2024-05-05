@@ -85,7 +85,7 @@ const HomeBanner = () => {
         <div id="home-banner" className="home-banner">
             <div className="container">
                 <div className="section-heading text-center">
-                    <h2 className="section-title">Giá kệ để hàng Tân Trường Phát Vina</h2>
+                    <h2 className="section-title">Giá kệ để hàng Cơ Khí TH Việt Nam</h2>
                     <p className="section-desc"></p>
                 </div>
                 <div className="row">
@@ -99,7 +99,7 @@ const HomeBanner = () => {
                 </div>
                 <div className="col-xs-12">
                     <div className="view-all text-center">
-                        <a className="btn" href="/collections/gia-ke-vina">TẤT CẢ SẢN PHẨM</a>
+                        <a className="btn" href="/collections/gia-ke-th">TẤT CẢ SẢN PHẨM</a>
                     </div>
                 </div>
             </div>

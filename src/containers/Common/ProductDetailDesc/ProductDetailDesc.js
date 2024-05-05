@@ -10,7 +10,7 @@ const ListDesc = [
     "Sử dụng được tối đa không gian kho chứa hàng",
     "Thuận lợi cho việc sử dụng đa dạng các loại xe nâng.",
     "Có thể thiết kế với giải pháp “Last in / First out” hoặc First in / First out tùy vào nhu cầu kho chứa hàng hoặc khi lưu kho với một lượng lớn sản phẩm cùng chủng loại.",
-    "Qua thực tế nhiều năm cung cấp cho thị trường Việt Nam, hệ thống kệ này của Tân Trường Phát Vina rất phù hợp với nhiều lĩnh vực công nghiệp gồm các ngành công nghiệp cơ bản, thực phẩm, và đặc biệt ngành công nghiệp kho lạnh."
+    "Qua thực tế nhiều năm cung cấp cho thị trường Việt Nam, hệ thống kệ này của Cơ Khí TH Việt Nam rất phù hợp với nhiều lĩnh vực công nghiệp gồm các ngành công nghiệp cơ bản, thực phẩm, và đặc biệt ngành công nghiệp kho lạnh."
 ]
 const ProductDetailDesc = ({ children }) => {
 
@@ -32,7 +32,7 @@ const ProductDetailDesc = ({ children }) => {
                 {children}
             </div>
             <div className="info-company">
-                <p><span style={{ fontSize: "15px" }}><strong>Công ty TNHH Tân Trường Phát Vina</strong></span></p>
+                <p><span style={{ fontSize: "15px" }}><strong>Công ty TNHH Cơ Khí TH Việt Nam</strong></span></p>
                 <ul>
                     <li><span style={{ fontSize: "15px" }}>
                         {/* <i class="fa fa-building-o" aria-hidden="true"></i> */}

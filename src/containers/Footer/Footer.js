@@ -18,7 +18,7 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-xs-12 col-sm-4 column-1">
                             <div className="">
-                                <h4>Công ty TNHH Tân Trường Phát Vina</h4>
+                                <h4>Công ty TNHH Cơ Khí TH Việt Nam</h4>
                                 <p>Nhà cung cấp giá kệ để hàng công nghiệp uy tín nhất Việt Nam với hơn 15 năm kinh nghiệm tư vấn và thi công thực tế</p>
                                 <h5>Văn phòng đại diện</h5>
                                 <p>Phố Hộ Vệ, Lạc Vệ, Tiên Du, Bắc Ninh</p>
@@ -52,7 +52,7 @@ const Footer = () => {
                                 <h4>Danh mục</h4>
                                 <ul>
 
-                                    <li><a href="/collections/gia-ke-vina"><i className="fa fa-caret-right" aria-hidden="true"></i>Sản phẩm</a></li>
+                                    <li><a href="/collections/gia-ke-th"><i className="fa fa-caret-right" aria-hidden="true"></i>Sản phẩm</a></li>
 
                                     <li><a href="/blogs/du-an-hoan-thanh"><i className="fa fa-caret-right" aria-hidden="true"></i>Dự án hoàn thành</a></li>
 
@@ -118,7 +118,7 @@ const Footer = () => {
                 <div className="container clearfix copyright-links">
                     <div className="row">
                         <div className="col12 col-md-6">
-                            © Bản quyền thuộc về Tân Trường Phát Vina
+                            © Bản quyền thuộc về Cơ Khí TH Việt Nam
                         </div>
                         <div className="col12 col-md-6">
                         </div>

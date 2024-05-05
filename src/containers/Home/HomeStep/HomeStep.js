@@ -27,7 +27,7 @@ const HomeStep = () => {
                                     <span className="home-step-number">1</span>
                                 </div>
                                 <div className="home-step-title">Tư vấn &amp; Thiết kế</div>
-                                <div className="home-step-desc visible-xs">Tân Trường Phát Vina tiến hành khảo sát thực tế và lắng nghe nhu cầu mong muốn của khách hàng. Sau đó tiến hành đo đạc và lên sơ đồ tổng thể cho dự án</div>
+                                <div className="home-step-desc visible-xs">Cơ Khí TH Việt Nam tiến hành khảo sát thực tế và lắng nghe nhu cầu mong muốn của khách hàng. Sau đó tiến hành đo đạc và lên sơ đồ tổng thể cho dự án</div>
                             </div>
 
                             <div className="home-step-item">
@@ -36,7 +36,7 @@ const HomeStep = () => {
                                     <span className="home-step-number">2</span>
                                 </div>
                                 <div className="home-step-title">Chế tạo</div>
-                                <div className="home-step-desc visible-xs">Sau khi khách hàng đồng ý với bản vẽ cuối cùng, Tân Trường Phát Vina sẽ tiến hành chế tạo sản phẩm</div>
+                                <div className="home-step-desc visible-xs">Sau khi khách hàng đồng ý với bản vẽ cuối cùng, Cơ Khí TH Việt Nam sẽ tiến hành chế tạo sản phẩm</div>
                             </div>
 
                             <div className="home-step-item">
@@ -45,7 +45,7 @@ const HomeStep = () => {
                                     <span className="home-step-number">3</span>
                                 </div>
                                 <div className="home-step-title">Giao hàng &amp; Lắp đặt </div>
-                                <div className="home-step-desc visible-xs">Tân Trường Phát Vina vận chuyển hàng tới địa điểm thi công. Nhân viên kỹ thuật sẽ tiến hành lắp đặt đúng theo bản vẽ, đảm bảo chất lượng và tính an toàn tuyệt đối</div>
+                                <div className="home-step-desc visible-xs">Cơ Khí TH Việt Nam vận chuyển hàng tới địa điểm thi công. Nhân viên kỹ thuật sẽ tiến hành lắp đặt đúng theo bản vẽ, đảm bảo chất lượng và tính an toàn tuyệt đối</div>
                             </div>
 
 
@@ -72,7 +72,7 @@ const HomeStep = () => {
                     </div>
                     <div className="col-12">
                         <div className="home-step-contact">
-                            <h4 className="title">Liên hệ ngay với Tân Trường Phát Vina</h4>
+                            <h4 className="title">Liên hệ ngay với Cơ Khí TH Việt Nam</h4>
                             <div className="content">
                                 <div className="item">
                                     <div className="icon"><i className="icon-call"></i></div>

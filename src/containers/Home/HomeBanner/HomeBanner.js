@@ -59,21 +59,25 @@ const FeatureBox = ({ data }) => {
     console.log("binh_data", data)
     const { image, title, subtitle, link } = data
     return (
-        <div className="col-12 col-md-4">
-            <div className="feature-box media-box">
-                <div className="fbox-media">
-                    <a href={link}>
-                        <img src={image} />
-                    </a>
-                </div>
-                <div className="fbox-desc">
-                    <h3>{title}
-                        {subtitle && subtitle.length > 0 && subtitle.map((item, index) => {
-
-                            return (<span className="subtitle">- {item}</span>)
-                        })}
-                    </h3>
-                    <p></p>
+        <div className="col-12 col-md-4 item-feature-box">
+            <div className="wrap-feature-box">
+                <div className="feature-box media-box">
+                    <div className="fbox-media">
+                        <a href={link}>
+                            <img src={image} />
+                        </a>
+                    </div>
+                    <div className="fbox-desc">
+                        <h3 className="title text-center">
+                            {title}
+                        </h3>
+                        <h3>
+                            {subtitle && subtitle.length > 0 && subtitle.map((item, index) => {
+                                return (<span className="subtitle">- {item}</span>)
+                            })}
+                        </h3>
+                        <p></p>
+                    </div>
                 </div>
             </div>
         </div>

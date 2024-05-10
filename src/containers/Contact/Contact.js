@@ -49,7 +49,7 @@ const Contact = ({ google }) => {
                                         <strong>
                                             Nhà máy sản xuất:&nbsp;
                                         </strong>
-                                        Phố Hộ Vệ, Lạc Vệ, Tiên Du, Bắc Ninh
+                                        KM số 10, QL3, Mai Lâm, Đông Anh, Hà Nội
                                     </span>
                                 </li>
                                 <li>
@@ -58,7 +58,7 @@ const Contact = ({ google }) => {
                                         <strong>
                                             Hotline:&nbsp;
                                         </strong>
-                                        0982 535 391
+                                        0833 855 955
                                     </span>
                                 </li>
                                 <li>
@@ -67,7 +67,7 @@ const Contact = ({ google }) => {
                                         <strong>
                                             Email:&nbsp;
                                         </strong>
-                                        sales.giakettp@gmail.com
+                                        cokhithvietnam@gmail.com
                                     </span>
                                 </li>
                             </ul>

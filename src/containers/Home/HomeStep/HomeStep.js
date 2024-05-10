@@ -11,10 +11,19 @@ import home_step_image_5 from "../../../assets/images/home_step/home_step_image_
 const HomeStep = () => {
     return (
 
-        <div id="home-step" className="home-step">
+        <div id="home-step" className="home home-step">
             <div className="container">
                 <div className="section-heading text-center">
-                    <h2 className="section-title">GIẢI PHÁP CỦA CHÚNG TÔI</h2>
+                    <h2 className="section-title">
+                        <span className="title">
+                            GIẢI PHÁP CỦA CHÚNG TÔI
+                        </span>
+                        <span className="extra-box">
+                            <div className="img-extra">
+
+                            </div>
+                        </span>
+                    </h2>
                     <p className="section-desc">Chúng tôi cung cấp giải pháp đơn giản để tăng sức chứa hàng hóa của bạn</p>
                 </div>
                 <div className="row gutters-0">
@@ -68,25 +77,6 @@ const HomeStep = () => {
                                 <div className="home-step-desc visible-xs">Chúng tôi cung cấp dịch vụ tháo dỡ, di dời hệ thống kệ chứa hàng theo yêu cầu với tính chuyên nghiệp cao. Đảm bảo tiêu chuẩn và phù hợp với yêu cầu của khách hàng</div>
                             </div>
 
-                        </div>
-                    </div>
-                    <div className="col-12">
-                        <div className="home-step-contact">
-                            <h4 className="title">Liên hệ ngay với Cơ Khí TH Việt Nam</h4>
-                            <div className="content">
-                                <div className="item">
-                                    <div className="icon"><i className="icon-call"></i></div>
-                                    <div className="text"><a href="tel:0982535391">GỌI HOTLINE</a></div>
-                                </div>
-                                <div className="item">
-                                    <div className="icon"><i className="icon-line-mail"></i></div>
-                                    <div className="text"><a href="mailto:sales.giakettp@gmail.com">EMAIL</a></div>
-                                </div>
-                                <div className="item">
-                                    <div className="icon"><i className="icon-line-mail"></i></div>
-                                    <div className="text"><a href="https://zalo.me/0982535391" target="_blank">ZALO</a></div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

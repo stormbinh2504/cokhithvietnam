@@ -24,12 +24,12 @@ const ProductDesc = ({ productDesc }) => {
             <div className="clear"></div>
 
             <div className="btn-wrap">
-                <a className="phone item-center" href="tel:0982535391">
+                <a className="phone item-center" href="tel:0833855955">
                     <img src={product_desc_call} alt="icon" />
-                    Gọi ngay 0982 535 391
+                    Gọi ngay 0833 855 955
                 </a>
                 <div className="chat-require">
-                    <a className="chat item-center" href="https://zalo.me/0982535391" target="_blank">
+                    <a className="chat item-center" href="https://zalo.me/0833855955" target="_blank">
                         <img src={product_desc_zalo} alt="icon" />
                         Chat
                     </a>

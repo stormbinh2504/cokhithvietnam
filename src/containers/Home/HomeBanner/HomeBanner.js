@@ -86,11 +86,19 @@ const FeatureBox = ({ data }) => {
 
 const HomeBanner = () => {
     return (
-        <div id="home-banner" className="home-banner">
+        <div id="home-banner" className="home home-banner">
             <div className="container">
                 <div className="section-heading text-center">
-                    <h2 className="section-title">Giá kệ để hàng Cơ Khí TH Việt Nam</h2>
-                    <p className="section-desc"></p>
+                    <h2 className="section-title">
+                        <span className="title">
+                            GIÁ KỆ ĐỂ HÀNG CƠ KHÍ TH VIỆT NAM
+                        </span>
+                        <span className="extra-box">
+                            <div className="img-extra">
+
+                            </div>
+                        </span>
+                    </h2>
                 </div>
                 <div className="row">
                     {listFeatureBox && listFeatureBox.length > 0 && listFeatureBox.map((item, index) => {
@@ -108,7 +116,7 @@ const HomeBanner = () => {
                 </div>
             </div>
 
-        </div>
+        </div >
     )
 }
 

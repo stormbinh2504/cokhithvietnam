@@ -5,11 +5,13 @@
     margin-top: 50px;
 
     .section-heading {
+        padding-top  : 30px;
         margin-bottom: 50px;
 
         .section-title {
             margin-bottom: 0;
             font-size    : 26px;
+            color        : $dark_color;
 
             p {
                 margin-bottom: 15px;

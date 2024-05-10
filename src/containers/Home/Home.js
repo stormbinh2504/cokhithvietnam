@@ -8,10 +8,13 @@ import { useEffect } from 'react';
 import HomeStep from './HomeStep/HomeStep';
 import HomeBanner from './HomeBanner/HomeBanner';
 import OurCustomer from './OurCustomer/OurCustomer';
+import HomeCustomerSay from './HomeCustomerSay/HomeCustomerSay';
 
-const src1 = "//theme.hstatic.net/200000335999/1000709370/14/slideshow_1.jpg?v=1455"
-const src2 = "//theme.hstatic.net/200000335999/1000709370/14/slideshow_2.jpg?v=1455"
-const src3 = "//theme.hstatic.net/200000335999/1000709370/14/slideshow_2.jpg?v=1455"
+import slider_1 from "../../assets/images/home/home_slider/slider_1.png"
+import slider_2 from "../../assets/images/home/home_slider/slider_2.png"
+import slider_3 from "../../assets/images/home/home_slider/slider_3.png"
+import slider_4 from "../../assets/images/home/home_slider/slider_4.png"
+
 const Home = () => {
 
     const reveal = () => {
@@ -59,14 +62,15 @@ const Home = () => {
                     ]}
                 // margin={8}
                 >
-                    <div ><img className="img" src={src1} /></div>
-                    <div><img className="img" src={src2} /></div>
-                    <div><img className="img" src={src3} /></div>
+                    <div ><img className="img" src={slider_1} /></div>
+                    <div><img className="img" src={slider_2} /></div>
+                    <div><img className="img" src={slider_3} /></div>
+                    <div><img className="img" src={slider_4} /></div>
                 </OwlCarousel>
             </div>
             <section id="content-home" className="content-home">
                 <div className="content-wrap">
-                    <div id="home-counter" className="home-counter">
+                    <div id="home-counter" className="home home-counter">
                         <div class="container gutters-0">
                             <div className="row">
                                 <div class="section-heading">
@@ -129,6 +133,7 @@ const Home = () => {
                     </div>
                     <HomeStep />
                     <HomeBanner />
+                    <HomeCustomerSay />
                     <OurCustomer />
                 </div>
             </section>

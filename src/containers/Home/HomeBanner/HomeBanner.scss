@@ -4,11 +4,13 @@
 .home-banner {
 
     .section-heading {
+        padding-top  : 30px;
         margin-bottom: 50px;
 
         .section-title {
             margin-bottom: 0;
             font-size    : 26px;
+            color        : $dark_color;
 
             p {
                 margin-bottom: 15px;
@@ -65,7 +67,7 @@
 
             .fbox-desc {
                 .title {
-                    font-weight: 700;
+                    font-weight  : 700;
                     margin-bottom: 10px;
                 }
 
@@ -76,7 +78,7 @@
                         color         : #444;
                         font-weight   : 300;
                         text-transform: none;
-                        font-size: 16px;
+                        font-size     : 16px;
                     }
                 }
             }
@@ -103,8 +105,8 @@
     .view-all {
         .btn {
             margin-top: 20px;
-            background: #ed1b24;
-            color     : #fff;
+            background: $bg_menu;
+            color     : $white_color;
         }
     }
 }

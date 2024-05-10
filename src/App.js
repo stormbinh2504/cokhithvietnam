@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 
-import logo from './logo.svg';
 import './App.scss';
 import "../src/styles/styles.scss";
 import { Route, Switch, Redirect } from "react-router-dom";
 import $ from 'jquery';
 import { ConnectedRouter as Router } from 'connected-react-router';
-
+import "../node_modules/slick-carousel/slick/slick.css";
+import "../node_modules/slick-carousel/slick/slick-theme.css";
 import { useSelector, useDispatch } from "react-redux";
 import { toast, ToastContainer } from "react-toastify";
 import { injectStyle } from "react-toastify/dist/inject-style";

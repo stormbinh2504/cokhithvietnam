@@ -51,12 +51,62 @@
         }
     }
 
+
+    .home {
+        margin: 40px 0px;
+
+        .section-heading {
+
+
+            .section-title {
+                position: relative;
+                height  : 60px;
+
+                .title {
+                    position: relative;
+
+                    &::after {
+                        content      : '';
+                        position     : absolute;
+                        // background: $bg_menu;
+                        // height    : 1px;
+                        width        : 100%;
+                        top          : 50px;
+                        left         : 0;
+                        border-bottom: 1px solid $border_color;
+                    }
+                }
+
+                .extra-box {
+                    position        : absolute;
+                    transform       : translateX(-50%);
+                    top             : 35px;
+                    left            : 50%;
+                    padding         : 0px 15px;
+                    background-color: $white_color;
+
+                    .img-extra {
+                        background     : url('../../assets/images/company/logo.png') no-repeat;
+                        width          : 30px;
+                        height         : 30px;
+                        background-size: 100%;
+                    }
+                }
+            }
+
+            .section-desc {
+                margin-top: 10px;
+            }
+        }
+    }
+
+
     .content-home {
         .content-wrap {
             padding: 20px 0;
 
             .home-counter {
-                padding : 50px 0px;
+                padding : 20px 0px 50px 0px;
                 position: relative;
 
                 .section-heading {
@@ -65,6 +115,7 @@
                     .section-title {
                         margin-bottom: 0;
                         font-size    : 26px;
+                        color        : $dark_color;
 
                         >span {
                             color: $red_color;

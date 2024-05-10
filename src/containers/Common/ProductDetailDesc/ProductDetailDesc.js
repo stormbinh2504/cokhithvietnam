@@ -36,25 +36,25 @@ const ProductDetailDesc = ({ children }) => {
                 <ul>
                     <li><span style={{ fontSize: "15px" }}>
                         {/* <i class="fa fa-building-o" aria-hidden="true"></i> */}
-                        - Văn phòng bán hàng: Phố Hộ Vệ, Lạc Vệ, Tiên Du, Bắc Ninh
+                        - Văn phòng bán hàng: KM số 10, QL3, Mai Lâm, Đông Anh, Hà Nội
                     </span>
                     </li>
                     <li>
                         <span style={{ fontSize: "15px" }}>
                             {/* <i class="fa fa-map-marker" aria-hidden="true"></i> */}
-                            - Nhà máy sản xuất: Phố Hộ Vệ, Lạc Vệ, Tiên Du, Bắc Ninh
+                            - Nhà máy sản xuất: KM số 10, QL3, Mai Lâm, Đông Anh, Hà Nội
                         </span>
                     </li>
                     <li>
                         <span style={{ fontSize: "15px" }}>
                             {/* <i className="fa fa-phone" aria-hidden="true"></i> */}
-                            - Hotline: 0982 535 391
+                            - Hotline: 0833 855 955
                         </span>
                     </li>
                     <li>
                         <span style={{ fontSize: "15px" }}>
                             {/* <i className="fa fa-envelope-o" aria-hidden="true"></i> */}
-                            - Email: sales.giakettp@gmail.com
+                            - Email: cokhithvietnam@gmail.com
                         </span>
                     </li>
                 </ul>

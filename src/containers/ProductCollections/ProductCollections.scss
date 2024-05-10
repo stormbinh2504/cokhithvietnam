@@ -3,21 +3,20 @@
 .product-collections {
     .content {
         .content-wrap {
+            background: url("../../assets/images/product_collections/collection-banner-header.jpg");
 
             .collection-description {
-                background   : url("../../assets/images/product_collections/collection-banner-header.jpg");
                 position     : relative;
                 margin-bottom: 30px;
 
                 &::after {
-                    content   : '';
-                    position  : absolute;
-                    background: rgba(255, 255, 255, .9);
-                    top       : 0;
-                    left      : 0;
-                    right     : 0;
-                    bottom    : 0;
-                    z-index   : 1;
+                    content : '';
+                    position: absolute;
+                    top     : 0;
+                    left    : 0;
+                    right   : 0;
+                    bottom  : 0;
+                    z-index : 1;
                 }
 
                 .container {
@@ -134,8 +133,8 @@
                     width     : 100%;
 
                     a {
-                        background: #ed1b24;
-                        color     : #fff;
+                        background: $bg_menu;
+                        color     : $white_color;
                     }
                 }
             }

@@ -21,9 +21,9 @@ const Footer = () => {
                                 <h4>Công ty TNHH Cơ Khí TH Việt Nam</h4>
                                 <p>Nhà cung cấp giá kệ để hàng công nghiệp uy tín nhất Việt Nam với hơn 15 năm kinh nghiệm tư vấn và thi công thực tế</p>
                                 <h5>Văn phòng đại diện</h5>
-                                <p>Phố Hộ Vệ, Lạc Vệ, Tiên Du, Bắc Ninh</p>
+                                <p>KM số 10, QL3, Mai Lâm, Đông Anh, Hà Nội</p>
                                 <h5>Nhà máy sản xuất</h5>
-                                <p>Phố Hộ Vệ, Lạc Vệ, Tiên Du, Bắc Ninh</p>
+                                <p>KM số 10, QL3, Mai Lâm, Đông Anh, Hà Nội</p>
                             </div>
                         </div>
                         <div className="col-xs-12 col-sm-4 column-2">
@@ -75,11 +75,11 @@ const Footer = () => {
                                 </div>
                                 <div className="item">
                                     <div className="icon">
-                                        <a href="https://zalo.me/0982535391"><img src="//theme.hstatic.net/200000335999/1000709370/14/ft_social_ico_2.png?v=1455" /></a>
+                                        <a href="https://zalo.me/0833855955"><img src="//theme.hstatic.net/200000335999/1000709370/14/ft_social_ico_2.png?v=1455" /></a>
                                     </div>
                                     {/* <div className="info">
-                                        <a href="https://zalo.me/0982535391" target="_blank"><span className="hide">Nhắn tin</span></a>
-                                        <a href="https://zalo.me/0982535391" target="_blank"><span className="hide">Zalo</span></a>
+                                        <a href="https://zalo.me/0833855955" target="_blank"><span className="hide">Nhắn tin</span></a>
+                                        <a href="https://zalo.me/0833855955" target="_blank"><span className="hide">Zalo</span></a>
                                     </div> */}
                                 </div>
                             </div>
@@ -91,13 +91,13 @@ const Footer = () => {
                             <a className="icon-line-mail icon-pre-footer">
                                 <i className="fa fa-envelope-o" aria-hidden="true"></i>
                             </a>
-                            <h4><a href="/pages/lien-he">sales.giakettp@gmail.com</a></h4>
+                            <h4><a href="/pages/lien-he">cokhithvietnam@gmail.com</a></h4>
                         </div>
                         <div className="col-6 col-md-3 text-center">
                             <a className="icon-call icon-pre-footer">
                                 <i className="fa fa-phone" aria-hidden="true"></i>
                             </a>
-                            <h4><a href="/pages/lien-he">Hotline: 0982 535 391</a></h4>
+                            <h4><a href="/pages/lien-he">Hotline: 0833 855 955</a></h4>
                         </div>
                         <div className="col-6 col-md-3 text-center">
                             <a className="icon-user2 icon-pre-footer">

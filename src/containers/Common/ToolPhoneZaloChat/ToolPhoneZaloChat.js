@@ -16,14 +16,14 @@ const ToolPhoneZaloChat = ({ children }) => {
         <div className='tool-phone-zalo-chat'>
             <div class='phonering-alo-phone'>
                 <div class="phonering-alo-ph-circle-fill"></div>
-                <a rel="nofollow" target="_blank" href="tel:0982535391" class="alo-ph-img-circle img-phonering"></a>
+                <a rel="nofollow" target="_blank" href="tel:0833855955" class="alo-ph-img-circle img-phonering"></a>
             </div>
             <div class="zaloring-alo-phone">
                 <div class="phonering-alo-ph-circle-fill"></div>
-                <a rel="nofollow" target="_blank" href="https://zalo.me/0982535391" class="alo-ph-img-circle img-zaloring"></a>
+                <a rel="nofollow" target="_blank" href="https://zalo.me/0833855955" class="alo-ph-img-circle img-zaloring"></a>
             </div>
             <div class="mess-facebook">
-                <a rel="nofollow" target="_blank" href="https://zalo.me/0982535391" class="fb-btn"></a>
+                <a rel="nofollow" target="_blank" href="https://zalo.me/0833855955" class="fb-btn"></a>
             </div>
             <div class="youtube-recomend">
                 <a rel="nofollow" target="_blank" href="https://www.youtube.com/" class="youtube-btn"></a>

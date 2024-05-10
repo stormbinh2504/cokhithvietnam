@@ -206,7 +206,7 @@ const Header = () => {
                             <li className={"nav-menu-item " + (checkActiveMenu(PATH_NAME.CONTACT) ? "active" : "")}>
                                 <a onClick={() => onRedirectByPathname(PATH_NAME.CONTACT)}>Liên hệ</a>
                             </li>
-                            <li className={"nav-menu-item "}><a href="https://drive.google.com/file/d/1nwUznZ8poREFhz_LWFjEp9P-uIa6Q5NB/view?usp=sharing" target="_blank">Tải xuống Catalogue</a></li>
+                            <li className={"nav-menu-item "}><a href="https://drive.google.com/file/d/1H-frDOuEx0pTjGlFFDiK5wl6eA26cz-4/view" target="_blank">Tải xuống Catalogue</a></li>
                         </ul>
                     </div>
 

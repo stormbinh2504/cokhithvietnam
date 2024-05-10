@@ -58,7 +58,7 @@ const Footer = () => {
 
                                     <li><a href="/pages/ve-chung-toi"><i className="fa fa-caret-right" aria-hidden="true"></i>Về chúng tôi</a></li>
 
-                                    <li><a href="https://drive.google.com/file/d/1nwUznZ8poREFhz_LWFjEp9P-uIa6Q5NB/view"><i className="fa fa-caret-right" aria-hidden="true"></i>Tải xuống Catalogue</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1H-frDOuEx0pTjGlFFDiK5wl6eA26cz-4/view"><i className="fa fa-caret-right" aria-hidden="true"></i>Tải xuống Catalogue</a></li>
 
                                 </ul>
                             </div>

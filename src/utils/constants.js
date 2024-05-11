@@ -1,6 +1,6 @@
 export const PATH_NAME = {
     HOME: "/", // Người mua
-    COLLECTIONS: "/collections/gia-ke-th", // Người bán
+    COLLECTIONS: "/collections", // Người bán
     BLOGS: "/blogs/du-an-hoan-thanh", // Người bán
     ABOUT_OUR: "/pages/ve-chung-toi", // Người bán
     CONTACT: "/pages/lien-he", // Người bán
@@ -23,4 +23,7 @@ export const PATH_NAME = {
     KE_DE_HANG_BAN_TU_DONG: "/products/ke-de-hang-ban-tu-dong",
     KE_SIEU_THI: "/products/ke-sieu-thi",
 }
+
+
+export const LINK_CATALOGUE = "https://drive.google.com/file/d/1H-frDOuEx0pTjGlFFDiK5wl6eA26cz-4/view"
 

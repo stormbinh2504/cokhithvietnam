@@ -111,7 +111,7 @@ const HomeBanner = () => {
                 </div>
                 <div className="col-xs-12">
                     <div className="view-all text-center">
-                        <a className="btn" href="/collections/gia-ke-th">TẤT CẢ SẢN PHẨM</a>
+                        <a className="btn" href="/collections">TẤT CẢ SẢN PHẨM</a>
                     </div>
                 </div>
             </div>

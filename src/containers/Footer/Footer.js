@@ -2,8 +2,10 @@ import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { useSelector, useDispatch } from "react-redux";
 import * as actions from '../../redux/actions'
-import { TYPE_USER } from '../../utils';
+import { LINK_CATALOGUE, PATH_NAME, TYPE_USER } from '../../utils';
 import "./Footer.scss"
+import logoFull from "../../assets/images/company/logo_full.png"
+import dmcaProtected from "../../assets/images/footer/dmca_protected.png"
 
 
 // let phone = 
@@ -16,100 +18,128 @@ const Footer = () => {
             <div className="container">
                 <div className="footer-widgets-wrap">
                     <div className="row">
-                        <div className="col-xs-12 col-sm-4 column-1">
-                            <div className="">
-                                <h4>Công ty TNHH Cơ Khí TH Việt Nam</h4>
-                                <p>Nhà cung cấp giá kệ để hàng công nghiệp uy tín nhất Việt Nam với hơn 15 năm kinh nghiệm tư vấn và thi công thực tế</p>
-                                <h5>Văn phòng đại diện</h5>
-                                <p>KM số 10, QL3, Mai Lâm, Đông Anh, Hà Nội</p>
-                                <h5>Nhà máy sản xuất</h5>
-                                <p>KM số 10, QL3, Mai Lâm, Đông Anh, Hà Nội</p>
-                            </div>
-                        </div>
-                        <div className="col-xs-12 col-sm-4 column-2">
+                        <div className="col-xs-12 col-sm-4 column-footer column-1">
                             <div className="widget widget_links">
-                                <h4>Thông tin</h4>
-                                <ul>
-
-                                    <li><a href="/pages/chinh-sach-bao-hanh"><i className="fa fa-caret-right" aria-hidden="true"></i>
-                                        Chính sách bảo hành</a>
-                                    </li>
-
-                                    <li><a href="/pages/chinh-sach-bao-mat-thong-tin"><i className="fa fa-caret-right" aria-hidden="true"></i>
-                                        Chính sách bảo mật</a></li>
-
-                                    <li><a href="/pages/thanh-toan"><i className="fa fa-caret-right" aria-hidden="true"></i>
-                                        Hình thức thanh toán</a></li>
-
-                                    <li><a href="/pages/chinh-sach-van-chuyen-va-giao-nhan"><i className="fa fa-caret-right" aria-hidden="true"></i>
-                                        Chính sách vận chuyển và giao nhận</a></li>
-
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="col-xs-12 col-sm-4 column-3">
-                            <div className="widget widget_links">
-                                <h4>Danh mục</h4>
-                                <ul>
-
-                                    <li><a href="/collections/gia-ke-th"><i className="fa fa-caret-right" aria-hidden="true"></i>Sản phẩm</a></li>
-
-                                    <li><a href="/blogs/du-an-hoan-thanh"><i className="fa fa-caret-right" aria-hidden="true"></i>Dự án hoàn thành</a></li>
-
-                                    <li><a href="/pages/ve-chung-toi"><i className="fa fa-caret-right" aria-hidden="true"></i>Về chúng tôi</a></li>
-
-                                    <li><a href="https://drive.google.com/file/d/1H-frDOuEx0pTjGlFFDiK5wl6eA26cz-4/view"><i className="fa fa-caret-right" aria-hidden="true"></i>Tải xuống Catalogue</a></li>
-
-                                </ul>
-                            </div>
-
-                            <div className="footer-social">
-                                <div className="item">
-                                    <div className="icon">
-                                        <a href="https://www.facebook.com/giakedehang.vn"><img src="//theme.hstatic.net/200000335999/1000709370/14/ft_social_ico_1.png?v=1455" /></a>
+                                <div className="section-logo">
+                                    <div className="block-logo-image item-center">
+                                        <img className="img-logo" src={logoFull} />
                                     </div>
-                                    {/* <div className="info">
-                                        <a href="https://www.facebook.com/giakedehang.vn"><span className="hide">Theo dõi</span></a>
-                                        <a href="https://www.facebook.com/giakedehang.vn"><span className="hide">trên Facebook</span></a>
-                                    </div> */}
                                 </div>
-                                <div className="item">
-                                    <div className="icon">
-                                        <a href="https://zalo.me/0833855955"><img src="//theme.hstatic.net/200000335999/1000709370/14/ft_social_ico_2.png?v=1455" /></a>
+                                <div className="section-company-name item-center">
+                                    <span>
+                                        CÔNG TY TNHH CƠ KHÍ TH VIỆT NAM
+                                    </span>
+                                </div>
+                                <div className="section-body">
+                                    <div className="section-body-wrap">
+                                        <div className="section-body-item">
+                                            Nhà cung cấp giá kệ để hàng công nghiệp uy tín nhất Việt Nam với hơn 15 năm kinh nghiệm tư vấn và thi công thực tế
+                                        </div>
+                                        <div className="section-body-item section-body-label-value">
+                                            <div className="label" style={{ marginRight: "3px" }}>Địa chỉ: </div>
+                                            <div className="value" style={{ fontWeight: "700" }}>KM số 10, QL3, Mai Lâm, Đông Anh, Hà Nội</div>
+                                        </div>
                                     </div>
-                                    {/* <div className="info">
-                                        <a href="https://zalo.me/0833855955" target="_blank"><span className="hide">Nhắn tin</span></a>
-                                        <a href="https://zalo.me/0833855955" target="_blank"><span className="hide">Zalo</span></a>
-                                    </div> */}
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div className="row row-flex clearfix contact_prefooter">
-                        <div className="col-6 col-md-3 text-center">
-                            <a className="icon-line-mail icon-pre-footer">
-                                <i className="fa fa-envelope-o" aria-hidden="true"></i>
-                            </a>
-                            <h4><a href="/pages/lien-he">cokhithvietnam@gmail.com</a></h4>
+                        <div className="col-xs-12 col-sm-4 column-footer column-2">
+                            <div className="widget widget_links">
+                                <div className="section-title">
+                                    <span>
+                                        THÔNG TIN
+                                    </span>
+                                </div>
+                                <div className="section-body">
+                                    <div className="section-body-wrap">
+                                        <div className="section-body-item">
+                                            <a href="/pages/chinh-sach-bao-hanh"><i className="fa fa-caret-right" aria-hidden="true" style={{ marginRight: "3px" }}></i>Chính sách bảo hành</a>
+                                        </div>
+                                        <div className="section-body-item">
+                                            <a href="/pages/chinh-sach-bao-mat-thong-tin"><i className="fa fa-caret-right" aria-hidden="true" style={{ marginRight: "3px" }}></i>Chính sách bảo mật</a>
+                                        </div>
+                                        <div className="section-body-item">
+                                            <a href="/pages/thanh-toan"><i className="fa fa-caret-right" aria-hidden="true" style={{ marginRight: "3px" }}></i>Hình thức thanh toán</a>
+                                        </div>
+                                        <div className="section-body-item">
+                                            <a href="/pages/chinh-sach-van-chuyen-va-giao-nhan"><i className="fa fa-caret-right" aria-hidden="true" style={{ marginRight: "3px" }}></i>Chính sách vận chuyển và giao nhận</a>
+                                        </div>
+                                        <div className="section-body-item section-body-label-value">
+                                            <div className="label" style={{ marginRight: "3px" }}>Email: </div>
+                                            <div className="value" style={{ fontWeight: "700" }}>cokhithvietnam@gmail.com</div>
+                                        </div>
+                                        <div className="section-body-item">
+                                            <div className="label">Hotline/zalo: </div>
+                                            <div className="phone" style={{ fontWeight: "700" }}><a href="https://zalo.me/0833855955" target="_blank">- 0833.855.955</a></div>
+                                            <div className="phone" style={{ fontWeight: "700" }}><a href="https://zalo.me/0362885789" target="_blank">- 0362.885.789</a></div>
+                                            <div className="phone" style={{ fontWeight: "700" }}><a href="https://zalo.me/0963959787" target="_blank">- 0963.959.787</a></div>
+                                        </div>
+                                        <div className="section-body-item section-body-label-value">
+                                            <div className="label" style={{ marginRight: "3px" }}>Thời gian làm việc: </div>
+                                            <div className="value" style={{ fontWeight: "700" }}>Thứ 2 - Thứ 7, 8h - 17h</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div className="col-6 col-md-3 text-center">
-                            <a className="icon-call icon-pre-footer">
-                                <i className="fa fa-phone" aria-hidden="true"></i>
-                            </a>
-                            <h4><a href="/pages/lien-he">Hotline: 0833 855 955</a></h4>
+                        <div className="col-xs-12 col-sm-4 column-footer column-3">
+                            <div className="widget widget_links">
+                                <div className="section-title">
+                                    <span>
+                                        DANH MỤC
+                                    </span>
+                                </div>
+                                <div className="section-body">
+                                    <div className="section-body-wrap">
+                                        <div className="section-body-item">
+                                            <a href={PATH_NAME.COLLECTIONS}><i className="fa fa-caret-right" aria-hidden="true" style={{ marginRight: "3px" }}></i>Sản phẩm</a>
+                                        </div>
+                                        <div className="section-body-item">
+                                            <a href={PATH_NAME.BLOGS}><i className="fa fa-caret-right" aria-hidden="true" style={{ marginRight: "3px" }}></i>Dự án hoàn thành</a>
+                                        </div>
+                                        <div className="section-body-item">
+                                            <a href={PATH_NAME.ABOUT_OUR}><i className="fa fa-caret-right" aria-hidden="true" style={{ marginRight: "3px" }}></i>Về chúng tôi</a>
+                                        </div>
+                                        <div className="section-body-item">
+                                            <a href={PATH_NAME.CONTACT}><i className="fa fa-caret-right" aria-hidden="true" style={{ marginRight: "3px" }}></i>Liên hệ</a>
+                                        </div>
+                                        <div className="section-body-item">
+                                            <a href={LINK_CATALOGUE} target="_blank"><i className="fa fa-caret-right" aria-hidden="true" style={{ marginRight: "3px" }}></i>Tải xuống Catalogue</a>
+                                        </div>
+                                        <div className="section-body-item">
+                                            <div className="block-logo-image">
+                                                <img className="img-logo" src={dmcaProtected} />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div className="col-6 col-md-3 text-center">
-                            <a className="icon-user2 icon-pre-footer">
-                                <i className="fa fa-user-o" aria-hidden="true"></i>
-                            </a>
-                            <h4><a href="/pages/lien-he">Liên hệ hỗ trợ</a></h4>
+                        <div className="col-sm-12 col-md-8 column-footer column-2">
+                            <div className="widget widget_links">
+                                <div className="section-title">
+                                    <span>
+                                        BẢN ĐỒ
+                                    </span>
+                                </div>
+                                <div className="section-body">
+                                    <div className='div-map' style={{ height: "300px" }}>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3722.565378710369!2d105.89913097525826!3d21.090014180574677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDA1JzI0LjEiTiAxMDXCsDU0JzA2LjEiRQ!5e0!3m2!1svi!2s!4v1715407000505!5m2!1svi!2s" style={{ height: "100%", width: "100%", border: "none" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div className="col-6 col-md-3 text-center">
-                            <a className="icon-dollar icon-pre-footer">
-                                <i className="fa fa-usd" aria-hidden="true"></i>
-                            </a>
-                            <h4><a href="/pages/thanh-toan">Hướng dẫn thanh toán </a></h4>
+                        <div className="col-sm-12 col-md-4 column-footer column-3">
+                            <div className="widget widget_links">
+                                <div className="section-title">
+                                    <span>
+                                        FANPAGE
+                                    </span>
+                                </div>
+                                <div className="section-body">
+                                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FGiakeTH&tabs=timeline&width=340&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="300" style={{ border: "none", overflow: "hidden" }} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -125,7 +155,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

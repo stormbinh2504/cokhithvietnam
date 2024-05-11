@@ -5,6 +5,21 @@
     height: 100%;
 
     .slider {
+
+        .owl-carousel {
+            .owl-stage-outer {
+                .owl-item {
+                    div {
+                        .img {
+                            background-repeat  : no-repeat;
+                            background-size    : cover;
+                            background-position: center;
+                        }
+                    }
+                }
+            }
+        }
+
         .owl-prev {
             width   : 15px;
             height  : 60px;
@@ -59,8 +74,10 @@
 
 
             .section-title {
-                position: relative;
-                height  : 60px;
+                position   : relative;
+                height     : 60px;
+                font-size  : 36px;
+                font-family: 'Noto Serif', serif;
 
                 .title {
                     position: relative;
@@ -68,22 +85,29 @@
                     &::after {
                         content      : '';
                         position     : absolute;
-                        // background: $bg_menu;
-                        // height    : 1px;
-                        width        : 100%;
+                        width        : calc(50% - 30px);
                         top          : 50px;
-                        left         : 0;
+                        left         : 0px;
+                        border-bottom: 1px solid $border_color;
+                    }
+
+                    &::before {
+                        content      : '';
+                        position     : absolute;
+                        width        : calc(50% - 30px);
+                        top          : 50px;
+                        right        : 0px;
                         border-bottom: 1px solid $border_color;
                     }
                 }
 
                 .extra-box {
-                    position        : absolute;
-                    transform       : translateX(-50%);
-                    top             : 35px;
-                    left            : 50%;
-                    padding         : 0px 15px;
-                    background-color: $white_color;
+                    position           : absolute;
+                    transform          : translateX(-50%);
+                    top                : 35px;
+                    left               : 50%;
+                    padding            : 0px 15px;
+                    // background-color: $white_color;
 
                     .img-extra {
                         background     : url('../../assets/images/company/logo.png') no-repeat;
@@ -102,6 +126,8 @@
 
 
     .content-home {
+
+
         .content-wrap {
             padding: 20px 0;
 
@@ -109,43 +135,113 @@
                 padding : 20px 0px 50px 0px;
                 position: relative;
 
-                .section-heading {
-                    margin-bottom: 50px;
+                .container {
+                    position: relative;
 
-                    .section-title {
-                        margin-bottom: 0;
-                        font-size    : 26px;
-                        color        : $dark_color;
+                    .section-heading {
+                        margin-bottom: 40px;
 
-                        >span {
-                            color: $red_color;
+                        .section-title {
+                            margin-bottom: 0;
+                            font-size    : 40px;
+                            color        : $dark_color;
+                            font-weight  : 700;
+                        }
+                    }
+
+                    .wrap-des-company {
+                        display: flex;
+                        gap    : 20px;
+                        width  : 100%;
+
+                        .block-image-conpany {
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .block-des {
+                            .desc {
+                                font-size    : 16px;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+
+
+                    .block-home-counter {
+                        max-width : 880px;
+                        position  : absolute;
+                        background: $primary_color;
+                        bottom    : -50px;
+                        right     : 0px;
+                        height    : max-content;
+                        padding   : 20px;
+                        color     : $price_text_color;
+
+                        .home-counter-item {
+                            .home-counter-number {
+                                font-size  : 32px;
+                                font-weight: bold;
+                            }
+
+                            .home-counter-border {
+                                height       : 1px;
+                                width        : 50px;
+                                display      : inline-block;
+                                background   : #333;
+                                margin-bottom: 5px;
+                            }
+
+                            .home-counter-text {
+                                font-size  : 16px;
+                                font-weight: bold;
+                                display    : inline-block;
+                            }
                         }
                     }
                 }
+            }
+        }
+    }
+}
 
-                .desc {
-                    font-size    : 16px;
-                    margin-bottom: 20px;
-                }
 
-                .home-counter-item {
-                    .home-counter-number {
-                        font-size  : 32px;
-                        font-weight: bold;
+
+@include media-breakpoint-down(sm) {}
+
+
+// từ 991px trở xuống
+@include media-breakpoint-down(md) {
+    .container-home {
+        .content-home {
+            .content-wrap {
+
+                .home-counter {
+
+                    .container {
+                        .block-home-counter {
+                            position  : relative;
+                            padding   : 0px;
+                            background: unset;
+                            max-width : unset;
+                            bottom    : 0px;
+
+                            .home-counter-item {
+                                .home-counter-number {
+                                    font-size  : 32px;
+                                    font-weight: bold;
+                                }
+
+                                .home-counter-border {
+                                    display: block;
+                                }
+
+                                .home-counter-text {}
+                            }
+                        }
                     }
 
-                    .home-counter-border {
-                        height       : 1px;
-                        width        : 50px;
-                        display      : inline-block;
-                        background   : #333;
-                        margin-bottom: 5px;
-                    }
-
-                    .home-counter-text {
-                        font-size  : 16px;
-                        font-weight: bold;
-                    }
                 }
             }
         }

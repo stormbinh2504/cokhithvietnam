@@ -30,13 +30,13 @@ const listCustomer = [
         urlImage: home_customer_say_3,
         name: "Nguyễn Sinh Hùng",
         position: "Phó giám đốc công ty Thiên Long",
-        subtitle: "“Công ty cùng chúng tôi phát triển hệ thống kệ kho bãi một cách chuyên nghiệp nhất, giúp tiết kiệm nhiều chi phí đem lại năng suất lao đọng tăng cao. Chúc công ty ngày càng phát triển”",
+        subtitle: "“Công ty cùng chúng tôi phát triển hệ thống kệ kho bãi một cách chuyên nghiệp nhất, giúp tiết kiệm nhiều chi phí đem lại năng suất lao động tăng cao. Chúc công ty ngày càng phát triển.”",
     },
     {
         urlImage: home_customer_say_4,
         name: "Nguyễn Thị Nga",
         position: "Phó giám đốc ngân hàng HSBC",
-        subtitle: "Đội Ngũ Chăm Sóc Khách Hàng Tận Tình chu đáo, sản phẩm giá kệ siêu thị dùng rất tốt bền chịu được sức nặng. Đơn vị vận chuyển đến nhanh chóng, giá cả hợp lý. Chúc đơn vị kinh doanh thuận lợi!”",
+        subtitle: "“Đội Ngũ Chăm Sóc Khách Hàng Tận Tình chu đáo, sản phẩm giá kệ siêu thị dùng rất tốt bền chịu được sức nặng. Đơn vị vận chuyển đến nhanh chóng, giá cả hợp lý. Chúc đơn vị kinh doanh thuận lợi!”",
     },
 ]
 
@@ -109,7 +109,7 @@ const HomeCustomerSay = () => {
                 <div className="section-heading text-center">
                     <h2 className="section-title">
                         <span className="title">
-                            KHÁCH HÀNG NÓI VỀ TH
+                            KHÁCH HÀNG NÓI VỀ CƠ KHÍ TH VIỆT NAM
                         </span>
                         <span className="extra-box">
                             <div className="img-extra">

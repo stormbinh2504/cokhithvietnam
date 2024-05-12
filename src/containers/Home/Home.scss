@@ -5,12 +5,18 @@
     height: 100%;
 
     .slider {
+        max-width: 1500px;
+        margin   : 0 auto;
+        width    : 100%;
 
         .owl-carousel {
             .owl-stage-outer {
                 .owl-item {
+
                     div {
                         .img {
+                            width              : 100%;
+                            aspect-ratio       : auto 1500 / 500;
                             background-repeat  : no-repeat;
                             background-size    : cover;
                             background-position: center;

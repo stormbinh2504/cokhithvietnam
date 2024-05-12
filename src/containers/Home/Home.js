@@ -65,7 +65,7 @@ const Home = () => {
                 <OwlCarousel items={1}
                     className="owl-theme"
                     loop={true}
-                    autoplay={true}
+                    autoplay={false}
                     nav={true}
                     autoHeight={true}
                     navText={[

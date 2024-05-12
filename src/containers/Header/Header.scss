@@ -101,7 +101,8 @@
 
 
     .header-wrap {
-        background: $bg_menu;
+        background   : $bg_menu;
+        border-bottom: 2px solid $primary_color;
 
         &.sticky-header {
             z-index                    : 199;

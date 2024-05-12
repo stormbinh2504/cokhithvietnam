@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 
 import './App.scss';
 import "../src/styles/styles.scss";
-import "aos/dist/aos.css";
 import { Route, Switch, Redirect } from "react-router-dom";
 import $ from 'jquery';
 import { ConnectedRouter as Router } from 'connected-react-router';

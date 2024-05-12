@@ -2,6 +2,7 @@ import React from 'react'
 import OwlCarousel from 'react-owl-carousel';
 import "./HomeStep.scss"
 import { useEffect } from 'react';
+import AOS from 'aos';
 import home_step_image_1 from "../../../assets/images/home_step/home_step_image_1.png"
 import home_step_image_2 from "../../../assets/images/home_step/home_step_image_2.png"
 import home_step_image_3 from "../../../assets/images/home_step/home_step_image_3.png"
@@ -9,9 +10,19 @@ import home_step_image_4 from "../../../assets/images/home_step/home_step_image_
 import home_step_image_5 from "../../../assets/images/home_step/home_step_image_5.png"
 
 const HomeStep = () => {
+
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            duration: 400,
+            easing: 'linear',
+            delay: 50,
+        });
+    }, []);
+
     return (
 
-        <div id="home-step" className="home home-step">
+        <div id="home-step" className="home home-step" data-aos="fade-down">
             <div className="container">
                 <div className="section-heading text-center">
                     <h2 className="section-title">

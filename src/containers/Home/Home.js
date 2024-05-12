@@ -9,6 +9,7 @@ import HomeStep from './HomeStep/HomeStep';
 import HomeBanner from './HomeBanner/HomeBanner';
 import OurCustomer from './OurCustomer/OurCustomer';
 import HomeCustomerSay from './HomeCustomerSay/HomeCustomerSay';
+import AOS from 'aos';
 
 import slider_1 from "../../assets/images/home/home_slider/slider_1.png"
 import slider_2 from "../../assets/images/home/home_slider/slider_2.png"
@@ -28,6 +29,15 @@ const Home = () => {
             LoadAnimateCounterNumber()
         }
     }
+
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            duration: 400,
+            easing: 'linear',
+            delay: 50,
+        });
+    }, []);
 
     useEffect(() => {
         window.addEventListener("scroll", reveal);
@@ -50,7 +60,7 @@ const Home = () => {
     }
 
     return (
-        <div className='container-home'>
+        <div className='container-home' data-aos="fade-down">
             <div className="slider">
                 <OwlCarousel items={1}
                     className="owl-theme"

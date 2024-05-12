@@ -8,6 +8,7 @@ import home_banner_img_3 from "../../../assets/images/home_banner/home_banner_im
 import home_banner_img_4 from "../../../assets/images/home_banner/home_banner_img_4.png"
 import home_banner_img_5 from "../../../assets/images/home_banner/home_banner_img_5.png"
 import home_banner_img_6 from "../../../assets/images/home_banner/home_banner_img_6.png"
+import AOS from 'aos';
 
 
 const listFeatureBox = [
@@ -85,8 +86,18 @@ const FeatureBox = ({ data }) => {
 }
 
 const HomeBanner = () => {
+
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            duration: 400,
+            easing: 'linear',
+            delay: 50,
+        });
+    }, []);
+
     return (
-        <div id="home-banner" className="home home-banner">
+        <div id="home-banner" className="home home-banner" data-aos="fade-down">
             <div className="container">
                 <div className="section-heading text-center">
                     <h2 className="section-title">

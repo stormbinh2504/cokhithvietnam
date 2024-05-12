@@ -2,6 +2,7 @@ import React from 'react'
 import OwlCarousel from 'react-owl-carousel';
 import "./OurCustomer.scss"
 import { useEffect } from 'react';
+import AOS from 'aos';
 
 
 import home_our_customer_1 from "../../../assets/images/home/home_our_customer/home_our_customer_1.png"
@@ -71,9 +72,17 @@ const listOurCustomer = [
 ]
 
 const OurCustomer = () => {
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            duration: 400,
+            easing: 'linear',
+            delay: 50,
+        });
+    }, []);
     return (
 
-        <div id="our-customer" className="home our-customer">
+        <div id="our-customer" className="home our-customer" data-aos="fade-down">
             <div class="container">
                 <div class="section-heading text-center">
                     <h2 className="section-title">

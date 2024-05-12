@@ -2,11 +2,22 @@ import React from 'react'
 import OwlCarousel from 'react-owl-carousel';
 import "./HomeImageBanner.scss"
 import { useEffect } from 'react';
+import AOS from 'aos';
 
 const HomeImageBanner = () => {
+
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            duration: 400,
+            easing: 'linear',
+            delay: 50,
+        });
+    }, []);
+
     return (
-        <div id="home-image-banner" className="home-image-banner">
-            <div className="home-image-banner-container">
+        <div id="home-image-banner" className="home-image-banner" data-aos="fade-down">
+            < div className="home-image-banner-container" >
                 <div className="container">
                     <div className="section-content-banner item-center">
                         <div className="section-content-banner-wrap">
@@ -19,7 +30,7 @@ const HomeImageBanner = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         </div >
     )
 }

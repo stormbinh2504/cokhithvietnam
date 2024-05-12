@@ -1,12 +1,14 @@
 import React from 'react'
 import "./HomeCustomerSay.scss"
 import Slider from "react-slick";
+import { useEffect } from 'react';
 
 // import nextArrow from "../../../assets/images/home/home_staff/nextArrow.svg"
 // import prevArrow from "../../../assets/images/home/home_staff/prevArrow.svg"
 
 // import next from "../../../assets/images/home/home_staff/next.svg"
 // import prev from "../../../assets/images/home/home_staff/prev.svg"
+import AOS from 'aos';
 
 import home_customer_say_1 from "../../../assets/images/home/home_customer_say/home_customer_say_1.png"
 import home_customer_say_2 from "../../../assets/images/home/home_customer_say/home_customer_say_2.png"
@@ -66,6 +68,16 @@ function SamplePrevArrow(props) {
 
 const HomeCustomerSay = () => {
 
+
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            duration: 400,
+            easing: 'linear',
+            delay: 50,
+        });
+    }, []);
+
     const settings = {
         dots: true,
         infinite: true,
@@ -104,7 +116,7 @@ const HomeCustomerSay = () => {
         ]
     };
     return (
-        <div id="home-customer-say" className="home home-customer-say">
+        <div id="home-customer-say" className="home home-customer-say" data-aos="fade-down">
             <div className="container">
                 <div className="section-heading text-center">
                     <h2 className="section-title">

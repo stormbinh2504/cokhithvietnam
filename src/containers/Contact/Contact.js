@@ -49,7 +49,7 @@ const Contact = ({ google }) => {
                                         <strong>
                                             Nhà máy sản xuất:&nbsp;
                                         </strong>
-                                        KM số 10, QL3, Mai Lâm, Đông Anh, Hà Nội
+                                        KM số 1, QL3, Mai Lâm, Đông Anh, Hà Nội
                                     </span>
                                 </li>
                                 <li>

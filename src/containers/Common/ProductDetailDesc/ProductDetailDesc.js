@@ -36,13 +36,13 @@ const ProductDetailDesc = ({ children }) => {
                 <ul>
                     <li><span style={{ fontSize: "15px" }}>
                         {/* <i class="fa fa-building-o" aria-hidden="true"></i> */}
-                        - Văn phòng bán hàng: KM số 10, QL3, Mai Lâm, Đông Anh, Hà Nội
+                        - Văn phòng bán hàng: KM số 1, QL3, Mai Lâm, Đông Anh, Hà Nội
                     </span>
                     </li>
                     <li>
                         <span style={{ fontSize: "15px" }}>
                             {/* <i class="fa fa-map-marker" aria-hidden="true"></i> */}
-                            - Nhà máy sản xuất: KM số 10, QL3, Mai Lâm, Đông Anh, Hà Nội
+                            - Nhà máy sản xuất: KM số 1, QL3, Mai Lâm, Đông Anh, Hà Nội
                         </span>
                     </li>
                     <li>

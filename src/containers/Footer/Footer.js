@@ -37,7 +37,7 @@ const Footer = () => {
                                         </div>
                                         <div className="section-body-item section-body-label-value">
                                             <div className="label" style={{ marginRight: "3px" }}>Địa chỉ: </div>
-                                            <div className="value" style={{ fontWeight: "700" }}>KM số 10, QL3, Mai Lâm, Đông Anh, Hà Nội</div>
+                                            <div className="value" style={{ fontWeight: "700" }}>KM số 1, QL3, Mai Lâm, Đông Anh, Hà Nội</div>
                                         </div>
                                     </div>
                                 </div>

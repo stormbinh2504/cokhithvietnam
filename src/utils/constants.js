@@ -1,9 +1,13 @@
 export const PATH_NAME = {
     HOME: "/", // Người mua
     COLLECTIONS: "/collections", // Người bán
-    BLOGS: "/blogs/du-an-hoan-thanh", // Người bán
-    ABOUT_OUR: "/pages/ve-chung-toi", // Người bán
-    CONTACT: "/pages/lien-he", // Người bán
+    BLOGS: "/blogs", // Người bán
+    ABOUT_OUR: "/about", // Người bán
+    CONTACT: "/contact", // Người bán
+    GUARANTEE: "/guarantee",
+    SECURITY: "/security",
+    PAYMENT: "/payment",
+    TRANSPORT: "/transport",
 
     KE_DRIVER_IN: "/products/ke-drive-in",
     KE_SELECTIVE: "/products/ke-selective",

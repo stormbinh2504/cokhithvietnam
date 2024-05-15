@@ -53,16 +53,16 @@ const Footer = () => {
                                 <div className="section-body">
                                     <div className="section-body-wrap">
                                         <div className="section-body-item">
-                                            <a href="/pages/chinh-sach-bao-hanh"><i className="fa fa-caret-right" aria-hidden="true" style={{ marginRight: "3px" }}></i>Chính sách bảo hành</a>
+                                            <a href={PATH_NAME.GUARANTEE}><i className="fa fa-caret-right" aria-hidden="true" style={{ marginRight: "3px" }}></i>Chính sách bảo hành</a>
                                         </div>
                                         <div className="section-body-item">
-                                            <a href="/pages/chinh-sach-bao-mat-thong-tin"><i className="fa fa-caret-right" aria-hidden="true" style={{ marginRight: "3px" }}></i>Chính sách bảo mật</a>
+                                            <a href={PATH_NAME.SECURITY}><i className="fa fa-caret-right" aria-hidden="true" style={{ marginRight: "3px" }}></i>Chính sách bảo mật</a>
                                         </div>
                                         <div className="section-body-item">
-                                            <a href="/pages/thanh-toan"><i className="fa fa-caret-right" aria-hidden="true" style={{ marginRight: "3px" }}></i>Hình thức thanh toán</a>
+                                            <a href={PATH_NAME.PAYMENT}><i className="fa fa-caret-right" aria-hidden="true" style={{ marginRight: "3px" }}></i>Hình thức thanh toán</a>
                                         </div>
                                         <div className="section-body-item">
-                                            <a href="/pages/chinh-sach-van-chuyen-va-giao-nhan"><i className="fa fa-caret-right" aria-hidden="true" style={{ marginRight: "3px" }}></i>Chính sách vận chuyển và giao nhận</a>
+                                            <a href={PATH_NAME.TRANSPORT}><i className="fa fa-caret-right" aria-hidden="true" style={{ marginRight: "3px" }}></i>Chính sách vận chuyển và giao nhận</a>
                                         </div>
                                         <div className="section-body-item section-body-label-value">
                                             <div className="label" style={{ marginRight: "3px" }}>Email: </div>

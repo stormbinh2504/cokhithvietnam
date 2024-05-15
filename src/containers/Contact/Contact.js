@@ -7,6 +7,7 @@ import "./Contact.scss"
 import PageTitle from '../Common/PageTitle/PageTitle';
 import { setMenuActive } from '../../redux/actions'
 import { connect } from 'react-redux';
+import InfoContact from '../Common/InfoContact/InfoContact';
 
 const Contact = ({ google }) => {
     const history = useHistory()
@@ -72,6 +73,9 @@ const Contact = ({ google }) => {
                                 </li>
                             </ul>
 
+                        </div>
+                        <div className="col-12">
+                            <InfoContact />
                         </div>
                     </div>
                 </div>

@@ -40,6 +40,11 @@ import ProductKeXepChong from './containers/ProductCollections/ProductKeXepChong
 import ProductKeDeBanHangTuDong from './containers/ProductCollections/ProductKeDeBanHangTuDong/ProductKeDeBanHangTuDong';
 import ProductKeSieuthi from './containers/ProductCollections/ProductKeSieuthi/ProductKeSieuthi';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import About from './containers/About/About';
+import Guarantee from './containers/Guarantee/Guarantee';
+import Security from './containers/Security/Security';
+import Payment from './containers/Payment/Payment';
+import Transport from './containers/Transport/Transport';
 
 if (typeof window !== "undefined") {
   injectStyle();
@@ -72,6 +77,11 @@ function App() {
               <Route exact path={PATH_NAME.COLLECTIONS} component={ProductCollections} />
 
               <Route exact path={PATH_NAME.CONTACT} component={Contact} />
+              <Route exact path={PATH_NAME.ABOUT_OUR} component={About} />
+              <Route exact path={PATH_NAME.GUARANTEE} component={Guarantee} />
+              <Route exact path={PATH_NAME.SECURITY} component={Security} />
+              <Route exact path={PATH_NAME.PAYMENT} component={Payment} />
+              <Route exact path={PATH_NAME.TRANSPORT} component={Transport} />
 
 
               <Route exact path={PATH_NAME.KE_DRIVER_IN} component={ProductKeDriverIn} />

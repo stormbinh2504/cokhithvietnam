@@ -19,6 +19,10 @@
 
         .navbar-logo {
 
+            .div-img-logo {
+                padding: 15px 0px;
+            }
+
             .img-logo {
                 // width : 100px;
                 height: 90px;
@@ -77,7 +81,7 @@
                         color         : $price_text_color;
                         text-transform: uppercase;
                         letter-spacing: 1px;
-                        padding-top   : 10px;
+                        padding-top   : 25px;
 
                         .info-content {
                             color         : $red_color;
@@ -282,11 +286,12 @@
                 -webkit-backface-visibility: hidden;
 
                 .div-img-logo {
-                    height: 100%;
+                    height : 100%;
+                    padding: 0px;
 
                     .img-logo {
                         // width : 100px;
-                        height   : 100%;
+                        height   : 60px;
                         max-width: 230px;
                     }
                 }

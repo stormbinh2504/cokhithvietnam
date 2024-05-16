@@ -24,35 +24,35 @@ export const listProject = [ //https://www.shavietnam.vn/search?q=aaa
         path: PATH_NAME.PROJECT_YENPHONG_BACNINH,
         date: "10/05/2024",
         listImages: [blog0],
-        location: "Tại Yên Phong, Bắc Ninh",
+        location: "Yên Phong, Bắc Ninh",
     },
     {
         title: "Kệ Siêu Thị Long Biên - Khách Hàng Lớn Tại Ngọc Thụy",
         path: PATH_NAME.PROJECT_SIEU_THI_LONG_BIEN,
         date: "02/01/2024",
         listImages: [blog1],
-        location: "Tại Ngọc Thụy",
+        location: "Ngọc Thụy",
     },
     {
         title: "Kệ Sắt V Lỗ Hòa Bình | Dự Án Kệ V Lỗ Cửa Hàng Sữa | Tại Lạc Sơn | Hòa Bình",
         path: PATH_NAME.PROJECT_LACSON_HOABINH,
         date: "15/08/2023",
         listImages: [blog2],
-        location: "Tại Lạc Sơn, Hòa Bình",
+        location: "Lạc Sơn, Hòa Bình",
     },
     {
         title: "Giá Kệ Kho Hàng - Dự Án Tại Tiên Du Bắc Ninh",
         path: PATH_NAME.PROJECT_TIENDU_BACNINH,
         date: "05/05/2023",
         listImages: [blog3],
-        location: "Tại Tiên Du, Bắc Ninh",
+        location: "Tiên Du, Bắc Ninh",
     },
     {
         title: "Kệ sắt trung tải 3 tầng tại Ninh Bình",
         path: PATH_NAME.PROJECT_NINHBINH,
         date: "17/12/2022",
         listImages: [blog4],
-        location: "Tại Ninh Bình",
+        location: "Ninh Bình",
     },
     {
         title: "Siêu dự án kệ trung tải tại Tập đoàn Vin - Tại trung tâm dữ liêu Vin",
@@ -74,11 +74,11 @@ const ListProject = () => {
 
     return (
         <div id='list-project' className='list-project'>
-            <div className="row">
+            <div className="row gutters-5">
                 {listProject && listProject.length > 0 && listProject.map((item, index) => {
                     const { title, path, date, listImages, location } = item
                     return (
-                        <div className="col-12 col-md-4 item-project-box">
+                        <div className="col-12 col-ms-6 col-md-4 item-project-box">
                             <div className="wrap-project-box" onClick={() => onRedirectByPathname(path)}>
                                 <div className="project-box img-box">
                                     <div className="project-img">

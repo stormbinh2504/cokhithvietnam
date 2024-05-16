@@ -403,7 +403,7 @@ const ProductCollections = () => {
 
                 <div className="list-product">
                     <div className="container">
-                        <div className="row">
+                        <div className="row gutters-5">
                             {listProDuct && listProDuct.length > 0 && listProDuct.map((item, index) => {
                                 return (
                                     <RenderProduct

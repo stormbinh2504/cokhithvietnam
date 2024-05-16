@@ -3,6 +3,7 @@ import { Link, useHistory } from 'react-router-dom'
 import { useSelector, useDispatch } from "react-redux";
 import { PATH_NAME, setPathName } from '../../../utils';
 import { setMenuActive } from '../../../redux/actions'
+import banner_langnghe from "../../../assets/images/banner_langnghe.png"
 
 import "./ListProductSidebar.scss"
 
@@ -145,6 +146,10 @@ const ListProductSidebar = () => {
                         )
                     })}
                 </ul>
+
+                <div className="block-banner" style={{ marginTop: "15px" }}>
+                    <img src={banner_langnghe} />
+                </div>
             </div >
         </div >
     )

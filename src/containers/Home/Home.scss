@@ -212,7 +212,6 @@
 
 
 
-@include media-breakpoint-down(sm) {}
 
 
 // từ 991px trở xuống
@@ -226,7 +225,7 @@
                     .section-heading {
                         .section-title {
                             height   : unset;
-                            font-size: 26px;
+                            font-size: 30px !important;
 
                             .title {
                                 &::after {
@@ -246,8 +245,83 @@
                 }
 
                 .home-counter {
+                    padding: 0px 0px 50px 0px;
+                    margin : 10px 0px !important;
 
                     .container {
+                        .wrap-des-company {
+
+                            .block-des {}
+                        }
+
+                        .block-home-counter {
+                            position  : relative;
+                            padding   : 0px;
+                            background: unset;
+                            max-width : unset;
+                            bottom    : 0px;
+
+                            .home-counter-item {
+                                .home-counter-number {
+                                    font-size  : 32px;
+                                    font-weight: bold;
+                                }
+
+                                .home-counter-border {
+                                    display: block;
+                                }
+
+                                .home-counter-text {}
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .container-home {
+        .content-home {
+            .content-wrap {
+
+                .home {
+                    .section-heading {
+                        .section-title {
+                            height   : unset;
+                            font-size: 26px !important;
+
+                            .title {
+                                &::after {
+                                    display: none;
+                                }
+
+                                &::before {
+                                    display: none;
+                                }
+                            }
+
+                            .extra-box {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .home-counter {
+                    padding: 0px 0px 50px 0px;
+                    margin : 10px 0px !important;
+
+                    .container {
+                        .wrap-des-company {
+
+                            .block-des {
+                                margin-top: 15px;
+                            }
+                        }
+
                         .block-home-counter {
                             position  : relative;
                             padding   : 0px;

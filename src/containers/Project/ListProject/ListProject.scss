@@ -25,26 +25,16 @@
                     height  : auto;
                     margin  : 0 0 25px;
 
-                    a {
-                        position: relative;
-                        display : block;
-                        width   : 100%;
-                        height  : auto;
-
-                        img {
-                            position  : relative;
-                            display   : block;
-                            width     : 100%;
-                            height    : auto;
-                            border    : none;
-                            background: none;
-                            transition: 0.5s;
-
-                            &:hover {
-                                transform: scale(1.1);
-                            }
-                        }
+                    img {
+                        position  : relative;
+                        display   : block;
+                        width     : 100%;
+                        height    : auto;
+                        border    : none;
+                        background: none;
+                        transition: 0.5s;
                     }
+
                 }
 
                 .project-desc {
@@ -61,6 +51,8 @@
                     .date {
                         display      : flex;
                         margin-bottom: 5px;
+                        color        : #acacac;
+                        font-size    : 12px;
 
                         .icon-date {
                             margin-right: 3px;
@@ -69,22 +61,21 @@
 
                     .des {
                         margin-bottom: 5px;
+                        color        : #3e3b3b;
+                        font-style   : italic !important;
+                    }
+
+                    .hastag {
+                        color    : #acacac;
+                        font-size: 12px;
                     }
                 }
 
+
                 &:hover {
-                    .fbox-img {
-                        a {
-                            img {
-                                transform: scale(1.05);
-                            }
-                        }
-                    }
-
-                    .fbox-desc {
-
-                        .title {
-                            color: $red_color;
+                    .project-img {
+                        img {
+                            transform: scale(1.05);
                         }
                     }
                 }

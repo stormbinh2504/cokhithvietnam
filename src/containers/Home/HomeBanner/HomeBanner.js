@@ -111,7 +111,7 @@ const HomeBanner = () => {
                         </span>
                     </h2>
                 </div>
-                <div className="row">
+                <div className="row gutters-5">
                     {listFeatureBox && listFeatureBox.length > 0 && listFeatureBox.map((item, index) => {
                         return (
                             <FeatureBox

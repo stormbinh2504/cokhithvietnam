@@ -21,7 +21,7 @@ const Project = ({ google }) => {
                 listPageTitle={[
                     {
                         path: PATH_NAME.PROJECT,
-                        title: "Dự án hoàn thành"
+                        title: "Dự án tiêu biểu"
                     }
                 ]}
             />
@@ -29,17 +29,14 @@ const Project = ({ google }) => {
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-md-9">
-                            <div className="title-page item-center">DỰ ÁN HOÀN THÀNH</div>
-                            <div className="block-session">
+                            <div className="title-page item-center">DỰ ÁN TIÊU BIỂU</div>
+                            {/* <div className="block-session">
                                 <div className="title-session">Bảo hành:</div>
                                 <div class="body-session">
                                     <div>Mọi sản phẩm của Cơ khí TH Việt Nam đều có một chế độ bảo hành theo tiêu chuẩn và phù hợp với từng loại sản phẩm.
                                     </div>
-                                    <div>
-                                        Chúng tôi cam kết thực hiện nghĩa vụ bảo hành trong vòng tối đa 48h sau khi nhận được thông báo của khách hàng.
-                                    </div>
                                 </div>
-                            </div>
+                            </div> */}
 
                             <ListProject />
                         </div>

@@ -48,7 +48,7 @@ const Contact = ({ google }) => {
                                     <i class="fa fa-map-marker" aria-hidden="true"></i>
                                     <span>
                                         <strong>
-                                            Nhà máy sản xuất:&nbsp;
+                                            Địa chỉ:&nbsp;
                                         </strong>
                                         KM số 1, QL3, Mai Lâm, Đông Anh, Hà Nội
                                     </span>
@@ -59,7 +59,15 @@ const Contact = ({ google }) => {
                                         <strong>
                                             Hotline:&nbsp;
                                         </strong>
-                                        0833 855 955
+                                        <div>
+                                            - 0833 855 955
+                                        </div>
+                                        <div>
+                                            - 0362.885.789
+                                        </div>
+                                        <div>
+                                            - 0963.959.787
+                                        </div>
                                     </span>
                                 </li>
                                 <li>

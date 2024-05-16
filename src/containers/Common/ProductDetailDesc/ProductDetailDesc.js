@@ -5,6 +5,7 @@ import { PATH_NAME, setPathName } from '../../../utils';
 import { setMenuActive } from '../../../redux/actions'
 
 import "./ProductDetailDesc.scss"
+import InfoContact from '../InfoContact/InfoContact';
 const ListDesc = [
     "Giải pháp này cho chi phí đầu tư thấp nhưng sức chứa pallet trong kho hàng cao hơn nhiều.",
     "Sử dụng được tối đa không gian kho chứa hàng",
@@ -36,19 +37,22 @@ const ProductDetailDesc = ({ children }) => {
                 <ul>
                     <li><span style={{ fontSize: "15px" }}>
                         {/* <i class="fa fa-building-o" aria-hidden="true"></i> */}
-                        - Văn phòng bán hàng: KM số 1, QL3, Mai Lâm, Đông Anh, Hà Nội
+                        - Địa chỉ: KM số 1, QL3, Mai Lâm, Đông Anh, Hà Nội
                     </span>
                     </li>
                     <li>
                         <span style={{ fontSize: "15px" }}>
-                            {/* <i class="fa fa-map-marker" aria-hidden="true"></i> */}
-                            - Nhà máy sản xuất: KM số 1, QL3, Mai Lâm, Đông Anh, Hà Nội
-                        </span>
-                    </li>
-                    <li>
-                        <span style={{ fontSize: "15px" }}>
                             {/* <i className="fa fa-phone" aria-hidden="true"></i> */}
-                            - Hotline: 0833 855 955
+                            - Hotline/zalo:
+                            <div>
+                                + 0833.855.955
+                            </div>
+                            <div>
+                                + 0362.885.789
+                            </div>
+                            <div>
+                                + 0963.959.787
+                            </div>
                         </span>
                     </li>
                     <li>
@@ -59,6 +63,7 @@ const ProductDetailDesc = ({ children }) => {
                     </li>
                 </ul>
             </div>
+            <InfoContact />
         </div >
     )
 }

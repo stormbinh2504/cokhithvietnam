@@ -99,7 +99,7 @@ const OurCustomer = () => {
                 <div className="row">
                     {listOurCustomer && listOurCustomer.length > 0 && listOurCustomer.map((item, index) => {
                         return (
-                            <div className="col-4 col-sm-3 col-md-2">
+                            <div className="col-6 col-sm-4 col-md-2 block-brand">
                                 <div class="img-brand">
                                     <img src={item.image} />
                                 </div>

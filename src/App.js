@@ -45,6 +45,13 @@ import Guarantee from './containers/Guarantee/Guarantee';
 import Security from './containers/Security/Security';
 import Payment from './containers/Payment/Payment';
 import Transport from './containers/Transport/Transport';
+import Project from './containers/Project/Project';
+import ProjectVin05022020 from './containers/Project/ProjectVin05022020/ProjectVin05022020';
+import ProjectSieuThiLongBien from './containers/Project/ProjectSieuThiLongBien/ProjectSieuThiLongBien';
+import ProjectYenPhongBacNinh from './containers/Project/ProjectYenPhongBacNinh/ProjectYenPhongBacNinh';
+import ProjectLacSonHoaBinh from './containers/Project/ProjectLacSonHoaBinh/ProjectLacSonHoaBinh';
+import ProjectTienDuBacNinh from './containers/Project/ProjectTienDuBacNinh/ProjectTienDuBacNinh';
+import ProjectNinhBinh from './containers/Project/ProjectNinhBinh/ProjectNinhBinh';
 
 if (typeof window !== "undefined") {
   injectStyle();
@@ -75,6 +82,7 @@ function App() {
             < div id="container-page-content" className="container-page-content ">
               <Route exact path={PATH_NAME.HOME} component={Home} />
               <Route exact path={PATH_NAME.COLLECTIONS} component={ProductCollections} />
+              <Route exact path={PATH_NAME.PROJECT} component={Project} />
 
               <Route exact path={PATH_NAME.CONTACT} component={Contact} />
               <Route exact path={PATH_NAME.ABOUT_OUR} component={About} />
@@ -101,6 +109,14 @@ function App() {
               <Route exact path={PATH_NAME.KE_XEP_CHONG} component={ProductKeXepChong} />
               <Route exact path={PATH_NAME.KE_DE_HANG_BAN_TU_DONG} component={ProductKeDeBanHangTuDong} />
               <Route exact path={PATH_NAME.KE_SIEU_THI} component={ProductKeSieuthi} />
+
+
+              <Route exact path={PATH_NAME.PROJECT_YENPHONG_BACNINH} component={ProjectYenPhongBacNinh} />
+              <Route exact path={PATH_NAME.PROJECT_SIEU_THI_LONG_BIEN} component={ProjectSieuThiLongBien} />
+              <Route exact path={PATH_NAME.PROJECT_LACSON_HOABINH} component={ProjectLacSonHoaBinh} />
+              <Route exact path={PATH_NAME.PROJECT_TIENDU_BACNINH} component={ProjectTienDuBacNinh} />
+              <Route exact path={PATH_NAME.PROJECT_NINHBINH} component={ProjectNinhBinh} />
+              <Route exact path={PATH_NAME.PROJECT_VIN_05_02_2020} component={ProjectVin05022020} />
 
             </div>
             <ToolPhoneZaloChat />

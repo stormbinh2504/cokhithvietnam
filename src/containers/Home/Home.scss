@@ -80,7 +80,7 @@
             .section-title {
                 position   : relative;
                 height     : 60px;
-                font-size  : 36px;
+                font-size  : 30px;
                 font-family: 'Noto Serif', serif;
 
                 .title {
@@ -217,9 +217,33 @@
 
 // từ 991px trở xuống
 @include media-breakpoint-down(md) {
+
     .container-home {
         .content-home {
             .content-wrap {
+
+                .home {
+                    .section-heading {
+                        .section-title {
+                            height   : unset;
+                            font-size: 26px;
+
+                            .title {
+                                &::after {
+                                    display: none;
+                                }
+
+                                &::before {
+                                    display: none;
+                                }
+                            }
+
+                            .extra-box {
+                                display: none;
+                            }
+                        }
+                    }
+                }
 
                 .home-counter {
 

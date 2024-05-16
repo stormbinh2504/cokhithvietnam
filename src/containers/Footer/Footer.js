@@ -6,6 +6,7 @@ import { LINK_CATALOGUE, PATH_NAME, TYPE_USER } from '../../utils';
 import "./Footer.scss"
 import logoFull from "../../assets/images/company/logo_full.png"
 import dmcaProtected from "../../assets/images/footer/dmca_protected.png"
+import qrcode from "../../assets/images/footer/qrcode.png"
 
 
 // let phone = 
@@ -95,7 +96,7 @@ const Footer = () => {
                                             <a href={PATH_NAME.COLLECTIONS}><i className="fa fa-caret-right" aria-hidden="true" style={{ marginRight: "3px" }}></i>Sản phẩm</a>
                                         </div>
                                         <div className="section-body-item">
-                                            <a href={PATH_NAME.BLOGS}><i className="fa fa-caret-right" aria-hidden="true" style={{ marginRight: "3px" }}></i>Dự án hoàn thành</a>
+                                            <a href={PATH_NAME.PROJECT}><i className="fa fa-caret-right" aria-hidden="true" style={{ marginRight: "3px" }}></i>Dự án hoàn thành</a>
                                         </div>
                                         <div className="section-body-item">
                                             <a href={PATH_NAME.ABOUT_OUR}><i className="fa fa-caret-right" aria-hidden="true" style={{ marginRight: "3px" }}></i>Về chúng tôi</a>
@@ -109,6 +110,9 @@ const Footer = () => {
                                         <div className="section-body-item">
                                             <div className="block-logo-image">
                                                 <img className="img-logo" src={dmcaProtected} />
+                                            </div>
+                                            <div className="block-logo-image" style={{ marginTop: "5px" }}>
+                                                <img className="img-logo" src={qrcode} width="85px" />
                                             </div>
                                         </div>
                                     </div>

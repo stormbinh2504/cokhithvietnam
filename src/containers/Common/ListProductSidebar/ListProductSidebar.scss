@@ -1,13 +1,26 @@
 @import "../../../styles/common";
 
 .list-product-sidebar {
+    margin-bottom: 20px;
+
     .content {
-        h4 {
-            margin-bottom : 25px;
-            font-size     : 15px;
-            font-weight   : 600;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+        .block-title {
+            font-size: 14px;
+            width    : 100%;
+
+            .title {
+                border        : 1px solid #DDD;
+                padding       : 10px;
+                border-bottom : none;
+                font-weight   : bold;
+                background    : $bg_menu;
+                text-transform: uppercase;
+                display       : inline-block;
+                margin        : 0;
+                padding       : 5px 15px;
+                color         : $white_color;
+                width         : 100%;
+            }
         }
 
         .list-product {

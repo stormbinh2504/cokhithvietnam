@@ -2,7 +2,9 @@
 
 
 .info-contact {
-    background: $white;
+    background   : $white;
+    margin-bottom: 20px;
+    margin-top   : 20px;
 
     .wrap-info-contact {
         display: flex;
@@ -84,7 +86,7 @@
 
                     .btn {
                         font-weight: 700;
-                        font-size  : 16px;
+                        font-size  : 15px;
                         line-height: 20px;
                         height     : 40px;
 

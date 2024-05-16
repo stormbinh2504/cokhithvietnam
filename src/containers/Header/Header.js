@@ -197,8 +197,8 @@ const Header = () => {
 
                                 </ul>
                             </li>
-                            <li className={"nav-menu-item " + (checkActiveMenu(PATH_NAME.BLOGS) ? "active" : "")}>
-                                <a onClick={() => onRedirectByPathname(PATH_NAME.BLOGS)}>Dự án hoàn thành</a>
+                            <li className={"nav-menu-item " + (checkActiveMenu(PATH_NAME.PROJECT) ? "active" : "")}>
+                                <a onClick={() => onRedirectByPathname(PATH_NAME.PROJECT)}>Dự án hoàn thành</a>
                             </li>
                             <li className={"nav-menu-item " + (checkActiveMenu(PATH_NAME.ABOUT_OUR) ? "active" : "")}>
                                 <a onClick={() => onRedirectByPathname(PATH_NAME.ABOUT_OUR)}>Về chúng tôi</a>

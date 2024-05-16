@@ -109,7 +109,12 @@ const ListProductSidebar = () => {
     return (
         <div className='list-product-sidebar'>
             <div class="content">
-                <h4>Danh mục sản phẩm</h4>
+                <div className="block-title">
+                    <div className="title">
+                        <i class="fa fa-bars" aria-hidden="true" style={{ marginRight: "10px" }}></i>
+                        Danh mục sản phẩm
+                    </div>
+                </div>
                 <ul className="list-product">
                     {listProductSideBar && listProductSideBar.length > 0 && listProductSideBar.map((item, index) => {
                         return (

@@ -1,0 +1,30 @@
+@import "../../../styles/common";
+
+.project-page {
+
+    .content {
+        .content-wrap {
+            .project-page-content {
+                margin-top   : 20px;
+                margin-bottom: 20px;
+
+                .title {
+                    margin-top   : 0px;
+                    margin-bottom: 0;
+                    font-size    : 24px;
+                    color        : $dark_color;
+                    line-height  : 36px;
+                }
+
+                .date-content {
+                    display    : flex;
+                    gap        : 10px;
+                    margin     : 10px 0 10px;
+                    font-weight: 400;
+                    font-size  : 13px;
+                    color      : #acacac;
+                }
+            }
+        }
+    }
+}

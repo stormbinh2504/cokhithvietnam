@@ -174,9 +174,9 @@ const MenuSidebar = ({ setIsOpenMenu }) => {
           </SubMenu>
           <Menu iconShape="circle" rootStyles={{ paddingLeft: "16px" }}>
             <MenuItem
-              active={checkActiveMenu(PATH_NAME.BLOGS)}
+              active={checkActiveMenu(PATH_NAME.PROJECT)}
               icon={<i className="fa fa-trophy" aria-hidden="true"></i>}
-              onClick={(e) => onRedirectByPathname(PATH_NAME.BLOGS)}
+              onClick={(e) => onRedirectByPathname(PATH_NAME.PROJECT)}
             >
               Dự án hoàn thành
             </MenuItem>

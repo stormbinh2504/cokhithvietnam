@@ -1,4 +1,6 @@
 export const PATH_NAME = {
+    LOGIN: "/login",
+    ADMIN: "/admin",
     HOME: "/", // Người mua
     COLLECTIONS: "/collections", // Người bán
     PROJECT: "/project",

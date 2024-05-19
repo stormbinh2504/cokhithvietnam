@@ -1,33 +1,38 @@
 import React, { useState } from 'react'
 import "./InfoContact.scss"
+import { firebaseMethods } from '../../../firebase/firebaseMethods';
+import { ToastUtil } from '../../../utils';
+// import moment from 'moment';
+import moment from 'moment-timezone';
 
 const InfoContact = ({ isOpen, toogle }) => {
     const [formContact, setFormContact] = useState({
         name: '',
         phone: '',
         email: '',
-        message: ''
+        message: '',
+        status: 'C',// C: Chờ duyệt, CD : Đã duyệt,
     });
 
-    const handleSubmit = () => {
-        const url = '/home/customer';
-        let formData = new FormData();
-        for (var k in formContact) {
-            formData.append(k, formContact[k]);
-        }
+    const handleSubmit = async () => {
 
-        fetch(url, {
-            method: 'post',
-            body: formData,
-        })
-            .then((res) => res.json()).then((data) => {
-                console.log(data);
-                alert(data.message);
-                if (data.code === 'success') {
-                    window.location.href = '/';
-                }
+        let data = {
+            ...formContact
+        }
+        let currentTimestampInSeconds = moment().unix();
+        data.ts = currentTimestampInSeconds.toString()
+
+        data.formattedDate = moment().tz('Asia/Bangkok').format('DD/MM/YYYY HH:mm:ss'); // Định dạng thời gian tùy chọn
+
+        await firebaseMethods.setDataToFirebase(data.ts, "listContact", data)
+            .then(res => {
+                ToastUtil.success("Gửi thông tin liên hệ thành công");
+            })
+            .catch(error => {
+                ToastUtil.errorApi(error, "Gửi thông tin liên hệ không thành công");
             });
     }
+
     return (
         <div className="info-contact">
             <div className="wrap-info-contact">

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect, Suspense } from 'react'
 
 import './App.scss';
 import "../src/styles/styles.scss";
@@ -52,6 +52,7 @@ import ProjectYenPhongBacNinh from './containers/Project/ProjectYenPhongBacNinh/
 import ProjectLacSonHoaBinh from './containers/Project/ProjectLacSonHoaBinh/ProjectLacSonHoaBinh';
 import ProjectTienDuBacNinh from './containers/Project/ProjectTienDuBacNinh/ProjectTienDuBacNinh';
 import ProjectNinhBinh from './containers/Project/ProjectNinhBinh/ProjectNinhBinh';
+import Login from './containers/Login/Login';
 
 if (typeof window !== "undefined") {
   injectStyle();
@@ -76,70 +77,74 @@ function App() {
     <div className="App">
       <Router history={history}>
         <ScrollToTop />
-        < Header />
-        <Switch>
-          <div className="main">
-            < div id="container-page-content" className="container-page-content ">
-              <Route exact path={PATH_NAME.HOME} component={Home} />
-              <Route exact path={PATH_NAME.COLLECTIONS} component={ProductCollections} />
-              <Route exact path={PATH_NAME.PROJECT} component={Project} />
+        <Suspense fallback={<div>Loading....</div>}>
+          < Header />
+          <Switch>
+            <div className="main">
+              < div id="container-page-content" className="container-page-content ">
+                <Route exact path={PATH_NAME.LOGIN} component={Login} />
 
-              <Route exact path={PATH_NAME.CONTACT} component={Contact} />
-              <Route exact path={PATH_NAME.ABOUT_OUR} component={About} />
-              <Route exact path={PATH_NAME.GUARANTEE} component={Guarantee} />
-              <Route exact path={PATH_NAME.SECURITY} component={Security} />
-              <Route exact path={PATH_NAME.PAYMENT} component={Payment} />
-              <Route exact path={PATH_NAME.TRANSPORT} component={Transport} />
+                <Route exact path={PATH_NAME.HOME} component={Home} />
+                <Route exact path={PATH_NAME.COLLECTIONS} component={ProductCollections} />
+                <Route exact path={PATH_NAME.PROJECT} component={Project} />
 
-
-              <Route exact path={PATH_NAME.KE_DRIVER_IN} component={ProductKeDriverIn} />
-              <Route exact path={PATH_NAME.KE_SELECTIVE} component={ProductKeSelective} />
-              <Route exact path={PATH_NAME.KE_DOUBLE_DEEP} component={ProductDoubleDeep} />
-              <Route exact path={PATH_NAME.KE_NARROW_AISLE} component={ProductNarrowAisle} />
-              <Route exact path={PATH_NAME.KE_PALLET_DI_DONG} component={ProductKePalletDiDong} />
-              <Route exact path={PATH_NAME.KE_CON_LAN_PALLET_FLOW_RACK} component={ProductKeConLanPalletFlowRack} />
-              <Route exact path={PATH_NAME.KE_PUSH_BACK} component={ProductKePushBack} />
-              <Route exact path={PATH_NAME.KE_TAY_DO} component={ProductKeTayDo} />
-              <Route exact path={PATH_NAME.KE_DE_KHUON_MOULD_RACK} component={ProductKeDeKhuonMouldRack} />
-              <Route exact path={PATH_NAME.KE_TRUNG_TAI} component={ProductKeTrungTai} />
-              <Route exact path={PATH_NAME.KE_CON_LAN_TRUNG_TAI} component={ProductKeConLanTrungTai} />
-              <Route exact path={PATH_NAME.KE_V_LO} component={ProductKeVLo} />
-              <Route exact path={PATH_NAME.KE_V_HOA} component={ProductKeVHoa} />
-              <Route exact path={PATH_NAME.KE_SAN_MEZZANINE} component={ProductKeSanMezzanine} />
-              <Route exact path={PATH_NAME.KE_XEP_CHONG} component={ProductKeXepChong} />
-              <Route exact path={PATH_NAME.KE_DE_HANG_BAN_TU_DONG} component={ProductKeDeBanHangTuDong} />
-              <Route exact path={PATH_NAME.KE_SIEU_THI} component={ProductKeSieuthi} />
+                <Route exact path={PATH_NAME.CONTACT} component={Contact} />
+                <Route exact path={PATH_NAME.ABOUT_OUR} component={About} />
+                <Route exact path={PATH_NAME.GUARANTEE} component={Guarantee} />
+                <Route exact path={PATH_NAME.SECURITY} component={Security} />
+                <Route exact path={PATH_NAME.PAYMENT} component={Payment} />
+                <Route exact path={PATH_NAME.TRANSPORT} component={Transport} />
 
 
-              <Route exact path={PATH_NAME.PROJECT_YENPHONG_BACNINH} component={ProjectYenPhongBacNinh} />
-              <Route exact path={PATH_NAME.PROJECT_SIEU_THI_LONG_BIEN} component={ProjectSieuThiLongBien} />
-              <Route exact path={PATH_NAME.PROJECT_LACSON_HOABINH} component={ProjectLacSonHoaBinh} />
-              <Route exact path={PATH_NAME.PROJECT_TIENDU_BACNINH} component={ProjectTienDuBacNinh} />
-              <Route exact path={PATH_NAME.PROJECT_NINHBINH} component={ProjectNinhBinh} />
-              <Route exact path={PATH_NAME.PROJECT_VIN_05_02_2020} component={ProjectVin05022020} />
+                <Route exact path={PATH_NAME.KE_DRIVER_IN} component={ProductKeDriverIn} />
+                <Route exact path={PATH_NAME.KE_SELECTIVE} component={ProductKeSelective} />
+                <Route exact path={PATH_NAME.KE_DOUBLE_DEEP} component={ProductDoubleDeep} />
+                <Route exact path={PATH_NAME.KE_NARROW_AISLE} component={ProductNarrowAisle} />
+                <Route exact path={PATH_NAME.KE_PALLET_DI_DONG} component={ProductKePalletDiDong} />
+                <Route exact path={PATH_NAME.KE_CON_LAN_PALLET_FLOW_RACK} component={ProductKeConLanPalletFlowRack} />
+                <Route exact path={PATH_NAME.KE_PUSH_BACK} component={ProductKePushBack} />
+                <Route exact path={PATH_NAME.KE_TAY_DO} component={ProductKeTayDo} />
+                <Route exact path={PATH_NAME.KE_DE_KHUON_MOULD_RACK} component={ProductKeDeKhuonMouldRack} />
+                <Route exact path={PATH_NAME.KE_TRUNG_TAI} component={ProductKeTrungTai} />
+                <Route exact path={PATH_NAME.KE_CON_LAN_TRUNG_TAI} component={ProductKeConLanTrungTai} />
+                <Route exact path={PATH_NAME.KE_V_LO} component={ProductKeVLo} />
+                <Route exact path={PATH_NAME.KE_V_HOA} component={ProductKeVHoa} />
+                <Route exact path={PATH_NAME.KE_SAN_MEZZANINE} component={ProductKeSanMezzanine} />
+                <Route exact path={PATH_NAME.KE_XEP_CHONG} component={ProductKeXepChong} />
+                <Route exact path={PATH_NAME.KE_DE_HANG_BAN_TU_DONG} component={ProductKeDeBanHangTuDong} />
+                <Route exact path={PATH_NAME.KE_SIEU_THI} component={ProductKeSieuthi} />
 
+
+                <Route exact path={PATH_NAME.PROJECT_YENPHONG_BACNINH} component={ProjectYenPhongBacNinh} />
+                <Route exact path={PATH_NAME.PROJECT_SIEU_THI_LONG_BIEN} component={ProjectSieuThiLongBien} />
+                <Route exact path={PATH_NAME.PROJECT_LACSON_HOABINH} component={ProjectLacSonHoaBinh} />
+                <Route exact path={PATH_NAME.PROJECT_TIENDU_BACNINH} component={ProjectTienDuBacNinh} />
+                <Route exact path={PATH_NAME.PROJECT_NINHBINH} component={ProjectNinhBinh} />
+                <Route exact path={PATH_NAME.PROJECT_VIN_05_02_2020} component={ProjectVin05022020} />
+
+              </div>
+              <ToolPhoneZaloChat />
+              <div id="scrollToTop" className='item-center'>
+                <i class="fa fa-angle-double-up" aria-hidden="true">
+                </i>
+              </div>
             </div>
-            <ToolPhoneZaloChat />
-            <div id="scrollToTop" className='item-center'>
-              <i class="fa fa-angle-double-up" aria-hidden="true">
-              </i>
-            </div>
-          </div>
-        </Switch>
-        <Footer />
-        <ToastContainer
-          position="top-right"
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-        />
+          </Switch>
+          <Footer />
+          <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
+        </Suspense>
       </Router>
-    </div>
+    </div >
   );
 }
 

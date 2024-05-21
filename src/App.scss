@@ -1,5 +1,20 @@
 @import "styles/common";
 
+body {
+  a {
+    color: unset;
+
+    &:hover {
+      color          : #222;
+      text-decoration: none;
+    }
+  }
+
+  ul {
+    margin-bottom: unset;
+  }
+}
+
 .main {}
 
 ul,
@@ -10,14 +25,7 @@ ol {
 
 li {}
 
-a {
-  color: unset;
 
-  &:hover {
-    color          : #222;
-    text-decoration: none;
-  }
-}
 
 button {
   outline      : unset;
@@ -78,5 +86,13 @@ button {
   &:focus {
     outline   : 0;
     box-shadow: 0 0 0 0.2rem $primary_color;
+  }
+}
+
+.container-content-logined {
+  min-height: 100vh;
+
+  .ant-layout {
+    min-height: 100vh;
   }
 }

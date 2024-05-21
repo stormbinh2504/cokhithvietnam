@@ -5,14 +5,16 @@ import { ToastUtil } from '../../../utils';
 // import moment from 'moment';
 import moment from 'moment-timezone';
 
+const DF_DATA = {
+    name: '',
+    phone: '',
+    email: '',
+    message: '',
+    status: 'C',// C: Chờ duyệt, CD : Đã duyệt,
+}
+
 const InfoContact = ({ isOpen, toogle }) => {
-    const [formContact, setFormContact] = useState({
-        name: '',
-        phone: '',
-        email: '',
-        message: '',
-        status: 'C',// C: Chờ duyệt, CD : Đã duyệt,
-    });
+    const [formContact, setFormContact] = useState(DF_DATA);
 
     const handleSubmit = async () => {
 
@@ -24,13 +26,17 @@ const InfoContact = ({ isOpen, toogle }) => {
 
         data.formattedDate = moment().tz('Asia/Bangkok').format('DD/MM/YYYY HH:mm:ss'); // Định dạng thời gian tùy chọn
 
-        await firebaseMethods.setDataToFirebase(data.ts, "listContact", data)
+        await firebaseMethods.setDatabaseInFirebase("listContact", data)
             .then(res => {
                 ToastUtil.success("Gửi thông tin liên hệ thành công");
             })
             .catch(error => {
                 ToastUtil.errorApi(error, "Gửi thông tin liên hệ không thành công");
             });
+    }
+
+    const clearData = async () => {
+        setFormContact(DF_DATA)
     }
 
     return (
@@ -114,7 +120,7 @@ const InfoContact = ({ isOpen, toogle }) => {
                             <button className="btn btn-send" id="submit" type="submit" onClick={handleSubmit}>
                                 Gửi liên hệ
                             </button>
-                            <button className="btn btn-clear" onClick={handleSubmit}>
+                            <button className="btn btn-clear" onClick={clearData}>
                                 Xóa nội dung
                             </button>
                         </div>

@@ -3,7 +3,7 @@ import { Link, useHistory, withRouter } from 'react-router-dom'
 import { useSelector, useDispatch } from "react-redux";
 import { setMenuActive } from '../../redux/actions'
 import * as actions from '../../redux/actions'
-import { LINK_CATALOGUE, PATH_NAME, setPathName } from '../../utils';
+import { LINK_CATALOGUE, PATH_NAME, openInNewTab, setPathName } from '../../utils';
 import "./Header.scss"
 import logoFull from "../../assets/images/company/logo_full.png"
 import MenuSidebar from '../MenuSidebar/MenuSidebar';
@@ -206,7 +206,9 @@ const Header = () => {
                             <li className={"nav-menu-item " + (checkActiveMenu(PATH_NAME.CONTACT) ? "active" : "")}>
                                 <a onClick={() => onRedirectByPathname(PATH_NAME.CONTACT)}>Liên hệ</a>
                             </li>
-                            <li className={"nav-menu-item "}><a href={LINK_CATALOGUE} target="_blank">Tải xuống Catalogue</a></li>
+                            <li className={"nav-menu-item  " + (checkActiveMenu(PATH_NAME.CATALOGUE) ? "active" : "")}>
+                                <a onClick={() => { openInNewTab(LINK_CATALOGUE) }}>Tải xuống Catalogue</a>
+                            </li>
                         </ul>
                     </div>
 

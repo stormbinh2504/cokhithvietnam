@@ -138,7 +138,7 @@
             padding: 20px 0;
 
             .home-counter {
-                padding : 20px 0px 50px 0px;
+                padding : 20px 0px 0px 0px;
                 position: relative;
 
                 .container {
@@ -176,16 +176,14 @@
 
 
                     .block-home-counter {
-                        max-width : 880px;
-                        position  : absolute;
-                        background: $primary_color;
-                        bottom    : -50px;
-                        right     : 0px;
-                        height    : max-content;
-                        padding   : 20px;
-                        color     : $price_text_color;
+                        height : max-content;
+                        padding: 20px;
+                        color  : $price_text_color;
 
                         .home-counter-item {
+                            display       : flex;
+                            flex-direction: column;
+
                             .home-counter-number {
                                 font-size  : 32px;
                                 font-weight: bold;

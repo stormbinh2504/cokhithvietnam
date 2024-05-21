@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Link, useHistory } from 'react-router-dom'
 import { loginStart, loginSucess, loginFail } from '../../redux/actions'
 import { alertType } from '../../redux/actions/alertActions'
-import { ToastUtil } from '../../utils'
+import { PATH_NAME, ToastUtil } from '../../utils'
 import "./Login.scss"
 import { appFirebase, uiConfig } from '../../firebase/firebaseconfig';
 import { getAuth } from "firebase/auth"; // Update import statement for auth
@@ -55,7 +55,7 @@ const Login = () => {
             if (body.username == "admin" && body.password == "123456") {
                 dispatch(loginSucess({}));
                 dispatch(alertType(false));
-                history.push("/admin"); // Chuyển hướng đến trang đăng nhập
+                history.push(PATH_NAME.ADMIN); // Chuyển hướng đến trang đăng nhập
                 ToastUtil.success("Đăng nhập thành công");
             } else {
                 throw Error

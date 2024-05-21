@@ -1,4 +1,4 @@
-import { appFirebase, auth, dbFirestore } from './firebaseconfig'
+import { appFirebase, auth, dbFirestore, dbRealtime } from './firebaseconfig'
 import firebase from "firebase/compat/app";
 import { reduxStore, dispatch } from '../redux/store';
 import { getAuth, signOut, fetchSignInMethodsForEmail, createUserWithEmailAndPassword, signInWithEmailAndPassword, deleteUser } from 'firebase/auth';
@@ -12,6 +12,7 @@ import {
     doc,
     setDoc,
 } from "firebase/firestore";
+import { getDatabase, ref, set, get, child, push } from 'firebase/database';
 
 export const firebaseMethods = {
     // firebase helper methods go here... 
@@ -137,5 +138,44 @@ export const firebaseMethods = {
         } catch (err) {
             console.error(err);
         }
-    }
+    },
+    setDatabaseInFirebase: async (path, data) => {
+
+        if (!path) {
+            console.error("Path is required");
+            return;
+        }
+
+        try {
+            const dbRef = ref(dbRealtime, path);
+            await push(dbRef, data);
+            console.log("bh_setDatabaseInFirebase_s");
+        } catch (error) {
+            console.log("bh_setDatabaseInFirebase_e", error);
+        }
+
+        // const dbRef = ref(dbRealtime)
+        // await set(child(dbRef, path), data)
+        //     .then(() => {
+        //         console.log("bh_setDatabaseInFirebase_s")
+        //     })
+        //     .catch((error) => {
+        //         console.log("bh_setDatabaseInFirebase_e")
+        //     });
+    },
+    getDatabaseInFirebase: async (path) => {
+        const dbRef = ref(dbRealtime);
+        try {
+            const snapshot = await get(child(dbRef, path));
+            if (snapshot.exists()) {
+                return snapshot.val();
+            } else {
+                console.log("No data available");
+                return null; // Return null or an appropriate value when no data exists
+            }
+        } catch (error) {
+            console.error("Error getting data:", error);
+            throw error; // Re-throw the error to be caught in the calling function
+        }
+    },
 }

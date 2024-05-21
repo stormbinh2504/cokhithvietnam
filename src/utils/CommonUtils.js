@@ -50,3 +50,10 @@ export const AnimateCounterNumber = (obj, initVal, lastVal, duration) => {
 }
 
 
+
+
+export const openInNewTab = url => {
+    if (url) {
+        window.open(url, '_blank', 'noopener,noreferrer');
+    }
+};

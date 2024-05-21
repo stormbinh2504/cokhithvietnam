@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom'
 import { useSelector, useDispatch } from "react-redux";
 import * as actions from '../../redux/actions'
@@ -7,15 +7,22 @@ import "./Footer.scss"
 import logoFull from "../../assets/images/company/logo_full.png"
 import dmcaProtected from "../../assets/images/footer/dmca_protected.png"
 import qrcode from "../../assets/images/footer/qrcode.png"
-
+import AOS from 'aos';
 
 // let phone = 
 const Footer = () => {
     const history = useHistory()
     const dispatch = useDispatch()
-
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            duration: 400,
+            easing: 'linear',
+            delay: 50,
+        });
+    }, []);
     return (
-        <div className='footer'>
+        <div className='footer' data-aos="fade-down">
             <div className="container">
                 <div className="footer-widgets-wrap">
                     <div className="row">

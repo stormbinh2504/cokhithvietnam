@@ -1,6 +1,6 @@
 export const PATH_NAME = {
     LOGIN: "/login",
-    ADMIN: "/admin",
+    NOT_FOUND: "/404",
     HOME: "/", // Người mua
     COLLECTIONS: "/collections", // Người bán
     PROJECT: "/project",
@@ -10,6 +10,7 @@ export const PATH_NAME = {
     SECURITY: "/security",
     PAYMENT: "/payment",
     TRANSPORT: "/transport",
+    CATALOGUE: "/catalogue",
 
     KE_DRIVER_IN: "/products/ke-drive-in",
     KE_SELECTIVE: "/products/ke-selective",
@@ -35,6 +36,9 @@ export const PATH_NAME = {
     PROJECT_TIENDU_BACNINH: "/project/gia-ke-kho-hang-du-an-tai-tien-du-bac-ninh",
     PROJECT_NINHBINH: "/project/ke-sat-trung-tai-3-tang-tai-ninh-binh",
     PROJECT_VIN_05_02_2020: "/project/sieu-du-an-ke-trung-tai-tai-tap-doan-vin-tai-trung-tam-du-lieu-vin",
+
+    ADMIN: "/admin",
+    ADMIN_CONTACT_PAGE: "/admin-contact-page",
 }
 
 

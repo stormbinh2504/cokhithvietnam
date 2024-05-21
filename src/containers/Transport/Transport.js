@@ -32,7 +32,7 @@ const Transport = ({ google }) => {
                         <div className="col-12 col-md-9">
                             <div className="title-page item-center">CHÍNH SÁCH VẬN CHUYỂN VÀ GIAO NHẬN</div>
                             <div className="block-session">
-                                <div className="title-session">Thông tin thanh toán:</div>
+                                <div className="title-session">Thông tin vận chuyển:</div>
                                 <div class="body-session">
                                     <div>
                                         Giao hàng miễn phí tại nội thành Hà Nội và các khu vực xung quanh Hà Nội 40km, hoặc các đơn hàng có giá trị từ 30.000.000vnđ trở lên.

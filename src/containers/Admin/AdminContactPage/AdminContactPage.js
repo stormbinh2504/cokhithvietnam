@@ -33,13 +33,123 @@ const AdminContactPage = ({ userInfo }) => {
     const fetchListContact = async () => {
         try {
             const res = await firebaseMethods.getDatabaseInFirebase("listContact");
-            let arr = Object.keys(res).map(key => ({ id: key, ...res[key] })).sort((a, b) => b.ts - a.ts);;
-            console.log("bh_fetchListContact", res, arr);
-            setListContact(arr)
+            console.log("bh_fetchListContact", res);
+            if (res && Object.keys(res).length > 0) {
+                let arr = Object.keys(res).map(key => ({ id: key, ...res[key] })).sort((a, b) => b.ts - a.ts);;
+                setListContact(arr)
+            }
         } catch (error) {
-            ToastUtil.errorApi(error, "Gửi thông tin liên hệ không thành công");
+            ToastUtil.errorApi(error, "Lấy thông tin liên hệ thất bại");
         }
     }
+
+    const onHandleProcess = async (_record) => {
+        let record = _.cloneDeep(_record)
+        record.status = "DC"
+        const updates = {};
+        updates['/listContact/' + record.id] = record;
+        // updates['/listContact/' + record.id + "/status"] = "DC"
+        await firebaseMethods.updateDatabaseInFirebase(updates)
+            .then(res => {
+                ToastUtil.success("Chuyển trạng thái đã xử lý thành công");
+            })
+            .catch(error => {
+                ToastUtil.errorApi(error, "Chuyển trạng thái đã xử lý thất bại");
+            });
+    }
+
+    const onHandleReset = async (_record) => {
+        let record = _.cloneDeep(_record)
+        record.status = "C"
+        const updates = {};
+        updates['/listContact/' + record.id] = record;
+        // updates['/listContact/' + record.id + "/status"] = "C"
+        await firebaseMethods.updateDatabaseInFirebase(updates)
+            .then(res => {
+                ToastUtil.success("Chuyển trạng thái chờ xử lý thành công");
+            })
+            .catch(error => {
+                ToastUtil.errorApi(error, "Chuyển trạng thái chờ xử lý thất bại");
+            });
+    }
+
+    const onHandleRemove = async (_record) => {
+        let record = _.cloneDeep(_record)
+        const updates = {};
+        updates['/listContact/' + record.id] = null
+        await firebaseMethods.updateDatabaseInFirebase(updates)
+            .then(res => {
+                ToastUtil.success("Chuyển trạng thái chờ xử lý thành công");
+            })
+            .catch(error => {
+                ToastUtil.errorApi(error, "Chuyển trạng thái chờ xử lý thất bại");
+            });
+    }
+
+
+    const columns = [
+        {
+            title: 'STT',
+            dataIndex: 'index',
+            key: 'index',
+            width: 50,
+            align: 'center',
+            render: (text, record, index) => (index + 1)
+        },
+        {
+            title: 'Email',
+            dataIndex: 'email',
+            key: 'email',
+            width: 200,
+            align: 'center',
+        },
+        {
+            title: 'Số điện thoại',
+            dataIndex: 'phone',
+            key: 'phone',
+            width: 100,
+            align: 'center',
+        },
+        {
+            title: 'Nội dung',
+            dataIndex: 'message',
+            key: 'message',
+            width: 100,
+            align: 'center',
+        },
+        {
+            title: 'Ngày',
+            dataIndex: 'date',
+            key: 'date',
+            width: 100,
+            align: 'center',
+        },
+        {
+            title: 'Giờ',
+            dataIndex: 'time',
+            key: 'time',
+            width: 100,
+            align: 'center',
+        },
+        {
+            title: 'Action',
+            key: 'action',
+            width: 250,
+            align: 'center',
+            fixed: 'right',
+            render: (_, record) => {
+                console.log("bh_record", record)
+                const { status } = record
+                return (
+                    <div className="container-button" >
+                        {status == "C" && <button className='btn btn-pending' onClick={() => onHandleProcess(record)}>Chờ Xử lý</button>}
+                        {status != "C" && <button className='btn btn-done' onClick={() => onHandleReset(record)}>Đã Xử lý</button>}
+                        <button className='btn btn-delete' onClick={() => onHandleRemove(record)} >Xóa</button>
+                    </div >
+                )
+            }
+        },
+    ];
 
     return (
         <div div className='admin-contact-page' >
@@ -63,14 +173,14 @@ const AdminContactPage = ({ userInfo }) => {
                             //     selectedRowKeys: selectedRowSymbols,
                             //     onChange: onSelectedRowKeysChange
                             // }}
-
+                            columns={columns}
                             loading={loading}
                             dataSource={listContact}
                             scroll={{ x: 1000 }}
                             pagination={false}
                             sticky={true}
                         >
-
+                            {/* 
                             <Column
                                 title="STT" dataIndex="index" key="index" width={50} align='center'
                                 render={(text, record, index) => index + 1}
@@ -78,7 +188,7 @@ const AdminContactPage = ({ userInfo }) => {
                             <Column title="Tên khách hàng" dataIndex="name" key="name" width={100} align='center' />
                             <Column title="Email" dataIndex="email" key="email" width={100} align='center' />
                             <Column title="Số điện thoại" dataIndex="phone" key="phone" width={100} align='center' />
-                            <Column title="Thời gian gửi" dataIndex="formattedDate" key="formattedDate" width={100} align='center' />
+                            <Column title="Thời gian gửi" dataIndex="formattedDate" key="formattedDate" width={100} align='center' /> */}
                             {/* 
                             <Column
                                 title="KLTB 3 ngày trước"

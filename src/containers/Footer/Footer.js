@@ -14,15 +14,15 @@ const Footer = () => {
     const history = useHistory()
     const dispatch = useDispatch()
     useEffect(() => {
-        AOS.init({
-            offset: 200,
-            duration: 400,
-            easing: 'linear',
-            delay: 50,
-        });
+        // AOS.init({
+        //     offset: 200,
+        //     duration: 400,
+        //     easing: 'linear',
+        //     delay: 50,
+        // });
     }, []);
     return (
-        <div className='footer' data-aos="fade-down">
+        <div className='footer'>
             <div className="container">
                 <div className="footer-widgets-wrap">
                     <div className="row">

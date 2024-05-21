@@ -1,1 +1,35 @@
 @import "../../../styles/common";
+
+.admin-contact-page {
+
+    .admin-contact-page-container {
+        .admin-contact-page-content {
+            .table-admin-contact-page {
+                .container-button {
+                    display: flex;
+                    gap    : 10px;
+
+                    .btn {
+                        border     : 1px solid #ccc;
+                        font-size  : 14px;
+                        padding    : 5px 5px;
+                        font-weight: 400;
+                    }
+
+                    .btn-delete {
+                        background-color: #f92626;
+                    }
+
+                    .btn-pending {
+                        background-color: yellow;
+                    }
+
+                    .btn-done {
+                        background-color: #50ff00;
+                    }
+                }
+            }
+
+        }
+    }
+}

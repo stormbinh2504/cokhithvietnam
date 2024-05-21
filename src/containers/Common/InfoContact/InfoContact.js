@@ -24,7 +24,9 @@ const InfoContact = ({ isOpen, toogle }) => {
         let currentTimestampInSeconds = moment().unix();
         data.ts = currentTimestampInSeconds.toString()
 
-        data.formattedDate = moment().tz('Asia/Bangkok').format('DD/MM/YYYY HH:mm:ss'); // Định dạng thời gian tùy chọn
+        data.formattedDate = moment().tz('Asia/Bangkok').format('DD/MM/YYYY HH:mm:ss')
+        data.date = moment().tz('Asia/Bangkok').format('DD/MM/YYYY');
+        data.time = moment().tz('Asia/Bangkok').format('HH:mm:ss');
 
         await firebaseMethods.setDatabaseInFirebase("listContact", data)
             .then(res => {

@@ -12,7 +12,7 @@ import {
     doc,
     setDoc,
 } from "firebase/firestore";
-import { getDatabase, ref, set, get, child, push } from 'firebase/database';
+import { getDatabase, ref, set, get, child, push, update, remove } from 'firebase/database';
 
 export const firebaseMethods = {
     // firebase helper methods go here... 
@@ -153,21 +153,13 @@ export const firebaseMethods = {
         } catch (error) {
             console.log("bh_setDatabaseInFirebase_e", error);
         }
-
-        // const dbRef = ref(dbRealtime)
-        // await set(child(dbRef, path), data)
-        //     .then(() => {
-        //         console.log("bh_setDatabaseInFirebase_s")
-        //     })
-        //     .catch((error) => {
-        //         console.log("bh_setDatabaseInFirebase_e")
-        //     });
     },
     getDatabaseInFirebase: async (path) => {
         const dbRef = ref(dbRealtime);
         try {
             const snapshot = await get(child(dbRef, path));
             if (snapshot.exists()) {
+                console.log("firebase_getDatabaseInFirebase", snapshot.val())
                 return snapshot.val();
             } else {
                 console.log("No data available");
@@ -177,5 +169,31 @@ export const firebaseMethods = {
             console.error("Error getting data:", error);
             throw error; // Re-throw the error to be caught in the calling function
         }
+    },
+    updateDatabaseInFirebase: async (updates) => {
+        const dbRef = ref(dbRealtime);
+        try {
+            await update(dbRef, updates);
+        } catch (error) {
+            console.error('Error updating value:', error);
+        }
+    },
+    removeDatabaseInFirebase: async (path) => {
+        const dbRef = ref(dbRealtime);
+        try {
+            await remove(dbRef.child(path));
+        } catch (error) {
+            console.error('Error updating value:', error);
+        }
+
+        // let record = _.cloneDeep(_record)
+        // const pathToRemove = '/listContact/' + record.id;
+        // await firebaseMethods.removeDatabaseInFirebase(pathToRemove)
+        //     .then(res => {
+        //         ToastUtil.success("Xóa thành công");
+        //     })
+        //     .catch(error => {
+        //         ToastUtil.errorApi(error, "Xóa thất bại");
+        //     });
     },
 }

@@ -52,9 +52,9 @@ const Home = () => {
         let text2 = document.getElementById('counter-number2');
         let text3 = document.getElementById('counter-number3');
         let text4 = document.getElementById('counter-number4');
-        AnimateCounterNumber(text1, 0, 15, 3000);
+        AnimateCounterNumber(text1, 0, 10, 3000);
         AnimateCounterNumber(text2, 0, 100, 3000);
-        AnimateCounterNumber(text3, 0, 8500, 3000);
+        AnimateCounterNumber(text3, 0, 6500, 3000);
         AnimateCounterNumber(text4, 0, 100, 3000);
         window.removeEventListener("scroll", reveal);
     }

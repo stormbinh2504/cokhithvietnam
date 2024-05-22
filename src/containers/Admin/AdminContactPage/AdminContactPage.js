@@ -50,8 +50,9 @@ const AdminContactPage = ({ userInfo }) => {
         updates['/listContact/' + record.id] = record;
         // updates['/listContact/' + record.id + "/status"] = "DC"
         await firebaseMethods.updateDatabaseInFirebase(updates)
-            .then(res => {
+            .then(async res => {
                 ToastUtil.success("Chuyển trạng thái đã xử lý thành công");
+                await fetchListContact();
             })
             .catch(error => {
                 ToastUtil.errorApi(error, "Chuyển trạng thái đã xử lý thất bại");
@@ -65,8 +66,9 @@ const AdminContactPage = ({ userInfo }) => {
         updates['/listContact/' + record.id] = record;
         // updates['/listContact/' + record.id + "/status"] = "C"
         await firebaseMethods.updateDatabaseInFirebase(updates)
-            .then(res => {
+            .then(async res => {
                 ToastUtil.success("Chuyển trạng thái chờ xử lý thành công");
+                await fetchListContact();
             })
             .catch(error => {
                 ToastUtil.errorApi(error, "Chuyển trạng thái chờ xử lý thất bại");
@@ -78,8 +80,9 @@ const AdminContactPage = ({ userInfo }) => {
         const updates = {};
         updates['/listContact/' + record.id] = null
         await firebaseMethods.updateDatabaseInFirebase(updates)
-            .then(res => {
+            .then(async res => {
                 ToastUtil.success("Chuyển trạng thái chờ xử lý thành công");
+                await fetchListContact();
             })
             .catch(error => {
                 ToastUtil.errorApi(error, "Chuyển trạng thái chờ xử lý thất bại");

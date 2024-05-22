@@ -95,42 +95,42 @@ function App() {
                     <Route exact path={PATH_NAME.HOME} component={Home} />
 
                     <Route exact path={PATH_NAME.LOGIN} component={Login} />
-                    <Route path={PATH_NAME.COLLECTIONS} component={ProductCollections} />
-                    <Route path={PATH_NAME.PROJECT} component={Project} />
+                    <Route exact path={PATH_NAME.COLLECTIONS} component={ProductCollections} />
+                    <Route exact path={PATH_NAME.PROJECT} component={Project} />
 
-                    <Route path={PATH_NAME.CONTACT} component={Contact} />
-                    <Route path={PATH_NAME.ABOUT_OUR} component={About} />
-                    <Route path={PATH_NAME.GUARANTEE} component={Guarantee} />
-                    <Route path={PATH_NAME.SECURITY} component={Security} />
-                    <Route path={PATH_NAME.PAYMENT} component={Payment} />
-                    <Route path={PATH_NAME.TRANSPORT} component={Transport} />
-
-
-                    <Route path={PATH_NAME.KE_DRIVER_IN} component={ProductKeDriverIn} />
-                    <Route path={PATH_NAME.KE_SELECTIVE} component={ProductKeSelective} />
-                    <Route path={PATH_NAME.KE_DOUBLE_DEEP} component={ProductDoubleDeep} />
-                    <Route path={PATH_NAME.KE_NARROW_AISLE} component={ProductNarrowAisle} />
-                    <Route path={PATH_NAME.KE_PALLET_DI_DONG} component={ProductKePalletDiDong} />
-                    <Route path={PATH_NAME.KE_CON_LAN_PALLET_FLOW_RACK} component={ProductKeConLanPalletFlowRack} />
-                    <Route path={PATH_NAME.KE_PUSH_BACK} component={ProductKePushBack} />
-                    <Route path={PATH_NAME.KE_TAY_DO} component={ProductKeTayDo} />
-                    <Route path={PATH_NAME.KE_DE_KHUON_MOULD_RACK} component={ProductKeDeKhuonMouldRack} />
-                    <Route path={PATH_NAME.KE_TRUNG_TAI} component={ProductKeTrungTai} />
-                    <Route path={PATH_NAME.KE_CON_LAN_TRUNG_TAI} component={ProductKeConLanTrungTai} />
-                    <Route path={PATH_NAME.KE_V_LO} component={ProductKeVLo} />
-                    <Route path={PATH_NAME.KE_V_HOA} component={ProductKeVHoa} />
-                    <Route path={PATH_NAME.KE_SAN_MEZZANINE} component={ProductKeSanMezzanine} />
-                    <Route path={PATH_NAME.KE_XEP_CHONG} component={ProductKeXepChong} />
-                    <Route path={PATH_NAME.KE_DE_HANG_BAN_TU_DONG} component={ProductKeDeBanHangTuDong} />
-                    <Route path={PATH_NAME.KE_SIEU_THI} component={ProductKeSieuthi} />
+                    <Route exact path={PATH_NAME.CONTACT} component={Contact} />
+                    <Route exact path={PATH_NAME.ABOUT_OUR} component={About} />
+                    <Route exact path={PATH_NAME.GUARANTEE} component={Guarantee} />
+                    <Route exact path={PATH_NAME.SECURITY} component={Security} />
+                    <Route exact path={PATH_NAME.PAYMENT} component={Payment} />
+                    <Route exact path={PATH_NAME.TRANSPORT} component={Transport} />
 
 
-                    <Route path={PATH_NAME.PROJECT_YENPHONG_BACNINH} component={ProjectYenPhongBacNinh} />
-                    <Route path={PATH_NAME.PROJECT_SIEU_THI_LONG_BIEN} component={ProjectSieuThiLongBien} />
-                    <Route path={PATH_NAME.PROJECT_LACSON_HOABINH} component={ProjectLacSonHoaBinh} />
-                    <Route path={PATH_NAME.PROJECT_TIENDU_BACNINH} component={ProjectTienDuBacNinh} />
-                    <Route path={PATH_NAME.PROJECT_NINHBINH} component={ProjectNinhBinh} />
-                    <Route path={PATH_NAME.PROJECT_VIN_05_02_2020} component={ProjectVin05022020} />
+                    <Route exact path={PATH_NAME.KE_DRIVER_IN} component={ProductKeDriverIn} />
+                    <Route exact path={PATH_NAME.KE_SELECTIVE} component={ProductKeSelective} />
+                    <Route exact path={PATH_NAME.KE_DOUBLE_DEEP} component={ProductDoubleDeep} />
+                    <Route exact path={PATH_NAME.KE_NARROW_AISLE} component={ProductNarrowAisle} />
+                    <Route exact path={PATH_NAME.KE_PALLET_DI_DONG} component={ProductKePalletDiDong} />
+                    <Route exact path={PATH_NAME.KE_CON_LAN_PALLET_FLOW_RACK} component={ProductKeConLanPalletFlowRack} />
+                    <Route exact path={PATH_NAME.KE_PUSH_BACK} component={ProductKePushBack} />
+                    <Route exact path={PATH_NAME.KE_TAY_DO} component={ProductKeTayDo} />
+                    <Route exact path={PATH_NAME.KE_DE_KHUON_MOULD_RACK} component={ProductKeDeKhuonMouldRack} />
+                    <Route exact path={PATH_NAME.KE_TRUNG_TAI} component={ProductKeTrungTai} />
+                    <Route exact path={PATH_NAME.KE_CON_LAN_TRUNG_TAI} component={ProductKeConLanTrungTai} />
+                    <Route exact path={PATH_NAME.KE_V_LO} component={ProductKeVLo} />
+                    <Route exact path={PATH_NAME.KE_V_HOA} component={ProductKeVHoa} />
+                    <Route exact path={PATH_NAME.KE_SAN_MEZZANINE} component={ProductKeSanMezzanine} />
+                    <Route exact path={PATH_NAME.KE_XEP_CHONG} component={ProductKeXepChong} />
+                    <Route exact path={PATH_NAME.KE_DE_HANG_BAN_TU_DONG} component={ProductKeDeBanHangTuDong} />
+                    <Route exact path={PATH_NAME.KE_SIEU_THI} component={ProductKeSieuthi} />
+
+
+                    <Route exact path={PATH_NAME.PROJECT_YENPHONG_BACNINH} component={ProjectYenPhongBacNinh} />
+                    <Route exact path={PATH_NAME.PROJECT_SIEU_THI_LONG_BIEN} component={ProjectSieuThiLongBien} />
+                    <Route exact path={PATH_NAME.PROJECT_LACSON_HOABINH} component={ProjectLacSonHoaBinh} />
+                    <Route exact path={PATH_NAME.PROJECT_TIENDU_BACNINH} component={ProjectTienDuBacNinh} />
+                    <Route exact path={PATH_NAME.PROJECT_NINHBINH} component={ProjectNinhBinh} />
+                    <Route exact path={PATH_NAME.PROJECT_VIN_05_02_2020} component={ProjectVin05022020} />
 
                     {/* <Route path='*' component={Page404} /> */}
                     <Route exact path={PATH_NAME.PAGE_404} component={Page404} />

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import ToastUtil from "./ToastUtil";
 
 export const useOnClickOutside = (ref, handleClick) => {
     useEffect(() => {
@@ -57,3 +58,18 @@ export const openInNewTab = url => {
         window.open(url, '_blank', 'noopener,noreferrer');
     }
 };
+
+
+export const onCopyText = (text, toastSuccess = "Copy success", toastError = "Copy Fail") => {
+    try {
+        if (window.isSecureContext && navigator.clipboard) {
+            navigator.clipboard.writeText(text);
+            ToastUtil.success(toastSuccess, text);
+        } else {
+            this.unsecuredCopyToClipboard(text);
+            ToastUtil.success(toastSuccess, text);
+        }
+    } catch (error) {
+        ToastUtil.error(toastError);
+    }
+}

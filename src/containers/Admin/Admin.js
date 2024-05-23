@@ -11,8 +11,8 @@ const Admin = () => {
 
 
     return (
-        <div id='contact' className='contact'>
-            abc
+        <div id='admin' className='admin item-center'>
+            Welcome !!!
         </div >
     )
 }

@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Link, useHistory } from 'react-router-dom'
 import { loginStart, loginSucess, loginFail } from '../../../redux/actions/userActions'
 import { alertType } from '../../../redux/actions/alertActions'
-import { CommonUtils, ToastUtil } from '../../../utils'
+import { CommonUtils, ToastUtil, onCopyText } from '../../../utils'
 import _ from 'lodash';
 import { connect } from 'react-redux';
 import moment from 'moment'
@@ -105,6 +105,13 @@ const AdminContactPage = ({ userInfo }) => {
             key: 'email',
             width: 200,
             align: 'center',
+            onCell: (record) => {
+                return {
+                    onClick: () => {
+                        onCopyText(record.email, "Copy email success")
+                    }
+                };
+            }
         },
         {
             title: 'Số điện thoại',
@@ -112,6 +119,13 @@ const AdminContactPage = ({ userInfo }) => {
             key: 'phone',
             width: 100,
             align: 'center',
+            onCell: (record) => {
+                return {
+                    onClick: () => {
+                        onCopyText(record.phone, "Copy phone success")
+                    }
+                };
+            }
         },
         {
             title: 'Nội dung',
@@ -145,8 +159,8 @@ const AdminContactPage = ({ userInfo }) => {
                 const { status } = record
                 return (
                     <div className="container-button" >
-                        {status == "C" && <button className='btn btn-pending' onClick={() => onHandleProcess(record)}>Chờ Xử lý</button>}
-                        {status != "C" && <button className='btn btn-done' onClick={() => onHandleReset(record)}>Đã Xử lý</button>}
+                        {status == "C" && <button className='btn btn-pending' onClick={() => onHandleProcess(record)}>Chờ xử lý</button>}
+                        {status != "C" && <button className='btn btn-done' onClick={() => onHandleReset(record)}>Đã xử lý</button>}
                         <button className='btn btn-delete' onClick={() => onHandleRemove(record)} >Xóa</button>
                     </div >
                 )

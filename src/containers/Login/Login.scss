@@ -1,3 +1,5 @@
+@import "../../styles/common";
+
 .login {
     display        : flex;
     align-items    : center;
@@ -43,7 +45,7 @@
                 transition      : border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
                 &:focus-visible {
-                    border : 1px solid #00deb6;
+                    border : 1px solid $primary_color;
                     outline: none;
                 }
             }
@@ -61,8 +63,8 @@
         }
 
         .btn-submit {
-            color     : #333;
-            background: #00deb6;
+            color     : $primary_color;
+            background: $bg_menu;
             border    : 0;
             min-width : 100px;
             height    : 40px;

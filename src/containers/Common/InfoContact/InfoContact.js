@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import "./InfoContact.scss"
 import { firebaseMethods } from '../../../firebase/firebaseMethods';
 import { ToastUtil } from '../../../utils';
@@ -10,14 +10,36 @@ const DF_DATA = {
     phone: '',
     email: '',
     message: '',
-    status: 'C',// C: Chờ duyệt, CD : Đã duyệt,
+    status: 'C',// C: Chờ xử lý, CD : Đã xử lý,
 }
 
 const InfoContact = ({ isOpen, toogle }) => {
     const [formContact, setFormContact] = useState(DF_DATA);
+    const nameRef = useRef(null);
+    const phoneRef = useRef(null);
+    const emailRef = useRef(null);
+
+    const validate = () => {
+        const { name, phone, email } = formContact
+        if (!name) {
+            nameRef.current.focus();
+            return false
+        }
+        if (!phone) {
+            phoneRef.current.focus();
+            return false
+        }
+        if (!email) {
+            emailRef.current.focus();
+            return false
+        }
+        return true
+    }
 
     const handleSubmit = async () => {
-
+        if (!validate()) {
+            return
+        }
         let data = {
             ...formContact
         }
@@ -61,9 +83,10 @@ const InfoContact = ({ isOpen, toogle }) => {
                                 onChange={(e) => setFormContact({ ...formContact, name: e.target.value })}
                                 className="form-input" id="name"
                                 name="name"
-                                placeholder="Nhập tên"
+                                placeholder="Nhập tên*"
                                 required=""
                                 data-error="Please enter your name"
+                                ref={nameRef}
                             />
                         </div>
                         <div className="group-input">
@@ -79,9 +102,10 @@ const InfoContact = ({ isOpen, toogle }) => {
                                 className="form-input"
                                 id="phone"
                                 name="phone"
-                                placeholder="Số điện thoại"
+                                placeholder="Số điện thoại*"
                                 required
                                 data-error="Please enter your name"
+                                ref={phoneRef}
                             />
                         </div>
                         <div className="group-input">
@@ -97,9 +121,10 @@ const InfoContact = ({ isOpen, toogle }) => {
                                 className="form-input"
                                 id="email"
                                 name="email"
-                                placeholder="Email"
+                                placeholder="Email*"
                                 required
                                 data-error="Please enter your name"
+                                ref={emailRef}
                             />
                         </div>
                         <div className="group-input">

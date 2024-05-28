@@ -41,7 +41,7 @@ const Footer = () => {
                                 <div className="section-body">
                                     <div className="section-body-wrap">
                                         <div className="section-body-item">
-                                            Nhà cung cấp giá kệ để hàng công nghiệp uy tín nhất Việt Nam với hơn 15 năm kinh nghiệm tư vấn và thi công thực tế
+                                            Nhà cung cấp giá kệ để hàng công nghiệp uy tín nhất Việt Nam với hơn 8 năm kinh nghiệm tư vấn và thi công thực tế
                                         </div>
                                         <div className="section-body-item section-body-label-value">
                                             <div className="label" style={{ marginRight: "3px" }}>Địa chỉ: </div>

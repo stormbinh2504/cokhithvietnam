@@ -17,6 +17,7 @@ import slider_3 from "../../assets/images/home/home_slider/slider_3.png"
 import slider_4 from "../../assets/images/home/home_slider/slider_4.png"
 import bgDes from "../../assets/images/home/bg_des.png"
 import HomeImageBanner from './HomeImageBanner/HomeImageBanner';
+import HomeProject from './HomeProject/HomeProject';
 
 const Home = () => {
 
@@ -65,7 +66,7 @@ const Home = () => {
                 <OwlCarousel items={1}
                     className="owl-theme"
                     loop={true}
-                    autoplay={false}
+                    autoplay={true}
                     nav={true}
                     autoHeight={true}
                     navText={[
@@ -155,6 +156,7 @@ const Home = () => {
                     <HomeStep />
                     <HomeBanner />
                     <HomeImageBanner />
+                    <HomeProject />
                     <HomeCustomerSay />
                     <OurCustomer />
                 </div>

@@ -80,7 +80,7 @@ const Footer = () => {
                                             <div className="label">Hotline/zalo: </div>
                                             <div className="phone" style={{ fontWeight: "700" }}><a href="https://zalo.me/0833855955" target="_blank">- 0833.855.955</a></div>
                                             <div className="phone" style={{ fontWeight: "700" }}><a href="https://zalo.me/0362885789" target="_blank">- 0362.885.789</a></div>
-                                            <div className="phone" style={{ fontWeight: "700" }}><a href="https://zalo.me/0963959787" target="_blank">- 0963.959.787</a></div>
+                                            <div className="phone" style={{ fontWeight: "700" }}><a href="https://zalo.me/0961537985" target="_blank">- 0961.537.985</a></div>
                                         </div>
                                         <div className="section-body-item section-body-label-value">
                                             <div className="label" style={{ marginRight: "3px" }}>Thời gian làm việc: </div>

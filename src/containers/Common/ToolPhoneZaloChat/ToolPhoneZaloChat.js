@@ -39,11 +39,11 @@ const ToolPhoneZaloChat = ({ children }) => {
             <div className="hotline-phone-ring-wrap hotline-phone-ring-wrap-3">
                 <div class='phonering-alo-phone'>
                     <div class="phonering-alo-ph-circle-fill"></div>
-                    <a rel="nofollow" target="_blank" href="tel:0963959787" class="alo-ph-img-circle img-phonering"></a>
+                    <a rel="nofollow" target="_blank" href="tel:0961537985" class="alo-ph-img-circle img-phonering"></a>
                 </div>
                 <div class="hotline-bar">
-                    <a href="tel:0963959787">
-                        <span class="text-hotline">0963 959 787</span>
+                    <a href="tel:0961537985">
+                        <span class="text-hotline">0961 537 985</span>
                     </a>
                 </div>
             </div>

@@ -51,7 +51,7 @@ const ProductDetailDesc = ({ children }) => {
                                 + 0362.885.789
                             </div>
                             <div>
-                                + 0963.959.787
+                                + 0961.537.985
                             </div>
                         </span>
                     </li>

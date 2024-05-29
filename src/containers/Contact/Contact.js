@@ -40,7 +40,7 @@ const Contact = ({ google }) => {
                                     <i class="fa fa-building-o" aria-hidden="true"></i>
                                     <span>
                                         <strong>
-                                            Công ty sản xuất và thương mại
+                                            CÔNG TY TNHH CƠ KHÍ TH VIỆT NAM
                                         </strong>
                                     </span>
                                 </li>
@@ -50,7 +50,12 @@ const Contact = ({ google }) => {
                                         <strong>
                                             Địa chỉ:&nbsp;
                                         </strong>
-                                        KM số 1, QL3, Mai Lâm, Đông Anh, Hà Nội
+                                        <div>
+                                            -  Địa chỉ 1: KM số 1, QL3, Mai Lâm, Đông Anh, Hà Nội
+                                        </div>
+                                        <div>
+                                            -  Địa chỉ 2:  Phố Hộ Vệ, xã Lạc Vệ, huyện Tiên Du, tỉnh Bắc Ninh
+                                        </div>
                                     </span>
                                 </li>
                                 <li>

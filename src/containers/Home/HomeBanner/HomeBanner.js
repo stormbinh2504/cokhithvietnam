@@ -20,6 +20,7 @@ import home_banner_img_15 from "../../../assets/images/home_banner/home_banner_i
 import home_banner_img_16 from "../../../assets/images/home_banner/home_banner_img_16.png"
 import home_banner_img_17 from "../../../assets/images/home_banner/home_banner_img_17.png"
 import home_banner_img_18 from "../../../assets/images/home_banner/home_banner_img_18.png"
+import home_banner_img_19 from "../../../assets/images/home_banner/home_banner_img_19.png"
 import AOS from 'aos';
 import { PATH_NAME } from '../../../utils';
 
@@ -58,35 +59,35 @@ const listFeatureBox = [
         title: "KỆ PALLET DI ĐỘNG",
         link: PATH_NAME.KE_PALLET_DI_DONG,
         image: home_banner_img_5,
-        subtitle: ["Phù hợp với tất cả các loại Pallet hàng", "Ứng dụng độ cao tới 11m", "Phù hợp hầu hết các loại xe nâng hàng"]
+        subtitle: ["Phù hợp với các kho lạnh và cực lạnh", "Tiết kiệm thời gian hoạt động trong kho hàng lạnh", "Tối ưu diện tích lưu trữ hàng hoá"]
     },
     {//*
         id: "6",
         title: "KỆ CON LĂN",
         link: PATH_NAME.KE_CON_LAN_PALLET_FLOW_RACK,
         image: home_banner_img_6,
-        subtitle: ["Phù hợp với tất cả các loại Pallet hàng", "Ứng dụng độ cao tới 11m", "Phù hợp hầu hết các loại xe nâng hàng"]
+        subtitle: ["Tăng diện tích lưu trữ hàng hoá thêm 50%", "Chiều cao tối đa lên tới 16m", "Khả năng truy xuất pallet tốt"]
     },
     {//*
         id: "7",
         title: "KỆ PUSH BACK",
         link: PATH_NAME.KE_PUSH_BACK,
         image: home_banner_img_7,
-        subtitle: ["Phù hợp với tất cả các loại Pallet hàng", "Ứng dụng độ cao tới 11m", "Phù hợp hầu hết các loại xe nâng hàng"]
+        subtitle: ["Phù hợp với kho hàng có tải trọng hàng hoá lớn", "Chiều cao tối đa lên tới 11m", "Tăng diện tích lưu trữ hàng hoá thêm 60-70%"]
     },
     {
         id: "8",
         title: "Kệ tay đỡ",
         link: PATH_NAME.KE_TAY_DO,
         image: home_banner_img_8,
-        subtitle: ["Phù hợp với tất cả các loại Pallet hàng", "Ứng dụng độ cao tới 11m", "Phù hợp hầu hết các loại xe nâng hàng"]
+        subtitle: ["Phù hợp với kho hàng có nhiều chủng loại hàng hoá", "Sử dụng xe nâng chuyên dụng hoặc lấy hàng bằng tay", "Thiết kế tháo lắp dễ hàng, nhanh chóng"]
     },
     {//*
         id: "9",
         title: "Kệ để khuôn",
         link: PATH_NAME.KE_DE_KHUON_MOULD_RACK,
         image: home_banner_img_9,
-        subtitle: ["Phù hợp với tất cả các loại Pallet hàng", "Ứng dụng độ cao tới 11m", "Phù hợp hầu hết các loại xe nâng hàng"]
+        subtitle: ["Tối ưu hoá không gian nhà xưởng", "Tải trọng mỗi tầng lên đến 3 tấn/tầng", "Nâng cao năng suất bảo trì, bảo dưỡng khuôn mẫu"]
     },
     {
         id: "10",
@@ -100,15 +101,15 @@ const listFeatureBox = [
         title: "KỆ CON LĂN TRUNG TẢI",
         link: PATH_NAME.KE_CON_LAN_TRUNG_TAI,
         image: home_banner_img_11,
-        subtitle: ["Hệ thống kho chứa hàng cực kỳ linh hoạt", "Thích hợp với kho chứa hàng cao tầng", "Định dạng phong phú về hệ thống tầng chứa hàng"]
+        subtitle: ["Phù hợp với hàng hoá tải trọng nhẹ", "Không cần sử dụng xe nâng", "Tải trọng 50-80kg/3 sàn roller nhựa"]
     },
-    {//*
-        id: "12",
-        title: "KỆ V HOA",
-        link: PATH_NAME.KE_V_HOA,
-        image: home_banner_img_12,
-        subtitle: ["Hệ thống kho chứa hàng cực kỳ linh hoạt", "Thích hợp với kho chứa hàng cao tầng", "Định dạng phong phú về hệ thống tầng chứa hàng"]
-    },
+    // {//*
+    //     id: "12",
+    //     title: "KỆ V HOA",
+    //     link: PATH_NAME.KE_V_HOA,
+    //     image: home_banner_img_12,
+    //     subtitle: ["Hệ thống kho chứa hàng cực kỳ linh hoạt", "Thích hợp với kho chứa hàng cao tầng", "Định dạng phong phú về hệ thống tầng chứa hàng"]
+    // },
     {//*
         id: "13",
         title: "KỆ V LỖ",
@@ -128,28 +129,35 @@ const listFeatureBox = [
         title: "KỆ XẾP CHỒNG",
         link: PATH_NAME.KE_XEP_CHONG,
         image: home_banner_img_15,
-        subtitle: ["Sử dụng các loại pallet đặc biệt", "Có thể xếp chồng lên tới 3 tầng", "Có thể gấp lại rất gọn gàng"]
+        subtitle: ["Tăng tính linh hoạt trong lưu trữ hàng hoá", "Dễ dàng thay đổi và di chuyển", "Thiết kế tối đa 5 tầng kệ xếp chồng lên nhau"]
     },
     {//*
         id: "16",
         title: "KỆ ĐỂ HÀNG BÁN TỰ ĐỘNG",
         link: PATH_NAME.KE_DE_HANG_BAN_TU_DONG,
         image: home_banner_img_16,
-        subtitle: ["Sử dụng các loại pallet đặc biệt", "Có thể xếp chồng lên tới 3 tầng", "Có thể gấp lại rất gọn gàng"]
+        subtitle: ["Mật độ lưu chứa pallet cao", " Phù hợp với các loại xe nâng nhỏ", "Tối ưu diện tích sử dụng"]
     },
     {//*
         id: "17",
         title: "KỆ SIÊU THỊ",
         link: PATH_NAME.KE_SIEU_THI,
         image: home_banner_img_17,
-        subtitle: ["Sử dụng các loại pallet đặc biệt", "Có thể xếp chồng lên tới 3 tầng", "Có thể gấp lại rất gọn gàng"]
+        subtitle: ["Phù hợp với trưng bày cửa hàng, siêu thị", "Mẫu mã đẹp, bắt mắt", "Kích thước đa dạng"]
     },
     {//*
         id: "18",
         title: "Máng cáp",
         link: PATH_NAME.MANG_CAP,
         image: home_banner_img_18,
-        subtitle: ["Sử dụng các loại pallet đặc biệt", "Có thể xếp chồng lên tới 3 tầng", "Có thể gấp lại rất gọn gàng"]
+        subtitle: ["Bảo vệ dây cáp điện", "Tăng tính thẩm mỹ cho công trình sử dụng", "Đa dạng về kích thước"]
+    },
+    {//*
+        id: "19",
+        title: "Gia công laze",
+        link: PATH_NAME.GIA_CONG_LAZE,
+        image: home_banner_img_19,
+        subtitle: ["Cắt chi tiết với độ chính xác cao", "Tối ưu thời gian sản xuất", "Sản phẩm hoàn thiện có tính thẩm mỹ"]
     },
 ]
 

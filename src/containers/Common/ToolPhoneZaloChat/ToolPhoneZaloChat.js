@@ -14,9 +14,38 @@ const ToolPhoneZaloChat = ({ children }) => {
 
     return (
         <div className='tool-phone-zalo-chat'>
-            <div class='phonering-alo-phone'>
-                <div class="phonering-alo-ph-circle-fill"></div>
-                <a rel="nofollow" target="_blank" href="tel:0833855955" class="alo-ph-img-circle img-phonering"></a>
+            <div className="hotline-phone-ring-wrap hotline-phone-ring-wrap-1">
+                <div class='phonering-alo-phone'>
+                    <div class="phonering-alo-ph-circle-fill"></div>
+                    <a rel="nofollow" target="_blank" href="tel:0833855955" class="alo-ph-img-circle img-phonering"></a>
+                </div>
+                <div class="hotline-bar">
+                    <a href="tel:0833855955">
+                        <span class="text-hotline">0833 855 955</span>
+                    </a>
+                </div>
+            </div>
+            <div className="hotline-phone-ring-wrap hotline-phone-ring-wrap-2">
+                <div class='phonering-alo-phone'>
+                    <div class="phonering-alo-ph-circle-fill"></div>
+                    <a rel="nofollow" target="_blank" href="tel:0362885789" class="alo-ph-img-circle img-phonering"></a>
+                </div>
+                <div class="hotline-bar">
+                    <a href="tel:0362885789">
+                        <span class="text-hotline">0362 885 789</span>
+                    </a>
+                </div>
+            </div>
+            <div className="hotline-phone-ring-wrap hotline-phone-ring-wrap-3">
+                <div class='phonering-alo-phone'>
+                    <div class="phonering-alo-ph-circle-fill"></div>
+                    <a rel="nofollow" target="_blank" href="tel:0963959787" class="alo-ph-img-circle img-phonering"></a>
+                </div>
+                <div class="hotline-bar">
+                    <a href="tel:0963959787">
+                        <span class="text-hotline">0963 959 787</span>
+                    </a>
+                </div>
             </div>
             <div class="zaloring-alo-phone">
                 <div class="phonering-alo-ph-circle-fill"></div>

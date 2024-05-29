@@ -2,10 +2,9 @@
 
 .tool-phone-zalo-chat {
     position: fixed;
-    top     : 30%;
+    top     : 65%;
     right   : 0px;
     z-index : 9999;
-
 
     .phonering-alo-phone,
     .zaloring-alo-phone,
@@ -16,8 +15,8 @@
         height  : 65px;
 
         .phonering-alo-ph-circle-fill {
-            width                   : 60px;
-            height                  : 60px;
+            width                   : 70px;
+            height                  : 70px;
             position                : absolute;
             background-color        : #000;
             border-radius           : 100% !important;
@@ -32,8 +31,8 @@
         }
 
         .alo-ph-img-circle {
-            width                   : 40px;
-            height                  : 40px;
+            width                   : 50px;
+            height                  : 50px;
             top                     : 10px;
             left                    : 10px;
             position                : absolute;
@@ -53,7 +52,7 @@
 
         .img-zaloring {
             background      : url("../../../assets/images/phone_zalo_chat/zalo.png") no-repeat center center;
-            background-color: $red_color;
+            background-color: #4285f4;
         }
     }
 
@@ -100,6 +99,69 @@
             -webkit-transition   : box-shadow .2s ease;
             background-size      : 80%;
             transition           : all .2s ease-in-out;
+        }
+    }
+
+    .hotline-phone-ring-wrap {
+        position: absolute;
+        right   : 0px;
+
+        &.hotline-phone-ring-wrap-1 {
+            top: -120px;
+        }
+
+        &.hotline-phone-ring-wrap-2 {
+            top  : -60px;
+            right: 0px;
+        }
+
+        .phonering-alo-phone {
+            position: absolute;
+            top     : -60px;
+            right   : 147px;
+            z-index : 9;
+
+            .phonering-alo-ph-circle-fill {
+                background-color: rgba(230, 8, 8, 0.7);
+            }
+        }
+
+        .hotline-bar {
+            position          : absolute;
+            background        : rgba(230, 8, 8, 0.75);
+            height            : 40px;
+            width             : 200px;
+            line-height       : 40px;
+            border-radius     : 3px;
+            padding           : 0 10px;
+            background-size   : 100%;
+            cursor            : pointer;
+            transition        : all 0.8s;
+            -webkit-transition: all 0.8s;
+            z-index           : 1;
+            box-shadow        : 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
+            border-radius     : 50px !important;
+            /* width          : 175px !important; */
+            right             : 0px;
+            top               : -45px;
+
+            a {
+                color          : #fff;
+                text-decoration: none;
+                font-size      : 15px;
+                font-weight    : bold;
+                text-indent    : 50px;
+                display        : block;
+                letter-spacing : 1px;
+                line-height    : 40px;
+                font-family    : Arial;
+            }
+        }
+    }
+
+    .zaloring-alo-phone {
+        .phonering-alo-ph-circle-fill {
+            background-color: rgba(17, 130, 252, .8);
         }
     }
 }

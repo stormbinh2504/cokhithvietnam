@@ -171,6 +171,13 @@ const MenuSidebar = ({ setIsOpenMenu }) => {
               Kệ siêu thị
             </MenuItem>
 
+            <MenuItem
+              active={checkActiveMenu(PATH_NAME.MANG_CAP)}
+              onClick={(e) => onRedirectByPathname(PATH_NAME.MANG_CAP)}
+            >
+              Máng cáp
+            </MenuItem>
+
           </SubMenu>
           <Menu iconShape="circle" rootStyles={{ paddingLeft: "16px" }}>
             <MenuItem

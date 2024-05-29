@@ -57,6 +57,8 @@ import product_ke_de_ban_hang_tu_dong_img2 from "../../assets/images/product_col
 import product_ke_sieu_thi_img1 from "../../assets/images/product_collections/product_ke_sieu_thi/img1.jpg"
 import product_ke_sieu_thi_img2 from "../../assets/images/product_collections/product_ke_sieu_thi/img2.jpg"
 
+import product_mang_cap_img1 from "../../assets/images/product_collections/product_mang_cap/img1.jpg"
+import product_mang_cap_img2 from "../../assets/images/product_collections/product_mang_cap/img2.jpg"
 
 const col_1 = [
     {
@@ -163,7 +165,11 @@ const col_3 = [
         title: "Kệ siêu thị",
         path: PATH_NAME.KE_SIEU_THI
     },
-
+    {
+        isTitleMain: true,
+        title: "Máng cáp",
+        path: PATH_NAME.MANG_CAP
+    },
 ]
 
 const RenderCol = ({ col }) => {
@@ -317,6 +323,12 @@ const listProDuct = [
         title: "Kệ siêu thị",
         path: PATH_NAME.KE_SIEU_THI,
         listImages: [product_ke_sieu_thi_img1, product_ke_sieu_thi_img2],
+        productDesc: "Kệ siêu thị Cơ Khí TH Việt Nam sử dụng chất liệu thép, tôn cao cấp và được sản xuất trên dây chuyền máy móc hiện đại, khép kínSản phẩm được áp dụng công nghệ phun...",
+    },
+    {
+        title: "Máng cáp",
+        path: PATH_NAME.MANG_CAP,
+        listImages: [product_mang_cap_img1, product_mang_cap_img1],
         productDesc: "Kệ siêu thị Cơ Khí TH Việt Nam sử dụng chất liệu thép, tôn cao cấp và được sản xuất trên dây chuyền máy móc hiện đại, khép kínSản phẩm được áp dụng công nghệ phun...",
     },
 ]

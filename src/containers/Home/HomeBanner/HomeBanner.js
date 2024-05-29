@@ -19,6 +19,7 @@ import home_banner_img_14 from "../../../assets/images/home_banner/home_banner_i
 import home_banner_img_15 from "../../../assets/images/home_banner/home_banner_img_15.png"
 import home_banner_img_16 from "../../../assets/images/home_banner/home_banner_img_16.png"
 import home_banner_img_17 from "../../../assets/images/home_banner/home_banner_img_17.png"
+import home_banner_img_18 from "../../../assets/images/home_banner/home_banner_img_18.png"
 import AOS from 'aos';
 import { PATH_NAME } from '../../../utils';
 
@@ -141,6 +142,13 @@ const listFeatureBox = [
         title: "KỆ SIÊU THỊ",
         link: PATH_NAME.KE_SIEU_THI,
         image: home_banner_img_17,
+        subtitle: ["Sử dụng các loại pallet đặc biệt", "Có thể xếp chồng lên tới 3 tầng", "Có thể gấp lại rất gọn gàng"]
+    },
+    {//*
+        id: "18",
+        title: "Máng cáp",
+        link: PATH_NAME.MANG_CAP,
+        image: home_banner_img_18,
         subtitle: ["Sử dụng các loại pallet đặc biệt", "Có thể xếp chồng lên tới 3 tầng", "Có thể gấp lại rất gọn gàng"]
     },
 ]

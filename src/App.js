@@ -59,6 +59,7 @@ import { DefaultLayout } from './components/layouts';
 import Page404 from './containers/Page404/Page404';
 import Admin from './containers/Admin/Admin';
 import NotFound from './containers/Page404/NotFound';
+import ProductMangCap from './containers/ProductCollections/ProductMangCap/ProductMangCap';
 
 if (typeof window !== "undefined") {
   injectStyle();
@@ -123,6 +124,7 @@ function App() {
                     <Route exact path={PATH_NAME.KE_XEP_CHONG} component={ProductKeXepChong} />
                     <Route exact path={PATH_NAME.KE_DE_HANG_BAN_TU_DONG} component={ProductKeDeBanHangTuDong} />
                     <Route exact path={PATH_NAME.KE_SIEU_THI} component={ProductKeSieuthi} />
+                    <Route exact path={PATH_NAME.MANG_CAP} component={ProductMangCap} />
 
 
                     <Route exact path={PATH_NAME.PROJECT_YENPHONG_BACNINH} component={ProjectYenPhongBacNinh} />

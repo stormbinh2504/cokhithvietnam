@@ -199,7 +199,7 @@ const Header = () => {
 
 
                                     <li className="sub-menu-item"><a onClick={() => onRedirectByPathname(PATH_NAME.MANG_CAP)}><div className="sub-menu-item-text" >Máng cáp</div></a></li>
-
+                                    <li className="sub-menu-item"><a onClick={() => onRedirectByPathname(PATH_NAME.GIA_CONG_LAZE)}><div className="sub-menu-item-text" >Gia công Laze</div></a></li>
 
                                 </ul>
                             </li>

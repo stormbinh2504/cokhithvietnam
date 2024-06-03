@@ -178,6 +178,13 @@ const MenuSidebar = ({ setIsOpenMenu }) => {
               Máng cáp
             </MenuItem>
 
+            <MenuItem
+              active={checkActiveMenu(PATH_NAME.GIA_CONG_LAZE)}
+              onClick={(e) => onRedirectByPathname(PATH_NAME.GIA_CONG_LAZE)}
+            >
+              Gia công Laze
+            </MenuItem>
+
           </SubMenu>
           <Menu iconShape="circle" rootStyles={{ paddingLeft: "16px" }}>
             <MenuItem

@@ -95,6 +95,10 @@ const listProductSideBar = [
         title_lv1: "Máng cáp",
         path: PATH_NAME.MANG_CAP
     },
+    {
+        title_lv1: "Gia công Laze",
+        path: PATH_NAME.GIA_CONG_LAZE
+    },
 ]
 
 

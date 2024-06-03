@@ -60,6 +60,9 @@ import product_ke_sieu_thi_img2 from "../../assets/images/product_collections/pr
 import product_mang_cap_img1 from "../../assets/images/product_collections/product_mang_cap/img1.jpg"
 import product_mang_cap_img2 from "../../assets/images/product_collections/product_mang_cap/img2.jpg"
 
+import product_gia_cong_laze_img1 from "../../assets/images/product_collections/product_gia_cong_laze/img1.jpg"
+import product_gia_cong_laze_img2 from "../../assets/images/product_collections/product_gia_cong_laze/img2.jpg"
+
 const col_1 = [
     {
         isTitleMain: true,
@@ -169,6 +172,11 @@ const col_3 = [
         isTitleMain: true,
         title: "Máng cáp",
         path: PATH_NAME.MANG_CAP
+    },
+    {
+        isTitleMain: true,
+        title: "Gia công Laze",
+        path: PATH_NAME.GIA_CONG_LAZE
     },
 ]
 
@@ -323,13 +331,19 @@ const listProDuct = [
         title: "Kệ siêu thị",
         path: PATH_NAME.KE_SIEU_THI,
         listImages: [product_ke_sieu_thi_img1, product_ke_sieu_thi_img2],
-        productDesc: "Kệ siêu thị Cơ Khí TH Việt Nam sử dụng chất liệu thép, tôn cao cấp và được sản xuất trên dây chuyền máy móc hiện đại, khép kínSản phẩm được áp dụng công nghệ phun...",
+        productDesc: "Kệ siêu thị Cơ Khí TH Việt Nam sử dụng chất liệu thép, tôn cao cấp và được sản xuất trên dây chuyền máy móc hiện đại, khép kín. Sản phẩm được áp dụng công nghệ phun sơn tĩnh điện, đảm bảo độ bền và tính thẩm mỹ cao.",
     },
     {
         title: "Máng cáp",
         path: PATH_NAME.MANG_CAP,
-        listImages: [product_mang_cap_img1, product_mang_cap_img1],
-        productDesc: "Kệ siêu thị Cơ Khí TH Việt Nam sử dụng chất liệu thép, tôn cao cấp và được sản xuất trên dây chuyền máy móc hiện đại, khép kínSản phẩm được áp dụng công nghệ phun...",
+        listImages: [product_mang_cap_img1, product_mang_cap_img2],
+        productDesc: "Máng cáp Cơ Khí TH Việt Nam được sản xuất từ thép và tôn cao cấp, phù hợp cho việc quản lý và bảo vệ hệ thống dây điện trong các công trình xây dựng. Sản phẩm có độ bền cao, chịu được môi trường khắc nghiệt và dễ dàng lắp đặt.",
+    },
+    {
+        title: "Gia công Laze",
+        path: PATH_NAME.GIA_CONG_LAZE,
+        listImages: [product_gia_cong_laze_img1, product_gia_cong_laze_img2],
+        productDesc: "Dịch vụ gia công laze của Cơ Khí TH Việt Nam sử dụng công nghệ laze tiên tiến, đảm bảo độ chính xác và chất lượng cao cho các sản phẩm kim loại. Chúng tôi nhận gia công theo yêu cầu, đáp ứng đa dạng các loại hình và kích thước khác nhau.",
     },
 ]
 

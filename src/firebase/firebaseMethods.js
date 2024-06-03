@@ -32,15 +32,13 @@ export const firebaseMethods = {
                 return res && res.user
             })
             .catch(err => {
-                console.log("err", err)
-                // setErrors(prev => ([...prev, err.message]))
+                throw err; // Ném lỗi để bắt ở phần gọi hàm login
             })
     },
     login: async (body) => {
         const { email, password } = body;
         try {
             const res = await signInWithEmailAndPassword(getAuth(appFirebase), email, password);
-            console.log("firebaseMethods_login_1", res);
             return res.user; // Trả về user object từ phản hồi
         } catch (err) {
             throw err; // Ném lỗi để bắt ở phần gọi hàm login
@@ -65,15 +63,11 @@ export const firebaseMethods = {
             // Kiểm tra xem người dùng có tồn tại không trước khi xóa
             if (user) {
                 // Xóa người dùng khỏi Firebase Authentication
-                console.log("deleteAccount", user, auth)
                 await deleteUser(getAuth(appFirebase), user.uid);
-                console.log('User deleted successfully.');
             } else {
-                console.log('User does not exist.');
             }
         } catch (error) {
-            console.error('Error deleting user:', error);
-            throw error;
+            throw error; // Re-throw the error to be caught in the calling function
         }
     },
     uploadProfileImage: (imageBytes64Str) => {
@@ -101,19 +95,17 @@ export const firebaseMethods = {
         //     })
     },
     setDataToFirebase: async (key, path, data) => {
-        console.log("setDataToFirebase", key, path, data)
         if (!key) {
             return
         }
         try {
             await setDoc(doc(dbFirestore, path, key), data);
         } catch (err) {
-            console.error(err);
+            throw err; // Re-throw the error to be caught in the calling function
         }
     },
     getDatafromFirebase: async (key, path) => {
         const myCollection = collection(dbFirestore, path);
-        console.log("getDatafromFirebase", key, path)
         try {
             const querySnapshot = await getDocs(myCollection);
             let data = {}
@@ -124,11 +116,10 @@ export const firebaseMethods = {
             return (data && data[key]) || {}
             // return querySnapshot
         } catch (err) {
-            console.error(err);
+            throw err; // Re-throw the error to be caught in the calling function
         }
     },
     updateDataInFirebase: async (key, path, data) => {
-        console.log("updateDataInFirebase", key, path, data);
         if (!key) {
             return;
         }
@@ -136,22 +127,20 @@ export const firebaseMethods = {
             const docRef = doc(dbFirestore, path, key);
             await updateDoc(docRef, data);
         } catch (err) {
-            console.error(err);
+            throw err; // Re-throw the error to be caught in the calling function
         }
     },
     setDatabaseInFirebase: async (path, data) => {
 
         if (!path) {
-            console.error("Path is required");
             return;
         }
 
         try {
             const dbRef = ref(dbRealtime, path);
             await push(dbRef, data);
-            console.log("bh_setDatabaseInFirebase_s");
         } catch (error) {
-            console.log("bh_setDatabaseInFirebase_e", error);
+            throw error; // Re-throw the error to be caught in the calling function
         }
     },
     getDatabaseInFirebase: async (path) => {
@@ -159,14 +148,11 @@ export const firebaseMethods = {
         try {
             const snapshot = await get(child(dbRef, path));
             if (snapshot.exists()) {
-                console.log("firebase_getDatabaseInFirebase", snapshot.val())
                 return snapshot.val();
             } else {
-                console.log("No data available");
                 return null; // Return null or an appropriate value when no data exists
             }
         } catch (error) {
-            console.error("Error getting data:", error);
             throw error; // Re-throw the error to be caught in the calling function
         }
     },
@@ -175,7 +161,7 @@ export const firebaseMethods = {
         try {
             await update(dbRef, updates);
         } catch (error) {
-            console.error('Error updating value:', error);
+            throw error; // Re-throw the error to be caught in the calling function
         }
     },
     removeDatabaseInFirebase: async (path) => {
@@ -183,7 +169,7 @@ export const firebaseMethods = {
         try {
             await remove(dbRef.child(path));
         } catch (error) {
-            console.error('Error updating value:', error);
+            throw error; // Re-throw the error to be caught in the calling function
         }
 
         // let record = _.cloneDeep(_record)

@@ -24,7 +24,6 @@ import { PATH_NAME } from '../../../utils';
 import { listProject } from '../../Project/ListProject/ListProject';
 
 const FeatureBox = ({ data }) => {
-    console.log("binh_data", data)
     const { listImages, title, path, location } = data
     return (
         <div className="col-12 col-md-4 item-feature-box">

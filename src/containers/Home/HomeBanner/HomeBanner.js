@@ -162,7 +162,6 @@ const listFeatureBox = [
 ]
 
 const FeatureBox = ({ data }) => {
-    console.log("binh_data", data)
     const { image, title, subtitle, link } = data
     return (
         <div className="col-12 col-md-4 item-feature-box">

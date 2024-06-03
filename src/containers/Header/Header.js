@@ -26,7 +26,6 @@ const Header = () => {
         let containerHeader = document.getElementById("container-header");
         let headerWarp = document.getElementById("header-wrap");
         let sticky = containerHeader.offsetTop;
-        console.log("binh_check_scroll", window.pageYOffset, sticky)
         if (window.pageYOffset > sticky) {
             headerWarp.classList.add("sticky-header")
         } else {

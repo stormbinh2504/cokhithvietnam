@@ -138,23 +138,23 @@ const HomeScale = () => {
                                                 <i class="fa fa-users" aria-hidden="true"></i>
                                             </div>
                                             <div className="text">
-                                                Cùng với đội ngũ công nhân chuyên nghiệp, lành nghề, tận tâm.
+                                                Đội ngũ công nhân viên với hơn 150 nhân sự thuộc khối sản xuất và khối văn phòng.
                                             </div>
                                         </div>
                                         <div class="i-item item3 animate_7">
                                             <div className="icon">
-                                                <i class="fa fa-users" aria-hidden="true"></i>
+                                                <i class="fa fa-industry" aria-hidden="true"></i>
                                             </div>
                                             <div className="text">
-                                                Cùng với đội ngũ công nhân chuyên nghiệp, lành nghề, tận tâm.
+                                                Nhà máy 1: Km số 1, Quốc lộ 3, xã Mai Lâm, huyện Đông Anh, Hà nội, với diện tích nhà xưởng 4000 mét vuông. Luôn đáp ứng tốt mọi yêu cầu của Quý Khách hàng
                                             </div>
                                         </div>
                                         <div class="i-item item3 animate_7">
                                             <div className="icon">
-                                                <i class="fa fa-users" aria-hidden="true"></i>
+                                                <i class="fa fa-industry" aria-hidden="true"></i>
                                             </div>
                                             <div className="text">
-                                                Cùng với đội ngũ công nhân chuyên nghiệp, lành nghề, tận tâm.
+                                                Nhà máy 2: Phố Hộ Vệ, xã Lạc Vệ, huyện Tiên Du, tỉnh Bắc Ninh, có diện tích hơn 2500 mét vuông.
                                             </div>
                                         </div>
                                     </div>

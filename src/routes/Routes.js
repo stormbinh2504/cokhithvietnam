@@ -7,7 +7,6 @@ import PrivateRouterLogin from './../containers/customRouter/PrivateRouterLogin'
 
 function Routes() {
     const { auth } = useSelector((state) => state);
-    console.log("binh--auth", auth)
 
     return (
         <Switch>

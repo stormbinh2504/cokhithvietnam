@@ -33,7 +33,6 @@ const AdminContactPage = ({ userInfo }) => {
     const fetchListContact = async () => {
         try {
             const res = await firebaseMethods.getDatabaseInFirebase("listContact");
-            console.log("bh_fetchListContact", res);
             if (res && Object.keys(res).length > 0) {
                 let arr = Object.keys(res).map(key => ({ id: key, ...res[key] })).sort((a, b) => b.ts - a.ts);;
                 setListContact(arr)
@@ -155,7 +154,6 @@ const AdminContactPage = ({ userInfo }) => {
             align: 'center',
             fixed: 'right',
             render: (_, record) => {
-                console.log("bh_record", record)
                 const { status } = record
                 return (
                     <div className="container-button" >

@@ -81,7 +81,6 @@ function App() {
   useEffect(() => {
     scrollTopAnimated()
   }, []);
-  console.log("bh_app", user)
   return (
 
     <div className="App">

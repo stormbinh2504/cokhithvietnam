@@ -30,7 +30,6 @@ export const loginFail = (error) => ({
 export const setUserInfo = (data) => {
     return (dispatch, getState) => {
         const state = getState();
-        console.log("binh_check_setUserInfo", data)
         dispatch({
             type: actionTypes.SET_USER_INFO,
             data: data

@@ -63,7 +63,7 @@ const ProductGiaCongLaze = () => {
                                     <div className="product-page">
                                         <div className="single-product">
                                             <div className="row">
-                                                <div className="col-12 col-md-6">
+                                                <div className="col-12 col-md-7">
                                                     <SilderImageThumbnail
                                                         images={images}
                                                     />

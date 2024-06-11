@@ -53,12 +53,12 @@ const ProductKeSieuthi = () => {
                                     <div className="product-page">
                                         <div className="single-product">
                                             <div className="row">
-                                                <div className="col-12 col-md-6">
+                                                <div className="col-12 col-md-7">
                                                     <SilderImageThumbnail
                                                         images={images}
                                                     />
                                                 </div>
-                                                <div className="col-12 col-md-6">
+                                                <div className="col-12 col-md-5">
                                                     <ProductDesc
                                                         productDesc={{
                                                             title: "Kệ siêu thị"

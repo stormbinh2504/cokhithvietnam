@@ -44,11 +44,11 @@ const Footer = () => {
                                             Nhà cung cấp giá kệ để hàng công nghiệp uy tín nhất Việt Nam với hơn 8 năm kinh nghiệm tư vấn và thi công thực tế.
                                         </div>
                                         <div className="section-body-item section-body-label-value">
-                                            <div className="value" style={{ fontWeight: "500" }}>Địa chỉ 1: KM số 1, QL3, Mai Lâm, Đông Anh, Hà Nội
+                                            <div className="value" style={{ fontWeight: "500" }}>Nhà máy 1: KM số 1, QL3, Mai Lâm, Đông Anh, Hà Nội
                                             </div>
                                         </div>
                                         <div className="section-body-item section-body-label-value">
-                                            <div className="value" style={{ fontWeight: "500" }}>Địa chỉ 2: Phố Hộ Vệ, xã Lạc Vệ, huyện Tiên Du, tỉnh Bắc Ninh
+                                            <div className="value" style={{ fontWeight: "500" }}>Nhà máy 2: Phố Hộ Vệ, xã Lạc Vệ, huyện Tiên Du, tỉnh Bắc Ninh
                                             </div>
                                         </div>
                                     </div>

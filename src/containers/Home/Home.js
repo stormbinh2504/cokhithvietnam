@@ -96,7 +96,19 @@ const Home = () => {
                                             <img className="mage-conpany" src={bgDes} />
                                         </div>
                                         <div className="col-sm-12 col-md-5 block-des">
-                                            <div class="desc">Công ty TNHH Cơ Khí TH Việt Nam kể từ ngày thành lập đến nay đã không ngừng phát triển và trở thành một Công ty hàng đầu chuyên về thiết kế và sản xuất kệ chứa hàng phục vụ mọi đối tượng khách hàng trong nước cũng như xuất khẩu. Với thế mạnh là kinh nghiệm lâu năm cùng với đội ngũ cán bộ kỹ thuật được đào tạo chính qui, công nhân tay nghề cao và dây chuyền khép kín, chúng tôi có khả năng tư vấn, thiết kế và trang bị hệ thống kệ chứa hàng cho quý khách với hiệu quả cao nhất và chi phí hợp lý nhất.</div>
+                                            <div class="desc">
+                                                <div><strong>Công ty TNHH Cơ Khí TH Việt Nam</strong> được thành lập từ năm 2017, là doanh nghiệp chuyên sản xuất các sản phẩm cơ khí dựa trên dột dập, hàn, gia công kim loại tấm. Với trang thiết bị hiện đại và đội ngũ kỹ thuật lành nghề. Chúng tôi mang đến những sản phẩm có chất lượng cao, giá thành hợp lý nhằm đáp ứng những nhu cầu khác nhau của khách hàng.
+                                                </div>
+                                                <div>Nhằm đáp ứng nhu cầu của khách hàng, chúng tôi đã và đang sở hữu nhiều loại máy cắt laser, máy đột, hàn laser,... Ngoài ra, Cơ Khí TH Việt Nam có đội ngũ công nhân, kỹ sư có tay nghề cao, được đào tạo bài bản, có kinh nghiệp lâu năm trong lĩnh vực sản xuất cơ khí.
+                                                </div>
+                                                <div>Bởi vậy, chúng tôi tự tin có thể sản xuất được các sản phẩm đặt tiêu chuẩn chất lượng cao mang đến sự hài lòng của khách hàng với tôn chỉ "Uy Tín-Chất Lượng-Hiệu Quả".
+                                                </div>
+                                                <br />
+                                                <div><strong>Kinh nghiệm trong lĩnh vực sản xuất, kinh doanh chính. </strong></div>
+                                                <div>- Các sản phẩm cơ khỉ, gia công kim loại tấm.</div>
+                                                <div>- Giá kệ trung tải, tải nặng, Kệ siêu thị,...</div>
+                                                <div>- Bàn ghế, xe đẩy, thang máng cáp, Tủ sắt, Vỏ của thiết bị máy móc,...</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -161,9 +173,9 @@ const Home = () => {
                     <HomeScale />
                     <HomeCustomerSay />
                     <OurCustomer />
-                </div>
-            </section>
-        </div>
+                </div >
+            </section >
+        </div >
     )
 }
 

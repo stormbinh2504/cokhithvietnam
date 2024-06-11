@@ -3,6 +3,7 @@ import OwlCarousel from 'react-owl-carousel';
 import "./HomeScale.scss"
 import { useEffect } from 'react';
 import AOS from 'aos';
+import Slider from "react-slick";
 
 import logo from "../../../assets/images/company/logo.png"
 import wrap_khoxuong from "../../../assets/images/home/home_scale/wrap_khoxuong.png"
@@ -18,6 +19,17 @@ import img9 from "../../../assets/images/home/home_scale/list_img/img9.png"
 import img10 from "../../../assets/images/home/home_scale/list_img/img10.png"
 import img11 from "../../../assets/images/home/home_scale/list_img/img11.png"
 import img12 from "../../../assets/images/home/home_scale/list_img/img12.png"
+
+
+import img_khoxuong1 from "../../../assets/images/home/home_scale/list_khoxuong/img1.png"
+import img_khoxuong2 from "../../../assets/images/home/home_scale/list_khoxuong/img2.png"
+import img_khoxuong3 from "../../../assets/images/home/home_scale/list_khoxuong/img3.png"
+import img_khoxuong4 from "../../../assets/images/home/home_scale/list_khoxuong/img4.png"
+import img_khoxuong5 from "../../../assets/images/home/home_scale/list_khoxuong/img5.png"
+import img_khoxuong6 from "../../../assets/images/home/home_scale/list_khoxuong/img6.png"
+import img_khoxuong7 from "../../../assets/images/home/home_scale/list_khoxuong/img7.png"
+import img_khoxuong8 from "../../../assets/images/home/home_scale/list_khoxuong/img8.png"
+import img_khoxuong9 from "../../../assets/images/home/home_scale/list_khoxuong/img9.png"
 
 const LIST_IMG_KHO_XUONG = [
     {
@@ -57,6 +69,65 @@ const LIST_IMG_KHO_XUONG = [
         img: img12,
     },
 ]
+
+
+const LIST_IMG_KHO_XUONG_CHINH = [
+    {
+        urlImage: img_khoxuong1,
+    },
+    {
+        urlImage: img_khoxuong2,
+    },
+    {
+        urlImage: img_khoxuong3,
+    },
+    {
+        urlImage: img_khoxuong4,
+    },
+    {
+        urlImage: img_khoxuong5,
+    },
+    {
+        urlImage: img_khoxuong6,
+    },
+    {
+        urlImage: img_khoxuong7,
+    },
+    {
+        urlImage: img_khoxuong8,
+    },
+    {
+        urlImage: img_khoxuong9,
+    },
+]
+
+
+
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <button
+            className={`d-none`}
+            onClick={onClick}
+        >
+            <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+        </button>
+    );
+}
+
+function SamplePrevArrow(props) {
+    const { className, style, to, onClick } = props;
+    return (
+        <button
+            className={`d-none`}
+            onClick={onClick}
+        >
+            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+        </button>
+    );
+}
+
+
 const HomeScale = () => {
 
     useEffect(() => {
@@ -68,6 +139,41 @@ const HomeScale = () => {
         });
     }, []);
 
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: true, // Enable autoplay
+        autoplaySpeed: 2000, // Set the autoplay speed in milliseconds
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
     return (
         <div id="home-scale" className="home home-scale" >
             <div className="vision-porcelain" data-aos="fade-down">
@@ -162,7 +268,22 @@ const HomeScale = () => {
                             </div>
                             <div class="col-12 col-md-6 sub">
                                 <div className="content-img">
-                                    <img src={wrap_khoxuong} />
+                                    <Slider
+                                        //  autoplay={true} 
+                                        {...settings} >
+                                        {LIST_IMG_KHO_XUONG_CHINH && LIST_IMG_KHO_XUONG_CHINH.length > 0 && LIST_IMG_KHO_XUONG_CHINH.map((item, index) => {
+                                            return (
+                                                <img src={item.urlImage} />
+                                                // <div className="khoxuong-item" key={index}>
+                                                //     <div className="wrap-khoxuong-item">
+                                                //         <div className="khoxuong-image item-center">
+                                                //             <img src={item.urlImage} />
+                                                //         </div>
+                                                //     </div>
+                                                // </div>
+                                            )
+                                        })}
+                                    </Slider>
                                 </div>
                             </div>
                         </div>

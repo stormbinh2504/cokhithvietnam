@@ -80,12 +80,12 @@ const Header = () => {
                                         <div className="info-content">
                                             <a href="tel:0833 855 955">0833 855 955</a>
                                         </div>
-                                        <div className="info-content">
+                                        {/* <div className="info-content">
                                             <a href="tel:0362885789">0362 885 789</a>
                                         </div>
                                         <div className="info-content">
                                             <a href="tel:0961537985">0961 537 985</a>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>

@@ -39,10 +39,10 @@ const ProductDetailDesc = ({ children }) => {
                         <span style={{ fontSize: "15px" }}>
                             - Địa chỉ:
                             <div>
-                                + Địa chỉ 1: KM số 1, QL3, Mai Lâm, Đông Anh, Hà Nội
+                                + Nhà máy 1: KM số 1, QL3, Mai Lâm, Đông Anh, Hà Nội
                             </div>
                             <div>
-                                - Địa chỉ 2: Phố Hộ Vệ, xã Lạc Vệ, huyện Tiên Du, tỉnh Bắc Ninh
+                                + Nhà máy 2: Phố Hộ Vệ, xã Lạc Vệ, huyện Tiên Du, tỉnh Bắc Ninh
                             </div>
                         </span>
                     </li>

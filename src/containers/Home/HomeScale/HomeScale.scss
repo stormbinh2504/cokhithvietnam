@@ -139,12 +139,82 @@
                     }
 
                     .content-img {
-                        height: 100%;
-                        width : 100%;
+                        height   : 100%;
+                        width    : 100%;
+                        max-width: 560px;
 
-                        img {
-                            max-height: 530px;
-                            width     : 100%;
+                        .slick-slider {
+                            height: 100%;
+                            width : 100%;
+
+                            .slick-list {
+                                height: 100%;
+                                width : 100%;
+
+                                .slick-track {
+                                    height: 100%;
+                                    width : 100%;
+
+                                    .slick-slide {
+                                        height: 100%;
+                                        width : 100%;
+
+                                        >div {
+                                            height: 100%;
+                                            width : 100%;
+
+                                        }
+                                    }
+
+                                    img {
+                                        width : 100% !important;
+                                        height: 100% !important;
+                                    }
+
+
+                                    .khoxuong-item {
+                                        height: 100%;
+                                        width : 100%;
+                                        border: 3px solid transparent;
+
+                                        .wrap-khoxuong-item {
+                                            padding      : 20px;
+                                            background   : #f9f9f9;
+                                            // border    : 2px solid #ececec;
+                                            height       : 100%;
+                                            width        : 100%;
+
+                                            .khoxuong-image {
+                                                height  : 100%;
+                                                width   : 100%;
+                                                position: relative;
+
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .slick-dots {
+                                bottom: -20px;
+
+                                li {
+                                    button {
+                                        &::before {
+                                            font-size: 10px;
+                                        }
+                                    }
+                                }
+
+                                .slick-active {
+                                    button {
+                                        &::before {
+                                            color: $white;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -198,12 +268,46 @@
             }
         }
 
-        .list-img-khoxuong {
-            display: flex;
-            width  : 100%;
 
-            .item-img {
-                width: calc(100% / 3);
+        .boxBig {
+            padding: 40px 0px;
+
+            >div {
+                background-color: $white_color;
+
+                .sub {
+                    .content-img {
+                        max-width: 500px !important;
+                    }
+                }
+            }
+
+            .list-img-khoxuong {
+                display: flex;
+                width  : 100%;
+
+                .item-img {
+                    width: calc(100% / 3);
+                }
+            }
+        }
+    }
+}
+
+// từ 575.98px trở xuống
+@include media-breakpoint-down(xs) {
+    .home-scale {
+        .boxBig {
+            padding: 40px 0px;
+
+            >div {
+                background-color: $white_color;
+
+                .sub {
+                    .content-img {
+                        max-width: 400px !important;
+                    }
+                }
             }
         }
     }

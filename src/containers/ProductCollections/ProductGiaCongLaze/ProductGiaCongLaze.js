@@ -50,7 +50,7 @@ const ProductGiaCongLaze = () => {
                     },
                     {
                         path: PATH_NAME.GIA_CONG_LAZE,
-                        title: "Gia công laze"
+                        title: "Gia công laser"
                     }
                 ]}
             />
@@ -68,10 +68,10 @@ const ProductGiaCongLaze = () => {
                                                         images={images}
                                                     />
                                                 </div>
-                                                <div className="col-12 col-md-6">
+                                                <div className="col-12 col-md-5">
                                                     <ProductDesc
                                                         productDesc={{
-                                                            title: "Gia công laze"
+                                                            title: "Gia công laser"
                                                         }}
                                                     />
                                                 </div>

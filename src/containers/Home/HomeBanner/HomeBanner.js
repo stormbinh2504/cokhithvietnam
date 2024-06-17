@@ -154,7 +154,7 @@ const listFeatureBox = [
     },
     {//*
         id: "19",
-        title: "Gia công laze",
+        title: "Gia công laser",
         link: PATH_NAME.GIA_CONG_LAZE,
         image: home_banner_img_19,
         subtitle: ["Cắt chi tiết với độ chính xác cao", "Tối ưu thời gian sản xuất", "Sản phẩm hoàn thiện có tính thẩm mỹ"]

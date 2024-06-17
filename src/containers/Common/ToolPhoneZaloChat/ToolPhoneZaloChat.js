@@ -55,7 +55,7 @@ const ToolPhoneZaloChat = ({ children }) => {
                 <a rel="nofollow" target="_blank" href="https://zalo.me/0833855955" class="fb-btn"></a>
             </div>
             <div class="youtube-recomend">
-                <a rel="nofollow" target="_blank" href="https://www.youtube.com/" class="youtube-btn"></a>
+                <a rel="nofollow" target="_blank" href="https://www.youtube.com/channel/UCEAmDXvUUwCUbVvvHVaXadg" class="youtube-btn"></a>
             </div>
         </div >
     )

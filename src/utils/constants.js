@@ -31,7 +31,7 @@ export const PATH_NAME = {
     KE_DE_HANG_BAN_TU_DONG: "/products/ke-de-hang-ban-tu-dong",
     KE_SIEU_THI: "/products/ke-sieu-thi",
     MANG_CAP: "/products/mang-cap",
-    GIA_CONG_LAZE: "/products/gia-cong-laze",
+    GIA_CONG_LAZE: "/products/gia-cong-laser",
 
     PROJECT_YENPHONG_BACNINH: "/project/gia-ke-kho-cong-nghiep-du-an-tai-yen-phong-bac-ninh",
     PROJECT_SIEU_THI_LONG_BIEN: "/project/ke-sieu-thi-long-bien-khach-hang-lon-tai-ngoc-thuy",

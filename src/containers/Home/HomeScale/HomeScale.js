@@ -228,7 +228,7 @@ const HomeScale = () => {
                                 <div class="content-sub">
                                     <h2 class="animate_4">HỆ THỐNG NHÀ MÁY</h2>
                                     <div className="introduce-company">
-                                        Công ty TNHH cơ khí TH Việt Nam là doanh nghiệp chuyên tư vấn, thiết kế và sản xuất các sản phẩm cơ khí về đột dập, hàn cắt, cắt laze, gia công kim loại tấm...v… Với sản phẩm thế mạnh là các loại giá kệ để hàng, giá kệ kho hàng, nhà xưởng, kệ siêu thị…
+                                        Công ty TNHH cơ khí TH Việt Nam là doanh nghiệp chuyên tư vấn, thiết kế và sản xuất các sản phẩm cơ khí về đột dập, hàn cắt, cắt laser, gia công kim loại tấm...v… Với sản phẩm thế mạnh là các loại giá kệ để hàng, giá kệ kho hàng, nhà xưởng, kệ siêu thị…
                                     </div>
                                     <div className="block-content">
                                         <div class="i-item item1 animate_5">

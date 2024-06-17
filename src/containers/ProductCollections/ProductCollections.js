@@ -343,7 +343,7 @@ const listProDuct = [
         title: "Gia công Laze",
         path: PATH_NAME.GIA_CONG_LAZE,
         listImages: [product_gia_cong_laze_img1, product_gia_cong_laze_img2],
-        productDesc: "Dịch vụ gia công laze của Cơ Khí TH Việt Nam sử dụng công nghệ laze tiên tiến, đảm bảo độ chính xác và chất lượng cao cho các sản phẩm kim loại. Chúng tôi nhận gia công theo yêu cầu, đáp ứng đa dạng các loại hình và kích thước khác nhau.",
+        productDesc: "Dịch vụ gia công laser của Cơ Khí TH Việt Nam sử dụng công nghệ laser tiên tiến, đảm bảo độ chính xác và chất lượng cao cho các sản phẩm kim loại. Chúng tôi nhận gia công theo yêu cầu, đáp ứng đa dạng các loại hình và kích thước khác nhau.",
     },
 ]
 

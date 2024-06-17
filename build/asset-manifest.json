@@ -1,9 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.3e3167d0.css",
-    "main.js": "/static/js/main.0083f6a8.js",
+    "main.js": "/static/js/main.bad523a8.js",
     "static/js/787.c17ec645.chunk.js": "/static/js/787.c17ec645.chunk.js",
+    "static/media/slider_1.png": "/static/media/slider_1.95c5eb6a964b5c9985bb.png",
+    "static/media/slider_3.png": "/static/media/slider_3.90966099ca6ceaae8d85.png",
     "static/media/wrap_khoxuong.png": "/static/media/wrap_khoxuong.80aee898a0e361388922.png",
+    "static/media/slider_4.png": "/static/media/slider_4.d4acf331d4ce56203d70.png",
+    "static/media/slider_2.png": "/static/media/slider_2.6a092b6c582d4daf3523.png",
     "static/media/home_image_banner.png": "/static/media/home_image_banner.0f5788bf5ebd50ae429c.png",
     "static/media/img2.jpg": "/static/media/img2.74c52961cd67d175735d.jpg",
     "static/media/home_banner_img_1.png": "/static/media/home_banner_img_1.3e7fed4ce10a017e2f1d.png",
@@ -24,16 +28,12 @@
     "static/media/home_banner_img_4.png": "/static/media/home_banner_img_4.6bf9028a6d06261b55dd.png",
     "static/media/img1.jpg": "/static/media/img1.1b3db18d7f621bdca608.jpg",
     "static/media/home_banner_img_2.png": "/static/media/home_banner_img_2.6dadb83b0bb1d6a06322.png",
-    "static/media/slider_1.png": "/static/media/slider_1.342ab6b52bdacc67344d.png",
     "static/media/home_banner_img_14.png": "/static/media/home_banner_img_14.de8b4d16d9a74813512b.png",
-    "static/media/slider_3.png": "/static/media/slider_3.f57ddc2187e295372883.png",
     "static/media/img3.jpg": "/static/media/img3.40c3932281f7bc9f1825.jpg",
-    "static/media/slider_4.png": "/static/media/slider_4.4ec79df1dd9186aab9d5.png",
     "static/media/home_customer_say_1.png": "/static/media/home_customer_say_1.44e350e3c20555731926.png",
     "static/media/bg_khoxuong.png": "/static/media/bg_khoxuong.19fc24ae5d69a1a8eff9.png",
     "static/media/home_customer_say_4.png": "/static/media/home_customer_say_4.2fda938d5e26a3b1264d.png",
     "static/media/bg_home_step.png": "/static/media/bg_home_step.1eb1df576ae0c984a425.png",
-    "static/media/slider_2.png": "/static/media/slider_2.aa09a386a821d75456f3.png",
     "static/media/home_banner_img_17.png": "/static/media/home_banner_img_17.2dfa122116f8ee4945fc.png",
     "static/media/img5.jpg": "/static/media/img5.3ef627f91f27f1695f30.jpg",
     "static/media/img6.jpg": "/static/media/img6.8ace3b79db2594e692e9.jpg",
@@ -81,11 +81,11 @@
     "index.html": "/index.html",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "main.3e3167d0.css.map": "/static/css/main.3e3167d0.css.map",
-    "main.0083f6a8.js.map": "/static/js/main.0083f6a8.js.map",
+    "main.bad523a8.js.map": "/static/js/main.bad523a8.js.map",
     "787.c17ec645.chunk.js.map": "/static/js/787.c17ec645.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3e3167d0.css",
-    "static/js/main.0083f6a8.js"
+    "static/js/main.bad523a8.js"
   ]
 }

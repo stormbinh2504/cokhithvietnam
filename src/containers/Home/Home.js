@@ -105,7 +105,7 @@ const Home = () => {
                                                 </div>
                                                 <br />
                                                 <div><strong>Kinh nghiệm trong lĩnh vực sản xuất, kinh doanh chính. </strong></div>
-                                                <div>- Các sản phẩm cơ khỉ, gia công kim loại tấm.</div>
+                                                <div>- Các sản phẩm cơ khí, gia công kim loại tấm.</div>
                                                 <div>- Giá kệ trung tải, tải nặng, Kệ siêu thị,...</div>
                                                 <div>- Bàn ghế, xe đẩy, thang máng cáp, Tủ sắt, Vỏ của thiết bị máy móc,...</div>
                                             </div>

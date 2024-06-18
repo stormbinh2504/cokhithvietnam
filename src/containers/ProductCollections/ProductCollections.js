@@ -63,6 +63,12 @@ import product_mang_cap_img2 from "../../assets/images/product_collections/produ
 import product_gia_cong_laze_img1 from "../../assets/images/product_collections/product_gia_cong_laze/img1.jpg"
 import product_gia_cong_laze_img2 from "../../assets/images/product_collections/product_gia_cong_laze/img2.jpg"
 
+import product_ban_thao_tac_img1 from "../../assets/images/product_collections/product_ban_thao_tac/img1.jpg"
+import product_ban_thao_tac_img2 from "../../assets/images/product_collections/product_ban_thao_tac/img2.jpg"
+
+import product_xe_day_img1 from "../../assets/images/product_collections/product_xe_day/img1.jpg"
+import product_xe_day_img2 from "../../assets/images/product_collections/product_xe_day/img2.jpg"
+
 const col_1 = [
     {
         isTitleMain: true,
@@ -177,6 +183,16 @@ const col_3 = [
         isTitleMain: true,
         title: "Gia công Laze",
         path: PATH_NAME.GIA_CONG_LAZE
+    },
+    {
+        isTitleMain: true,
+        title: "Bàn thao tác",
+        path: PATH_NAME.BAN_THAO_TAC
+    },
+    {
+        isTitleMain: true,
+        title: "Xe đẩy",
+        path: PATH_NAME.XE_DAY
     },
 ]
 
@@ -340,10 +356,22 @@ const listProDuct = [
         productDesc: "Máng cáp Cơ Khí TH Việt Nam được sản xuất từ thép và tôn cao cấp, phù hợp cho việc quản lý và bảo vệ hệ thống dây điện trong các công trình xây dựng. Sản phẩm có độ bền cao, chịu được môi trường khắc nghiệt và dễ dàng lắp đặt.",
     },
     {
-        title: "Gia công Laze",
+        title: "Gia công Laser",
         path: PATH_NAME.GIA_CONG_LAZE,
         listImages: [product_gia_cong_laze_img1, product_gia_cong_laze_img2],
         productDesc: "Dịch vụ gia công laser của Cơ Khí TH Việt Nam sử dụng công nghệ laser tiên tiến, đảm bảo độ chính xác và chất lượng cao cho các sản phẩm kim loại. Chúng tôi nhận gia công theo yêu cầu, đáp ứng đa dạng các loại hình và kích thước khác nhau.",
+    },
+    {
+        title: "Bàn thao tác",
+        path: PATH_NAME.BAN_THAO_TAC,
+        listImages: [product_ban_thao_tac_img1, product_ban_thao_tac_img2],
+        productDesc: "Bàn thao tác Cơ Khí TH Việt Nam được thiết kế chắc chắn, bền bỉ, và dễ dàng tùy chỉnh để phù hợp với nhiều nhu cầu sử dụng khác nhau. Sản phẩm lý tưởng cho các nhà xưởng, khu công nghiệp, giúp nâng cao hiệu quả làm việc và đảm bảo an toàn lao động.",
+    },
+    {
+        title: "Xe đẩy",
+        path: PATH_NAME.XE_DAY,
+        listImages: [product_xe_day_img1, product_xe_day_img2],
+        productDesc: "Xe đẩy Cơ Khí TH Việt Nam được sản xuất từ vật liệu chất lượng cao, chịu lực tốt, và có thiết kế thông minh để dễ dàng di chuyển hàng hóa trong nhà máy, kho bãi. Sản phẩm giúp giảm bớt công sức lao động và tăng năng suất công việc.",
     },
 ]
 

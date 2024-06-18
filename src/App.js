@@ -61,6 +61,8 @@ import Admin from './containers/Admin/Admin';
 import NotFound from './containers/Page404/NotFound';
 import ProductMangCap from './containers/ProductCollections/ProductMangCap/ProductMangCap';
 import ProductGiaCongLaze from './containers/ProductCollections/ProductGiaCongLaze/ProductGiaCongLaze';
+import ProductBanThaoTac from './containers/ProductCollections/ProductBanThaoTac/ProductBanThaoTac';
+import ProductXeDay from './containers/ProductCollections/ProductXeDay/ProductXeDay';
 
 if (typeof window !== "undefined") {
   injectStyle();
@@ -126,6 +128,8 @@ function App() {
                     <Route exact path={PATH_NAME.KE_SIEU_THI} component={ProductKeSieuthi} />
                     <Route exact path={PATH_NAME.MANG_CAP} component={ProductMangCap} />
                     <Route exact path={PATH_NAME.GIA_CONG_LAZE} component={ProductGiaCongLaze} />
+                    <Route exact path={PATH_NAME.BAN_THAO_TAC} component={ProductBanThaoTac} />
+                    <Route exact path={PATH_NAME.XE_DAY} component={ProductXeDay} />
 
 
                     <Route exact path={PATH_NAME.PROJECT_YENPHONG_BACNINH} component={ProjectYenPhongBacNinh} />

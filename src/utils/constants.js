@@ -32,6 +32,8 @@ export const PATH_NAME = {
     KE_SIEU_THI: "/products/ke-sieu-thi",
     MANG_CAP: "/products/mang-cap",
     GIA_CONG_LAZE: "/products/gia-cong-laser",
+    BAN_THAO_TAC: "/products/ban-thao-tac",
+    XE_DAY: "/products/xe-day",
 
     PROJECT_YENPHONG_BACNINH: "/project/gia-ke-kho-cong-nghiep-du-an-tai-yen-phong-bac-ninh",
     PROJECT_SIEU_THI_LONG_BIEN: "/project/ke-sieu-thi-long-bien-khach-hang-lon-tai-ngoc-thuy",

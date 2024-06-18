@@ -38,7 +38,7 @@ const Transport = ({ google }) => {
                                         Giao hàng miễn phí tại nội thành Hà Nội và các khu vực xung quanh Hà Nội 40km, hoặc các đơn hàng có giá trị từ 30.000.000vnđ trở lên.
                                     </div>
                                     <div>
-                                        - Đối với khách hàng ở Hồ Chí Minh, Đồng Nai, Bình Dương chúng tôi sẽ nhờ đối tác giao hàng tận văn phòng nhà xưởng của Quý khách. Hoặc Quý khách lấy hàng trực tiếp tại địa chỉ mà Myteck chuyển hàng tới.
+                                        - Đối với khách hàng ở Hồ Chí Minh, Đồng Nai, Bình Dương chúng tôi sẽ nhờ đối tác giao hàng tận văn phòng nhà xưởng của Quý khách. Hoặc Quý khách lấy hàng trực tiếp tại địa chỉ mà Cơ khí TH chuyển hàng tới.
                                     </div>
                                     <div>
                                         - Các tỉnh khác sẽ giao hàng qua dịch vụ chuyển phát nhanh Bưu Điện, Tín Thành, Tân Sơn Nhất. Hai bên sẽ thỏa thuận về hình thức, chi phí vận chuyển phát sinh nếu có trong từng đơn hàng bằng văn bản.

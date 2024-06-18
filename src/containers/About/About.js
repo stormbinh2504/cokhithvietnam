@@ -70,10 +70,10 @@ const About = ({ google }) => {
                         <div className="title-session">Cam kết từ Cơ khí TH Việt Nam</div>
                         <div class="body-session">
                             <div>
-                                Cơ khí TH Việt Nam có rất nhiều chi nhánh và đại lý rộng khắp toàn quốc nên việc vận chuyển và lắp đặt kệ siêu thị rất dễ dàng, nhanh chóng. Với mục tiêu trở thành một trong những công ty hàng đầu Việt Nam, Cơ khí TH Việt Nam cam kết sẽ đưa ra thị trường những sản phẩm có chất lượng tốt, giá thành cạnh tranh và vô vàn nhiều ưu đãi hấp dẫn dành cho quý khách hàng.
+                                Cơ khí TH Việt Nam có rất nhiều chi nhánh và đại lý rộng khắp toàn quốc nên việc vận chuyển và lắp đặt rất dễ dàng, nhanh chóng. Với mục tiêu trở thành một trong những công ty hàng đầu Việt Nam, Cơ khí TH Việt Nam cam kết sẽ đưa ra thị trường những sản phẩm có chất lượng tốt, giá thành cạnh tranh và vô vàn nhiều ưu đãi hấp dẫn dành cho quý khách hàng.
                             </div>
                             <div>
-                                Với sự tin yêu của các đối tác trong nhiều năm qua, Cơ khí TH Việt Nam đảm bảo luôn đặt uy tín lên hàng đầu và luôn kinh doanh với mục đích vì lợi ích của khách hàng là chủ yếu. Chúng tôi luôn có các chính sách bảo hành các sản phẩm kệ siêu thị và nhiều sản phẩm khác do chúng tôi sản xuất. Thời gian bảo hành lên đến 5 năm, bảo hành độ bền lên đến 10 năm, nên quý khách hoàn toàn có thể tin dùng.
+                                Với sự tin yêu của các đối tác trong nhiều năm qua, Cơ khí TH Việt Nam đảm bảo luôn đặt uy tín lên hàng đầu và luôn kinh doanh với mục đích vì lợi ích của khách hàng là chủ yếu. Chúng tôi luôn có các chính sách bảo hành các sản phẩm giá kệ và nhiều sản phẩm khác do chúng tôi sản xuất. Thời gian bảo hành lên đến 5 năm, bảo hành độ bền lên đến 10 năm, nên quý khách hoàn toàn có thể tin dùng.
                             </div>
                         </div>
                     </div>

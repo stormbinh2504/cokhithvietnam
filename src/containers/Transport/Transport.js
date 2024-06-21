@@ -35,16 +35,16 @@ const Transport = ({ google }) => {
                                 <div className="title-session">Thông tin vận chuyển:</div>
                                 <div class="body-session">
                                     <div>
-                                        Giao hàng miễn phí tại nội thành Hà Nội và các khu vực xung quanh Hà Nội 40km, hoặc các đơn hàng có giá trị từ 30.000.000vnđ trở lên.
+                                        Giao hàng tận nơi theo yêu cầu của khách hàng tại tất cả các tỉnh thành trên cả nước
                                     </div>
                                     <div>
-                                        - Đối với khách hàng ở Hồ Chí Minh, Đồng Nai, Bình Dương chúng tôi sẽ nhờ đối tác giao hàng tận văn phòng nhà xưởng của Quý khách. Hoặc Quý khách lấy hàng trực tiếp tại địa chỉ mà Cơ khí TH chuyển hàng tới.
+                                        Cơ khí TH Việt Nam sẽ bàn giao trong vòng 05 - 07 ngày kể từ ngày nhận được xác nhận đơn đặt hàng của khách hàng.
                                     </div>
                                     <div>
-                                        - Các tỉnh khác sẽ giao hàng qua dịch vụ chuyển phát nhanh Bưu Điện, Tín Thành, Tân Sơn Nhất. Hai bên sẽ thỏa thuận về hình thức, chi phí vận chuyển phát sinh nếu có trong từng đơn hàng bằng văn bản.
+                                        Trước khi vận chuyển, bộ phận giao nhận sẽ liên lạc với Quý khách hàng trước 01 ngày để thông báo và xác nhận thời gian, địa điểm cụ thể cho Quý khách hàng.
                                     </div>
                                     <div>
-                                        VD: Các mặt hàng có trọng lượng {">15kg"} chúng tôi miễn phí vận chuyển khi khách đồng ý chuyển phát bằng đường bộ. Tính phí khi khách yêu cầu chuyển phát nhanh 24h qua máy bay
+                                        Thời gian giao hàng và lắp đặt: từ 8h30 đến 17h30 tất cả các ngày trong tuần.
                                     </div>
                                 </div>
                             </div>

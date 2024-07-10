@@ -222,9 +222,9 @@ const HomeScale = () => {
             </div>
             <div className="system-company" data-aos="fade-down">
                 <div className="container">
-                    <div className="boxBig item-center">
+                    <div className="boxBig">
                         <div class="row" style={{ padding: "20px 0px" }}>
-                            <div class="col-12 col-md-6 sub">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sub">
                                 <div class="content-sub">
                                     <h2 class="animate_4">HỆ THỐNG NHÀ MÁY</h2>
                                     <div className="introduce-company">
@@ -266,7 +266,7 @@ const HomeScale = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 sub">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sub">
                                 <div className="content-img">
                                     <Slider
                                         //  autoplay={true} 

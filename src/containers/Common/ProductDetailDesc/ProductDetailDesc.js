@@ -51,7 +51,7 @@ const ProductDetailDesc = ({ children }) => {
                             {/* <i className="fa fa-phone" aria-hidden="true"></i> */}
                             - Hotline/zalo:
                             <div>
-                                + 0833.855.955
+                                + 0966.090.984
                             </div>
                             <div>
                                 + 0362.885.789

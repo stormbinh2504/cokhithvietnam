@@ -82,7 +82,7 @@ const Footer = () => {
                                         </div>
                                         <div className="section-body-item">
                                             <div className="label">Hotline/zalo: </div>
-                                            <div className="phone" style={{ fontWeight: "700" }}><a href="https://zalo.me/0833855955" target="_blank">- 0833.855.955</a></div>
+                                            <div className="phone" style={{ fontWeight: "700" }}><a href="https://zalo.me/0966090984" target="_blank">- 0966.090.984</a></div>
                                             <div className="phone" style={{ fontWeight: "700" }}><a href="https://zalo.me/0362885789" target="_blank">- 0362.885.789</a></div>
                                             <div className="phone" style={{ fontWeight: "700" }}><a href="https://zalo.me/0961537985" target="_blank">- 0961.537.985</a></div>
                                         </div>

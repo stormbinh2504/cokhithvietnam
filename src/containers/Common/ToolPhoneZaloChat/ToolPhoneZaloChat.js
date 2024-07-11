@@ -17,11 +17,11 @@ const ToolPhoneZaloChat = ({ children }) => {
             <div className="hotline-phone-ring-wrap hotline-phone-ring-wrap-1">
                 <div class='phonering-alo-phone'>
                     <div class="phonering-alo-ph-circle-fill"></div>
-                    <a rel="nofollow" target="_blank" href="tel:0833855955" class="alo-ph-img-circle img-phonering"></a>
+                    <a rel="nofollow" target="_blank" href="tel:0966090984" class="alo-ph-img-circle img-phonering"></a>
                 </div>
                 <div class="hotline-bar">
-                    <a href="tel:0833855955">
-                        <span class="text-hotline">0833 855 955</span>
+                    <a href="tel:0966090984">
+                        <span class="text-hotline">0966 090 984</span>
                     </a>
                 </div>
             </div>
@@ -49,10 +49,10 @@ const ToolPhoneZaloChat = ({ children }) => {
             </div>
             <div class="zaloring-alo-phone">
                 <div class="phonering-alo-ph-circle-fill"></div>
-                <a rel="nofollow" target="_blank" href="https://zalo.me/0833855955" class="alo-ph-img-circle img-zaloring"></a>
+                <a rel="nofollow" target="_blank" href="https://zalo.me/0966090984" class="alo-ph-img-circle img-zaloring"></a>
             </div>
             <div class="mess-facebook">
-                <a rel="nofollow" target="_blank" href="https://zalo.me/0833855955" class="fb-btn"></a>
+                <a rel="nofollow" target="_blank" href="https://zalo.me/0966090984" class="fb-btn"></a>
             </div>
             <div class="youtube-recomend">
                 <a rel="nofollow" target="_blank" href="https://www.youtube.com/channel/UCEAmDXvUUwCUbVvvHVaXadg" class="youtube-btn"></a>

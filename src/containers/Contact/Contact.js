@@ -65,7 +65,7 @@ const Contact = ({ google }) => {
                                             Hotline:&nbsp;
                                         </strong>
                                         <div>
-                                            - 0833 855 955
+                                            - 0966 090 984
                                         </div>
                                         <div>
                                             - 0362.885.789

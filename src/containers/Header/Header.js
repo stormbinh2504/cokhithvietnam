@@ -73,12 +73,12 @@ const Header = () => {
                             <div className="extra-item col-4" data-id="5fcb72ee" data-element_type="column">
                                 <div className="extra-wrap">
                                     <div className="extra-item-icon item-center">
-                                        <a href="tel:0833 855 955"><i className="fa fa-phone" aria-hidden="true"></i></a>
+                                        <a href="tel:0966 090 984"><i className="fa fa-phone" aria-hidden="true"></i></a>
                                     </div>
                                     <div className="extra-item-content">
                                         Hotline
                                         <div className="info-content">
-                                            <a href="tel:0833 855 955">0833 855 955</a>
+                                            <a href="tel:0966 090 984">0966 090 984</a>
                                         </div>
                                         {/* <div className="info-content">
                                             <a href="tel:0362885789">0362 885 789</a>

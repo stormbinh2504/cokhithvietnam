@@ -40,3 +40,18 @@ sudo nano /etc/hosts
 sudo tail -f /var/log/nginx/error.log
 
 
+
+server {
+    listen 80;
+    listen [::]:80;
+
+    root /var/www/binhhuun/html;
+    index index.html index.htm index.nginx-debian.html;
+
+    server_name phimme.online www.phimme.online;
+
+    location / {
+            try_files $uri $uri/ /index.html$is_args$args =404 ;
+    }
+
+}

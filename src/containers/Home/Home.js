@@ -76,10 +76,10 @@ const Home = () => {
                     ]}
                 // margin={8}
                 >
-                    <div ><img className="img" src={slider_1} /></div>
-                    <div><img className="img" src={slider_2} /></div>
-                    <div><img className="img" src={slider_3} /></div>
-                    <div><img className="img" src={slider_4} /></div>
+                    <div ><img className="img" src={"/images/home/home_slider/slider_1.png"} /></div>
+                    <div><img className="img" src={"/images/home/home_slider/slider_2.png"} /></div>
+                    <div><img className="img" src={"/images/home/home_slider/slider_3.png"} /></div>
+                    <div><img className="img" src={"/images/home/home_slider/slider_4.png"} /></div>
                 </OwlCarousel>
             </div>
             <section id="content-home" className="content-home">

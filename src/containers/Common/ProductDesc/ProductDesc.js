@@ -33,7 +33,7 @@ const ProductDesc = ({ productDesc }) => {
                         <img src={product_desc_zalo} alt="icon" />
                         Chat
                     </a>
-                    <a className="require item-center" href="/pages/lien-he" >
+                    <a className="require item-center" href="/contact" >
                         Yêu cầu tư vấn
                     </a>
                 </div>

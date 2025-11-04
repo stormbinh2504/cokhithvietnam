@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.619cc86b.css",
-    "main.js": "/static/js/main.3bf36a20.js",
+    "main.css": "/static/css/main.a276e6c2.css",
+    "main.js": "/static/js/main.38c76389.js",
     "static/js/787.c17ec645.chunk.js": "/static/js/787.c17ec645.chunk.js",
     "static/media/slider_1.png": "/static/media/slider_1.6916195d6a3affd720bc.png",
     "static/media/slider_3.png": "/static/media/slider_3.509a905d0c005eb3fbd2.png",
@@ -23,10 +23,10 @@
     "static/media/home_banner_img_10.png": "/static/media/home_banner_img_10.34a31791c1ab0f88615b.png",
     "static/media/img4.png": "/static/media/img4.bacbd21f298c168667f3.png",
     "static/media/img3.png": "/static/media/img3.f470240815e22b1086b0.png",
+    "static/media/img1.jpg": "/static/media/img1.1b3db18d7f621bdca608.jpg",
     "static/media/home_banner_img_8.png": "/static/media/home_banner_img_8.3549e8da85cf91e06277.png",
     "static/media/about.png": "/static/media/about.1193688b63ae0ac9ed78.png",
     "static/media/home_banner_img_4.png": "/static/media/home_banner_img_4.6bf9028a6d06261b55dd.png",
-    "static/media/img1.jpg": "/static/media/img1.1b3db18d7f621bdca608.jpg",
     "static/media/home_banner_img_2.png": "/static/media/home_banner_img_2.6dadb83b0bb1d6a06322.png",
     "static/media/home_banner_img_14.png": "/static/media/home_banner_img_14.de8b4d16d9a74813512b.png",
     "static/media/img3.jpg": "/static/media/img3.40c3932281f7bc9f1825.jpg",
@@ -77,16 +77,16 @@
     "static/media/spin-api.svg": "/static/media/spin-api.65a1875ad1c3cb06c8f984923bb36532.svg",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/facebook-icon.svg": "/static/media/facebook-icon.4482c462e2211bafec5d.svg",
+    "static/media/facebook-icon.svg": "/static/media/facebook-icon.2465f05fffbb2c336aeb.svg",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/index.html",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "main.619cc86b.css.map": "/static/css/main.619cc86b.css.map",
-    "main.3bf36a20.js.map": "/static/js/main.3bf36a20.js.map",
+    "main.a276e6c2.css.map": "/static/css/main.a276e6c2.css.map",
+    "main.38c76389.js.map": "/static/js/main.38c76389.js.map",
     "787.c17ec645.chunk.js.map": "/static/js/787.c17ec645.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.619cc86b.css",
-    "static/js/main.3bf36a20.js"
+    "static/css/main.a276e6c2.css",
+    "static/js/main.38c76389.js"
   ]
 }

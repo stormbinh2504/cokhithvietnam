@@ -14,6 +14,7 @@ import ProductDetailDesc from '../../Common/ProductDetailDesc/ProductDetailDesc'
 
 import img1 from "../../../assets/images/product_collections/product_ke_sieu_thi/img1.jpg"
 import img2 from "../../../assets/images/product_collections/product_ke_sieu_thi/img2.jpg"
+import img3 from "../../../assets/images/product_collections/product_ke_sieu_thi/img3.jpg"
 
 const ProductKeSieuthi = () => {
     const history = useHistory()
@@ -27,6 +28,10 @@ const ProductKeSieuthi = () => {
         {
             original: img2,
             thumbnail: img2,
+        },
+        {
+            original: img3,
+            thumbnail: img3,
         },
     ];
 

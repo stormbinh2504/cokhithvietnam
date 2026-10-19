@@ -69,6 +69,9 @@ import product_ban_thao_tac_img2 from "../../assets/images/product_collections/p
 import product_xe_day_img1 from "../../assets/images/product_collections/product_xe_day/img1.jpg"
 import product_xe_day_img2 from "../../assets/images/product_collections/product_xe_day/img2.jpg"
 
+import product_bang_tai_img1 from "../../assets/images/product_collections/product_bang_tai/img1.jpg"
+import product_bang_tai_img2 from "../../assets/images/product_collections/product_bang_tai/img2.jpg"
+
 const col_1 = [
     {
         isTitleMain: true,
@@ -372,6 +375,15 @@ const listProDuct = [
         path: PATH_NAME.XE_DAY,
         listImages: [product_xe_day_img1, product_xe_day_img2],
         productDesc: "Xe đẩy Cơ Khí TH Việt Nam được sản xuất từ vật liệu chất lượng cao, chịu lực tốt, và có thiết kế thông minh để dễ dàng di chuyển hàng hóa trong nhà máy, kho bãi. Sản phẩm giúp giảm bớt công sức lao động và tăng năng suất công việc.",
+    },
+    {
+        title: "Băng tải",
+        path: PATH_NAME.BANG_TAI,
+        listImages: [
+            product_bang_tai_img1,
+            product_bang_tai_img2,
+        ],
+        productDesc: "Băng tải Cơ Khí TH Việt Nam được thiết kế nhằm vận chuyển hàng hóa tự động, liên tục trong nhà máy, xưởng sản xuất và kho hàng. Sản phẩm giúp tối ưu quy trình sản xuất, giảm sức lao động, tiết kiệm thời gian và nâng cao hiệu suất vận hành.",
     },
 ]
 

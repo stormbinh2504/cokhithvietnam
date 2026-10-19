@@ -63,6 +63,7 @@ import ProductMangCap from './containers/ProductCollections/ProductMangCap/Produ
 import ProductGiaCongLaze from './containers/ProductCollections/ProductGiaCongLaze/ProductGiaCongLaze';
 import ProductBanThaoTac from './containers/ProductCollections/ProductBanThaoTac/ProductBanThaoTac';
 import ProductXeDay from './containers/ProductCollections/ProductXeDay/ProductXeDay';
+import ProductBangTai from './containers/ProductCollections/ProductBangTai/ProductBangTai';
 
 if (typeof window !== "undefined") {
   injectStyle();
@@ -130,6 +131,7 @@ function App() {
                     <Route exact path={PATH_NAME.GIA_CONG_LAZE} component={ProductGiaCongLaze} />
                     <Route exact path={PATH_NAME.BAN_THAO_TAC} component={ProductBanThaoTac} />
                     <Route exact path={PATH_NAME.XE_DAY} component={ProductXeDay} />
+                    <Route exact path={PATH_NAME.BANG_TAI} component={ProductBangTai} />
 
 
                     <Route exact path={PATH_NAME.PROJECT_YENPHONG_BACNINH} component={ProjectYenPhongBacNinh} />

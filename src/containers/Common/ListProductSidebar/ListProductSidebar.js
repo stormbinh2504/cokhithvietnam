@@ -99,6 +99,22 @@ const listProductSideBar = [
         title_lv1: "Gia công Laze",
         path: PATH_NAME.GIA_CONG_LAZE
     },
+    {
+        title_lv1: "Bàn thao tác",
+        path: PATH_NAME.BAN_THAO_TAC
+    },
+    {
+        title_lv1: "Xe đẩy",
+        path: PATH_NAME.XE_DAY
+    },
+    {
+        title_lv1: "Băng tải",
+        path: PATH_NAME.BANG_TAI
+    },
+    {
+        title_lv1: "Palet xếp chồng",
+        path: PATH_NAME.PALET_XEP_CHONG
+    },
 ]
 
 

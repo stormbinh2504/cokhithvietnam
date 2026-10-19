@@ -202,6 +202,8 @@ const Header = () => {
                                     <li className="sub-menu-item"><a onClick={() => onRedirectByPathname(PATH_NAME.GIA_CONG_LAZE)}><div className="sub-menu-item-text" >Gia công Laser</div></a></li>
                                     <li className="sub-menu-item"><a onClick={() => onRedirectByPathname(PATH_NAME.BAN_THAO_TAC)}><div className="sub-menu-item-text" >Bàn thao tác</div></a></li>
                                     <li className="sub-menu-item"><a onClick={() => onRedirectByPathname(PATH_NAME.XE_DAY)}><div className="sub-menu-item-text" >Xe đẩy</div></a></li>
+                                    <li className="sub-menu-item"><a onClick={() => onRedirectByPathname(PATH_NAME.BANG_TAI)}><div className="sub-menu-item-text" >Băng tải</div></a></li>
+                                    <li className="sub-menu-item"><a onClick={() => onRedirectByPathname(PATH_NAME.PALET_XEP_CHONG)}><div className="sub-menu-item-text" >Palet xếp chồng</div></a></li>
 
                                 </ul>
                             </li>

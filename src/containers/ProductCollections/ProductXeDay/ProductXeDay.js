@@ -17,36 +17,33 @@ import img2 from "../../../assets/images/product_collections/product_xe_day/img2
 import img3 from "../../../assets/images/product_collections/product_xe_day/img3.jpg"
 import img4 from "../../../assets/images/product_collections/product_xe_day/img4.jpg"
 import img5 from "../../../assets/images/product_collections/product_xe_day/img5.jpg"
+import img6 from "../../../assets/images/product_collections/product_xe_day/img6.jpg"
+import img7 from "../../../assets/images/product_collections/product_xe_day/img7.jpg"
+import img8 from "../../../assets/images/product_collections/product_xe_day/img8.jpg"
+import img9 from "../../../assets/images/product_collections/product_xe_day/img9.jpg"
+import img10 from "../../../assets/images/product_collections/product_xe_day/img10.jpg"
+import img11 from "../../../assets/images/product_collections/product_xe_day/img11.jpg"
 
 const ProductXeDay = () => {
     const history = useHistory()
     const dispatch = useDispatch()
 
     const images = [
-        {
-            original: img1,
-            thumbnail: img1,
-        },
-        {
-            original: img2,
-            thumbnail: img2,
-        },
-        {
-            original: img3,
-            thumbnail: img3,
-        },
-        {
-            original: img4,
-            thumbnail: img4,
-        },
-        {
-            original: img5,
-            thumbnail: img5,
-        },
+        { original: img1, thumbnail: img1 },
+        { original: img2, thumbnail: img2 },
+        { original: img3, thumbnail: img3 },
+        { original: img4, thumbnail: img4 },
+        { original: img5, thumbnail: img5 },
+        { original: img6, thumbnail: img6 },
+        { original: img7, thumbnail: img7 },
+        { original: img8, thumbnail: img8 },
+        { original: img9, thumbnail: img9 },
+        { original: img10, thumbnail: img10 },
+        { original: img11, thumbnail: img11 },
     ];
 
     return (
-        <div className='product-ke-driver-in'>
+        <div className='product-xe-day'>
             <PageTitle
                 listPageTitle={[
                     {
@@ -104,9 +101,16 @@ const ProductXeDay = () => {
                                                         </p>
                                                         <p>
                                                             <span style={{ fontSize: "15px" }}>
-                                                                Xe đẩy hàng là sản phẩm quan trọng gắn liền với hệ thống kho hàng. Giải quyết vấn đề di chuyển hàng hóa linh động mà không cần sử dụng tới xe nâng. Chất liệu sử dụng đa dạng như thép, inox phù hợp với mọi nhu cầu sử dụng
+                                                                Trong các kho hàng công nghiệp việc sử dụng xe đẩy hàng (hay còn gọi là xe kéo hàng) cực kỳ cần thiết bởi chúng mang đến sự thuận tiện nhất cho người dùng. Đây là dòng sản phẩm gắn liền với hệ thống kho hàng, cửa hàng… Xe đẩy hàng có thiết kế nhỏ gọn kết hợp với chức năng vận chuyển sẽ là phương tiện cực kỳ thích hợp dành cho những kho hàng công nghiêp, có lượng hàng lớn cần di chuyển.
                                                             </span>
                                                         </p>
+                                                        <div className="product-images">
+                                                            {images.map((img, index) => (
+                                                                <div className="product-image" key={index}>
+                                                                    <img src={img.original} alt={`Bàn thao tác ${index + 1}`} />
+                                                                </div>
+                                                            ))}
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

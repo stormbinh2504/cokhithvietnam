@@ -184,7 +184,30 @@ const MenuSidebar = ({ setIsOpenMenu }) => {
             >
               Gia công Laze
             </MenuItem>
-
+            <MenuItem
+              active={checkActiveMenu(PATH_NAME.BAN_THAO_TAC)}
+              onClick={(e) => onRedirectByPathname(PATH_NAME.BAN_THAO_TAC)}
+            >
+              Bàn thao tác
+            </MenuItem>
+            <MenuItem
+              active={checkActiveMenu(PATH_NAME.XE_DAY)}
+              onClick={(e) => onRedirectByPathname(PATH_NAME.XE_DAY)}
+            >
+              Xe đẩy
+            </MenuItem>
+            <MenuItem
+              active={checkActiveMenu(PATH_NAME.BANG_TAI)}
+              onClick={(e) => onRedirectByPathname(PATH_NAME.BANG_TAI)}
+            >
+              Băng tải
+            </MenuItem>
+            <MenuItem
+              active={checkActiveMenu(PATH_NAME.PALET_XEP_CHONG)}
+              onClick={(e) => onRedirectByPathname(PATH_NAME.PALET_XEP_CHONG)}
+            >
+              Palet xếp chồng
+            </MenuItem>
           </SubMenu>
           <Menu iconShape="circle" rootStyles={{ paddingLeft: "16px" }}>
             <MenuItem
